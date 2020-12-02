@@ -9,15 +9,40 @@
 
   <body>
     <h1>C組的簽到本</h1>
-    <br /><br />
     <h3>一個人寫一行簽到吧</h3>
-    <p>老翰</p>
-    <p>阿妞哈sei唷 李wei宣</p>
-    <p>小倩簽到!!</p>
-    <h3>嗨嗨嗨我是宜君</h3>
-    <h1>吳翊民 AKA 亞瑟</h1>
-    <p>測試測試，我是晏慈</p>
+    <p class="autobg">老翰</p>
+    <p class="autobg">阿妞哈sei唷 李wei宣</p>
+    <p class="autobg">小倩簽到!!</p>
+    <h3 class="autobg">嗨嗨嗨我是宜君</h3>
+    <h1 class="autobg">吳翊民 AKA 亞瑟</h1>
+    <p class="autobg">測試測試，我是晏慈</p>
 
     <script src="/scripts/hans.js"></script>
+
+    <!-- 老師上課用的，自動變換色彩的... -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script>
+      function getRandomInt(max) {
+        return Math.floor(Math.random() * Math.floor(max - 50) + 100);
+      }
+
+      function getRBGA() {
+        return `linear-gradient(135deg, rgba(${getRandomInt(100) + 100},${
+          getRandomInt(100) + 100
+        },${getRandomInt(100) + 100},.5), rgba(${getRandomInt(
+          200
+        )},${getRandomInt(200)},${getRandomInt(200)},.8)`;
+      }
+
+      const elements = document.querySelectorAll(".autobg");
+
+      Array.from(elements).forEach((element, index) => {
+        element.style.backgroundImage = getRBGA();
+      });
+
+      // $('.autobg').each(function (index, currentElement) {
+      //     currentElement.style.backgroundImage = getRBGA();
+      // });
+    </script>
   </body>
 </html>
