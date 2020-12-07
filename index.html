@@ -11,8 +11,8 @@
         .imgBackground {
             background-image: url('./images/daniela-0uQ4Z6V7pe4-unsplash_1440x960.jpg');
             background-repeat: no-repeat;
-            background-size: 100% auto;
-            background-position: center top;
+            background-size: 100% cover;
+            background-position: center center;
             overflow: hidden;
             height: 800px;
         }
@@ -21,7 +21,8 @@
 
 <body>
     <!-- 複製 bootsrap 的 navbar 範例 -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        </div>
         <a class="navbar-brand" href="#">HONKI.C</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,6 +78,11 @@
     <div class="imgBackground">
     </div>
 
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">C組 練習用的頁面</a>
+        </div>
+    </nav>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
