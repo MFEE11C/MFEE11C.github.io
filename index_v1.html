@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MFEE11C Practice</title>
+  <link rel="stylesheet" href="/css/basic_style.css" />
+</head>
+
+<body>
+
+  <h1 class="autobg">C組的頁面</h1>
+  <br /><br />
+  <p>「大家要一起撐過去！」 by 老翰 2020.12.02. Wed.</p>
+  <br /><br />
+  <ul>
+    <li></li>
+    <li>
+      <a href="https://github.com/MFEE11C/MFEE11C.github.io">組頁面repo</a>
+    </li>
+    <li><a href="/hanslab/lab-index.html">老翰的實驗室</a></li>
+  </ul>
+
+  <!-- 老師上課用的，自動變換色彩的... -->
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+  <script>
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * Math.floor(max - 50) + 100);
+    }
+
+    function getRBGA() {
+      return `linear-gradient(135deg, rgba(${getRandomInt(100) + 100},${getRandomInt(100) + 100
+        },${getRandomInt(100) + 100},.5), rgba(${getRandomInt(
+          200
+        )},${getRandomInt(200)},${getRandomInt(200)},.8)`;
+    }
+
+    const elements = document.querySelectorAll(".autobg");
+
+    Array.from(elements).forEach((element, index) => {
+      element.style.backgroundImage = getRBGA();
+    });
+
+      // $('.autobg').each(function (index, currentElement) {
+      //     currentElement.style.backgroundImage = getRBGA();
+      // });
+  </script>
+</body>
+
+</html>
