@@ -1,127 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C組的簽到本</title>
+    <link rel="stylesheet" href="/css/basic_style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>C組的簽到本</title>
-  <link rel="stylesheet" href="/css/basic_style.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
-</head>
+  <body>
+    <!-- 產生 navbar 的 script -->
+    <script src="/scripts/navbar-v1.js" type="text/javascript" defer></script>
 
-<body>
+    <h1>C組的簽到本</h1>
+    <h3>一個人寫一行簽到吧</h3>
+    <p class="autobg">老翰</p>
+    <p class="autobg">阿妞哈sei唷 李wei宣</p>
+    <p class="autobg">小倩簽到!!</p>
+    <h3 class="autobg">嗨嗨嗨我是宜君</h3>
+    <h1 class="autobg">吳翊民 AKA 亞瑟</h1>
+    <p class="autobg">測試測試，我是晏慈</p>
+    <span>1君2簽</span>
+    <h1>測試fork</h1>
 
-  <!-- 複製 bootsrap 的 navbar 範例 -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-    </div>
-    <a class="navbar-brand" href="../index.html">HONKI.C</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <br />
+    <a href="/index.html">回首頁</a>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)/span></a>
-        </li>
-        <li>
-          <a class="nav-link" href="#">簽到</a>
-        </li>
-        <li>
-          <a class="nav-link" href="https://github.com/MFEE11C/MFEE11C.github.io">組頁面repo</a>
-        </li>
+    <!-- 老師上課用的，自動變換色彩的... -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script>
+      function getRandomInt(max) {
+        return Math.floor(Math.random() * Math.floor(max - 50) + 100);
+      }
 
-        <!-- <li class="nav-item dropdown">
-    <a
-      class="nav-link dropdown-toggle"
-      href="#"
-      id="navbarDropdown"
-      role="button"
-      data-toggle="dropdown"
-      aria-haspopup="true"
-      aria-expanded="false"
-    >
-      Dropdown
-    </a>
-    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Something else here</a>
-    </div>
-  </li>
-  <li class="nav-item">
-    <a
-      class="nav-link disabled"
-      href="#"
-      tabindex="-1"
-      aria-disabled="true"
-      >Disabled</a
-    >
-  </li> -->
-      </ul>
-    </div>
-  </nav>
-  <!-- 複製 bootsrap 的 navbar 範例 END-->
-
-
-  <h1>C組的簽到本</h1>
-  <h3>一個人寫一行簽到吧</h3>
-  <p class="autobg">老翰</p>
-  <p class="autobg">阿妞哈sei唷 李wei宣</p>
-  <p class="autobg">小倩簽到!!</p>
-  <h3 class="autobg">嗨嗨嗨我是宜君</h3>
-  <h1 class="autobg">吳翊民 AKA 亞瑟</h1>
-  <p class="autobg">測試測試，我是晏慈</p>
-  <span>1君2簽</span>
-  <h1>測試fork</h1>
-
-  <br />
-  <a href="/index.html">回首頁</a>
-
-  <!-- 老師上課用的，自動變換色彩的... -->
-  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-  <script>
-    function getRandomInt(max) {
-      return Math.floor(Math.random() * Math.floor(max - 50) + 100);
-    }
-
-    function getRBGA() {
-      return `linear-gradient(135deg, rgba(${getRandomInt(100) + 100},${getRandomInt(100) + 100
+      function getRBGA() {
+        return `linear-gradient(135deg, rgba(${getRandomInt(100) + 100},${
+          getRandomInt(100) + 100
         },${getRandomInt(100) + 100},.5), rgba(${getRandomInt(
           200
         )},${getRandomInt(200)},${getRandomInt(200)},.8)`;
-    }
+      }
 
-    const elements = document.querySelectorAll(".autobg");
+      const elements = document.querySelectorAll(".autobg");
 
-    Array.from(elements).forEach((element, index) => {
-      element.style.backgroundImage = getRBGA();
-    });
+      Array.from(elements).forEach((element, index) => {
+        element.style.backgroundImage = getRBGA();
+      });
 
       // $('.autobg').each(function (index, currentElement) {
       //     currentElement.style.backgroundImage = getRBGA();
       // });
-  </script>
+    </script>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
-
-  <nav class="navbar fixed-bottom navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">C組 練習用的頁面</a>
-    </div>
-  </nav>
-
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
