@@ -3,47 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MFEE11C Practice</title>
+    <title>HONKI 模板</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
       integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
       crossorigin="anonymous"
     />
-    <style>
-      .imgBackground {
-        background-image: url("./images/daniela-0uQ4Z6V7pe4-unsplash_1440x960.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        overflow: hidden;
-        width: 100%;
-        height: 1000px;
-      }
-    </style>
+    <!-- 導入 navbar 與 footer 的 script -->
+    <script src="./scripts/navfoot-v1.js" type="text/javascript" defer></script>
+    <style></style>
   </head>
 
   <body>
-    <!-- 產生 navbar 的 script -->
-    <script src="/scripts/navbar-v1.js" type="text/javascript" defer></script>
-    <!-- 產生 navbar 的 script end -->
+    <!-- JS 導入 navbar 模板 -->
+    <div id="navbarTemp"></div>
 
-    <div class="imgBackground"></div>
+    <div class="container">
+      <div class="row"></div>
+    </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-      crossorigin="anonymous"
-    ></script>
+    <!-- JS 導入 footer 模板 -->
+    <div id="footerTemp"></div>
   </body>
 </html>
