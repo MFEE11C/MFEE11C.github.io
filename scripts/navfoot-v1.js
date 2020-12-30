@@ -5,11 +5,12 @@ const navTemplate = document.createElement('template');
 navTemplate.innerHTML = 
  
 `
+
 <nav
-      class="navbar fixed-top navbar-expand-lg navbar-light"
+      class="navbar navbar-expand-lg navbar-light"
       style="height: 100px; background-color: #d0d9d4"
     >
-      <a class="navbar-brand" href="/">HONKI</a>
+      <a class="navbar-brand" href="#">HONKI模板</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -21,23 +22,16 @@ navTemplate.innerHTML =
       >
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li>
-            <a
-              class="nav-link"
-              href="https://github.com/MFEE11C/MFEE11C.github.io"
-              >組頁面repo</a
-            >
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
           </li>
         </ul>
       </div>
     </nav>
+
 `
 
 document.getElementById('navbarTemp').appendChild(navTemplate.content);
@@ -54,13 +48,20 @@ footerTemplate.innerHTML =
 
 `
 <nav
-      class="navbar fixed-bottom navbar-light"
+      class="navbar navbar-light"
       style="height: 464px; background-color: #d0d9d4"
     >
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Footer</a>
       </div>
     </nav>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"
+  ></script>
 
 `
 
