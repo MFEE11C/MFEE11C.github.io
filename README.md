@@ -18,15 +18,15 @@
 
 #### 網站頁面檔案規劃
 
-- 根目錄（ / ）
-  - index.html ： Landing Page+心得
-  - pages 資料夾（ /page/ ）
-    - 活動：余
-    - 二手書：蔡
-    - old-seasons.html ： 過往推薦（翰）
-    - 書城：李
-    - 購物車：吳
-    - 會員：倩
+- 根目錄
+  - index.html （Landing Page+心得）
+  - pages 資料夾
+    - 活動（余）
+    - 二手書（蔡）
+    - old-seasons.html （過往推薦，翰）
+    - 書城（李）
+    - 購物車（吳）
+    - 會員（倩）
   - images 資料夾
   - css
   - js
