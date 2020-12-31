@@ -18,6 +18,19 @@
 
 #### 網站頁面檔案規劃
 
-- root（ / ）， Landing Page （ index.html ）
-  - page
-    - old-seasons.html ： 過往推薦
+- 根目錄
+  - index.html （Landing Page+心得）
+  - pages 資料夾
+    - 活動（余）
+    - 二手書（蔡）
+    - old-seasons.html （過往推薦，翰）
+    - 書城（李）
+    - 購物車（吳）
+    - 會員（倩）
+  - images 資料夾
+  - css
+  - js
+    - jquery-3.5.1.js
+    - navfoot-v1.js ： navbar 與 footer 的模板
+  - bootstrap-4.5.3-dist
+  - fontawesome-free-5.15.1-web
