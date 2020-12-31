@@ -29,7 +29,17 @@ navTemplate.innerHTML =
             <a class="nav-link" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/MFEE11C/MFEE11C.github.io">Repo</a>
+            <a
+              class="nav-link"
+              href="https://github.com/MFEE11C/MFEE11C.github.io/"
+              >Repo</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/members/register.html">二手書</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/members/register.html">註冊</a>
           </li>
         </ul>
       </div>
