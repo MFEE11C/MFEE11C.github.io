@@ -1,0 +1,49 @@
+:root {
+  /* navbar & footer green bg */
+  --green: #d0d9d4;
+  /* main background grey */
+  --lightgrey: #ebe7e0;
+  /* navbar burger bg*/
+  --gold: #bfb183;
+  /* navbar icon color */
+  --darkgrey: #4f5250;
+  /* white & black 一般純白跟純黑 fonts*/
+  --black: #000;
+  --white: #fff;
+  /* others */
+  --yellow: #f2e3b3;
+  --darkgreen: #9fa8a3;
+  --lightyellow: #ffffe5;
+  --lightergrey: #f0f1eb;
+  --lightbrown: #e7e0d8;
+  --brown: #d8c5b6;
+  --blue: #96ace1;
+  --landingpagefootergrey: #dadfd2;
+  /* background: var(--goldgradient); 漸層色用法記得要用background */
+  --goldgradient: linear-gradient(90deg, #f2e3b3, #bfb183);
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  /* font-family: 'Abel', sans-serif; */
+  background-color: var(--lightgrey);
+  font-size: 16px;
+}
+h1 {
+  font-size: 93px;
+}
+h2 {
+  font-size: 58px;
+}
+h3 {
+  font-size: 47px;
+}
+h4 {
+  font-size: 33px;
+}
+h5 {
+  font-size: 23px;
+}
+h6 {
+  font-size: 16px;
+}
