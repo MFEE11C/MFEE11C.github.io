@@ -15,3 +15,9 @@
 - [ ] 確認其他如 css ， js 的檔案命名規則
 - [ ] [Sourcetree 版控軟體](https://www.sourcetreeapp.com/)教學（圖形化 Git 軟體）
 - [ ] Markdown 教學
+
+#### 網站頁面檔案規劃
+
+- root（ / ）， Landing Page （ index.html ）
+  - page
+    - old-seasons.html ： 過往推薦
