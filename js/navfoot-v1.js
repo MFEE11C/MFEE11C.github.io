@@ -6,44 +6,49 @@ navTemplate.innerHTML =
  
 `
 
-    <nav
-      class="navbar navbar-expand-lg navbar-light"
-      style="padding: 30px; background-color: #d0d9d4"
-    >
-      <a class="navbar-brand" href="/index-01-template.html">HONKI模板</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<nav
+class="navbar navbar-expand-lg navbar-light"
+style="padding: 30px; background-color: #d0d9d4"
+>
+<a class="navbar-brand" href="/">HONKI模板</a>
+<button
+  class="navbar-toggler"
+  type="button"
+  data-toggle="collapse"
+  data-target="#navbarSupportedContent"
+  aria-controls="navbarSupportedContent"
+  aria-expanded="false"
+  aria-label="Toggle navigation"
+>
+  <span class="navbar-toggler-icon"></span>
+</button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/pages/members/register.html">二手書</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/pages/members/register.html">註冊</a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="https://github.com/MFEE11C/MFEE11C.github.io/"
-              >Repo</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="/">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/pages/members/register.html">二手書</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/pages/old-seasons/os-index.html"
+        >過往推薦</a
+      >
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/pages/members/register.html">註冊</a>
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        href="https://github.com/MFEE11C/MFEE11C.github.io/"
+        >Repo</a
+      >
+    </li>
+  </ul>
+</div>
+</nav>
 
 `
 
