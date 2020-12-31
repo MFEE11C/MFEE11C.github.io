@@ -6,9 +6,9 @@ navTemplate.innerHTML =
  
 `
 
-<nav
+    <nav
       class="navbar navbar-expand-lg navbar-light"
-      style="height: 100px; background-color: #d0d9d4"
+      style="padding: 30px; background-color: #d0d9d4"
     >
       <a class="navbar-brand" href="/index-01-template.html">HONKI模板</a>
       <button
