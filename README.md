@@ -3,7 +3,7 @@
 ## 網站頁面檔案規劃
 
 - MFEE11C.github.io
-  - index.html （Landing Page+心得）
+  - index.html （模板頁面，Style Guide，使用說明）
   - pages
     - activity （活動，余）
       - bookmarket.html
