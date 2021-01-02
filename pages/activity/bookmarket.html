@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可參考網頁紀錄</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        .container {
+            margin: 10px auto;
+        }
+
+        .pics {
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="list-group">
+                <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0000501" class="list-group-item list-group-item-action"
+                    target="_new">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">交通部觀光局網頁</h5>
+                    </div>
+                    <p class="mb-1">https://www.taiwan.net.tw/m1.aspx?sNo=0000501</p>
+                    <small>台灣地圖css版面參考</small>
+                    <div class="mt-2">
+                        <img src="./imgs/bookmarket001.jpg" alt="p1" class="pics">
+                    </div>
+                </a>
+                <a href="https://www.kgc.co.kr/index.do" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">韓國正官庄網頁</h5>
+                    </div>
+                    <p class="mb-1">https://www.kgc.co.kr/index.do</p>
+                    <small class="text-muted">熱門活動推薦版面可參考</small>
+                    <div class="mt-2">
+                        <video loop="true" autoplay="autoplay" class="pics" muted="true">
+                            <source type="video/mp4" src="video/KGC인삼공사 - Google Chrome 2021-01-02 20-56-08.mp4">
+                        </video>
+                    </div>
+                </a>
+                <a href="https://www.tftmall.co.kr/goods/goods_list.php?cateCd=004"
+                    class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">韓國tft</h5>
+                    </div>
+                    <p class="mb-1">https://www.tftmall.co.kr/goods/goods_list.php?cateCd=004</p>
+                    <small class="text-muted">所有活動頁面的版型可參考</small>
+                    <div class="mt-2">
+                        <video loop="true" autoplay="autoplay" class="pics" muted="true">
+                            <source type="video/mp4"
+                                src="video/일상에 건강을 더하다! tft - Google Chrome 2021-01-02 21-05-34.mp4">
+                        </video>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        $('.list-group-item').mouseenter(function () {
+            $(this).addClass('active');
+            $(this).mouseleave(function () {
+                $(this).removeClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
