@@ -1,5 +1,8 @@
 # C 組 Github Page 的資料夾
 
+目前以下列 Github 頁面初步練習大專協作：
+https://mfee11c.github.io/
+
 ## 網站頁面檔案規劃
 
 - MFEE11C.github.io
