@@ -1,10 +1,8 @@
-// navbar 模板 
+// navbar 模板
 // 用 backtick 包住要傳到 html 的 模板
 
-const navTemplate = document.createElement('template');
-navTemplate.innerHTML = 
- 
-`
+const navTemplate = document.createElement("template");
+navTemplate.innerHTML = `
 
 <nav
       class="navbar navbar-expand-lg navbar-light"
@@ -29,7 +27,7 @@ navTemplate.innerHTML =
             <a class="nav-link" href="#">首頁</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">書城</a>
+            <a class="nav-link" href="/pages/bookstore/merch-list.html">書城</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/pages/activity/bookmarket.html">活動</a>
@@ -63,21 +61,17 @@ navTemplate.innerHTML =
       </div>
     </nav>
 
-`
+`;
 
-document.getElementById('navbarTemp').appendChild(navTemplate.content);
-
+document.getElementById("navbarTemp").appendChild(navTemplate.content);
 
 // -------------------- 分隔線 --------------------
-
 
 // footer
 // 用 backtick 包住要傳到 html 的 模板
 
-const footerTemplate = document.createElement('template');
-footerTemplate.innerHTML = 
-
-`
+const footerTemplate = document.createElement("template");
+footerTemplate.innerHTML = `
 <nav
       class="navbar navbar-light"
       style="height: 464px; background-color: #d0d9d4"
@@ -87,6 +81,6 @@ footerTemplate.innerHTML =
       </div>
     </nav>
 
-`
+`;
 
-document.getElementById('footerTemp').appendChild(footerTemplate.content);
+document.getElementById("footerTemp").appendChild(footerTemplate.content);
