@@ -23,7 +23,7 @@ https://mfee11c.github.io/
     - style.css
   - js
     - jquery-3.5.1.js
-    - navfoot-v1.js ： navbar 與 footer 的模板
+    - navfoot-v1.js （navbar 與 footer 的模板）
   - bootstrap-4.5.3-dist
   - fontawesome-free-5.15.1-web
 
