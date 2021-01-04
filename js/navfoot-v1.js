@@ -45,7 +45,7 @@ navTemplate.innerHTML = `
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">購物車</a>
+            <a class="nav-link" href="./pages/cart/cart-index.html">購物車</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/pages/members/register.html">會員中心</a>
