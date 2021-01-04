@@ -8,20 +8,22 @@ https://mfee11c.github.io/
 - MFEE11C.github.io
   - index.html （模板頁面，Style Guide，使用說明）
   - pages
+    - 首頁（佳）
+    - 書城（李）
     - activity （活動，余）
       - bookmarket.html
-    - UsedbooksIndex.html 二手書（蔡）
+    - UsedbooksIndex.html （二手書，蔡）
       - UsedbooksIndex.html
     - old-seasons （過往推薦，翰）
       - os-index.html
-    - 書城（李）
     - 購物車（吳）
-    - 會員（倩）
-  - images 資料夾
+    - 會員中心（倩）
+  - images
   - css
+    - style.css
   - js
     - jquery-3.5.1.js
-    - navfoot-v1.js ： navbar 與 footer 的模板
+    - navfoot-v1.js （navbar 與 footer 的模板）
   - bootstrap-4.5.3-dist
   - fontawesome-free-5.15.1-web
 
