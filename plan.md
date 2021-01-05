@@ -1,5 +1,8 @@
 # 企劃書討論筆記
 
+各自負責的頁面與文字請 11/15 交初稿，上傳到以下資料夾：
+https://drive.google.com/drive/folders/1UMy_55h82qE4DYVoHYwJ55DdKXfYCmRE?usp=sharing
+
 ## 前言
 
 - 品牌形象
@@ -20,6 +23,7 @@
 - 目標族群
   - 文藝青年
   - 在地社群經營者
+  - 鄉土文化熱愛者
 - 競爭者
   - 大型網路書店
   - 連鎖一班書店
