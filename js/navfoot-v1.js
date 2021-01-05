@@ -57,7 +57,7 @@ footerTemplate.innerHTML = `
       style="height: 464px; background-color: #d0d9d4"
     >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Footer</a>
+        <a class="navbar-brand" href="/pages/staff/staff.html">工作人員名單</a>
       </div>
     </nav>
 
