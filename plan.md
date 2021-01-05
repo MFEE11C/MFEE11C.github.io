@@ -1,10 +1,10 @@
-# 企劃書討論筆記
+# 企劃書討論筆記（老翰）
 
 預計工作時程
 各自負責的頁面與文字請 1/15 交初稿，上傳到以下資料夾：
 https://drive.google.com/drive/folders/1UMy_55h82qE4DYVoHYwJ55DdKXfYCmRE?usp=sharing
 
-1/19 承翰統整一版，大家確認完
+1/19 承翰統整完成一版，給大家確認
 1/26 繳交企劃書
 
 ## 前言
