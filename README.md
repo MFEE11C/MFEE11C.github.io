@@ -9,15 +9,18 @@ https://mfee11c.github.io/
   - index.html （模板頁面，Style Guide，使用說明）
   - pages
     - 首頁（佳）
-    - 書城（李）
+    - bookstore（書城，李）
+      - merch-list.html
     - activity （活動，余）
       - bookmarket.html
     - UsedbooksIndex.html （二手書，蔡）
       - UsedbooksIndex.html
     - old-seasons （過往推薦，翰）
       - os-index.html
-    - 購物車（吳）
-    - 會員中心（倩）
+    - cart（購物車，吳）
+      - cart-index.html
+    - members （會員中心，倩）
+      - register.html
   - images
   - css
     - style.css
