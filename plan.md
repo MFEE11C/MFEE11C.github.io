@@ -1,11 +1,11 @@
 # 企劃書討論筆記
 
 預計工作時程
-各自負責的頁面與文字請 11/15 交初稿，上傳到以下資料夾：
+各自負責的頁面與文字請 1/15 交初稿，上傳到以下資料夾：
 https://drive.google.com/drive/folders/1UMy_55h82qE4DYVoHYwJ55DdKXfYCmRE?usp=sharing
 
-11/19 承翰統整一版，大家確認完
-11/26 繳交企劃書
+1/19 承翰統整一版，大家確認完
+1/26 繳交企劃書
 
 ## 前言
 
@@ -34,13 +34,13 @@ https://drive.google.com/drive/folders/1UMy_55h82qE4DYVoHYwJ55DdKXfYCmRE?usp=sha
   - 獨立書店
   - 二手書店
   - 電子書
-- SWOT
+- ## SWOT
 
 ## 網站設計與建制
 
 - LOGO 設計理念（高）
 - 網頁色彩配置（高）
-- 網站架構
+- 網站架構（高）
 - Flow Chart（流程圖）
   - 參考覓廚 CHERCHEF 的企劃書，各自頁面做
 - 版面配置（各頁面同學各自寫作）
