@@ -23,7 +23,7 @@ navTemplate.innerHTML = `
           <a class="nav-link" href="/pages/activity/bookmarket.html">活動</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/pages/UsedbooksChange/UsedbooksIndex.html">二手書交換</a>
+          <a class="nav-link" href="/pages/used-books/used-books-index.html">二手書交換</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/pages/old-seasons/os-index.html">過往推薦</a>
