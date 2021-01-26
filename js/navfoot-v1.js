@@ -8,6 +8,7 @@ navTemplate.innerHTML = `
     <div class="container col-12">
       <a class="navbar-brand" href="/">
 
+        <!-- LOGO SVG -->
         <svg xmlns="http://www.w3.org/2000/svg" width="72" height="55.532" viewBox="0 0 80 55.532">
           <g id="LOGO" transform="translate(-25 -11.282)">
             <path id="Subtraction_3" data-name="Subtraction 3"
@@ -59,7 +60,10 @@ navTemplate.innerHTML = `
             <a class="nav-link" href="/pages/used-books/used-books-index.html">二手書交換</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="/pages/old-seasons/os-index.html">過往推薦</a>
+            <a class="nav-link" href="/pages/old-seasons/os-index.html">過往節氣</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/pages/style-guide-draft.html">Style Guide稿</a>
           </li>
         </ul>
         <ul class="navbar-nav">
