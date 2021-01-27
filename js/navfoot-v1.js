@@ -132,6 +132,13 @@ navTemplate.innerHTML = `
                 >Style Guide稿</a
               >
             </li>
+            <li class="nav-item active">
+              <a
+                class="nav-link"
+                href="https://github.com/honkibooks/honkibooks.github.io"
+                >Repo</a
+              >
+            </li>
           </ul>
           <ul class="navbar-nav">
             <li class="nav-item active mx-2">
