@@ -3,6 +3,7 @@
 @media only screen and (max-width: 1200px) {
   .responsive-title {
     font-size: 2em;
+    text-align: center;
   }
 }
 
