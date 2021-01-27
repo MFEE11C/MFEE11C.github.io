@@ -1,23 +1,72 @@
 /* Color */
 
 .honki-red {
-  width: 140px;
-  height: 78px;
+  background-color: #e83015;
 
+  height: 100px;
+
+  line-height: 50px;
   text-align: center;
 
-  background-color: #e83015;
   color: #fff;
 }
 
 .honki-black {
-  width: 140px;
-  height: 78px;
+  background-color: #1c1b1b;
 
+  height: 100px;
+
+  line-height: 50px;
   text-align: center;
 
-  background-color: #303030;
   color: #fff;
+}
+
+.honki-green {
+  background-color: #7ba23e;
+
+  height: 100px;
+
+  line-height: 50px;
+  text-align: center;
+
+  color: #fff;
+}
+
+.honki-paper {
+  background-color: #f2ece3;
+
+  height: 100px;
+
+  line-height: 50px;
+  text-align: center;
+
+  border: 1px solid #1c1b1b;
+  color: #1c1b1b;
+}
+
+.honki-paper2 {
+  background-color: #fdf3db;
+
+  height: 100px;
+
+  line-height: 50px;
+  text-align: center;
+
+  border: 1px solid #1c1b1b;
+  color: #1c1b1b;
+}
+
+.honki-white {
+  background-color: #ffffff;
+
+  height: 100px;
+
+  line-height: 50px;
+  text-align: center;
+
+  border: 1px solid #1c1b1b;
+  color: #1c1b1b;
 }
 
 /* Font: English */
