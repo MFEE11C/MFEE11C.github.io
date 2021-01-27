@@ -1,26 +1,50 @@
+/* Color */
+
+.honki-red {
+  width: 140px;
+  height: 78px;
+
+  text-align: center;
+
+  background-color: #e83015;
+  color: #fff;
+}
+
+.honki-black {
+  width: 140px;
+  height: 78px;
+
+  text-align: center;
+
+  background-color: #303030;
+  color: #fff;
+}
+
+/* Font: English */
+
 .font-en-abel {
-    font-family: 'Abel', sans-serif;
+  font-family: "Abel", sans-serif;
 }
 
 h1.font-en-abel {
-    font-size: 102px;
+  font-size: 102px;
 }
 h2.font-en-abel {
-    font-size: 64px;
+  font-size: 64px;
 }
 h3.font-en-abel {
-    font-size: 51px;
+  font-size: 51px;
 }
 h4.font-en-abel {
-    font-size: 36px;
+  font-size: 36px;
 }
 h5.font-en-abel {
-    font-size: 25px;
+  font-size: 25px;
 }
 h6.font-en-abel {
-    font-size: 21px;
+  font-size: 21px;
 }
 
 p.font-en-abel {
-    font-size: 17px;
+  font-size: 17px;
 }
