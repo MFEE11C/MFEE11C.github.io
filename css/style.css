@@ -1,26 +1,15 @@
 :root {
-  /* navbar & footer green bg */
-  --green: #d0d9d4;
-  /* main background grey */
-  --lightgrey: #ebe7e0;
-  /* navbar burger bg*/
-  --gold: #bfb183;
-  /* navbar icon color */
-  --darkgrey: #4f5250;
-  /* white & black 一般純白跟純黑 fonts*/
-  --black: #000;
-  --white: #fff;
-  /* others */
-  --yellow: #f2e3b3;
-  --darkgreen: #9fa8a3;
-  --lightyellow: #ffffe5;
-  --lightergrey: #f0f1eb;
-  --lightbrown: #e7e0d8;
-  --brown: #d8c5b6;
-  --blue: #96ace1;
-  --landingpagefootergrey: #dadfd2;
-  /* background: var(--goldgradient); 漸層色用法記得要用background */
-  --goldgradient: linear-gradient(90deg, #f2e3b3, #bfb183);
+  /* Primary 主色 */
+  --honki-red: #e83015;
+  /* Secondary 輔色 */
+  --honki-yellow: #fdf3db;
+  /* Text 文字色 */
+  --honki-black: #1c1b1b;
+  /* Theme 主題色 */
+  --honki-theme: #7ba23e;
+  /* Others 其他 */
+  --honki-white: #fff;
+  --honki-paper: #f2ece3;
 }
 
 body {
@@ -42,7 +31,7 @@ h4 {
   font-size: 33px;
 }
 h5 {
-  font-size: 23px;
+  font-size: 24px;
 }
 h6 {
   font-size: 16px;
