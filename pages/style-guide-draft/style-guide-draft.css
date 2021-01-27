@@ -1,5 +1,9 @@
-.responsive-title {
-  font-size: calc(100% + 1vw + 1vh);
+/* 只用在 style-guilde-draft.html 的 標題 h1  */
+
+@media only screen and (max-width: 1200px) {
+  .responsive-title {
+    font-size: 3em;
+  }
 }
 
 /* Color */
