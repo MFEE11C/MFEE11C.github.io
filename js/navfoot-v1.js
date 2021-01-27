@@ -166,7 +166,7 @@ footerTemplate.innerHTML = `
   <nav class="navbar navbar-expand-xl navbar-dark" style="height: 80px; background-color: #e83015">
     <div class="container col-12">
       <ul class="navbar-nav mr-auto">
-        <a class="navbar-brand mr-auto" href="/pages/staff/staff.html">© HONKI 2020</a>
+        <a class="navbar-brand mr-auto" href="/pages/staff/staff.html">© HONKI 2021</a>
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item active mx-2">
