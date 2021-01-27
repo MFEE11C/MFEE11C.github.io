@@ -121,7 +121,9 @@ navTemplate.innerHTML = `
               >
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="/pages/old-seasons/os-index.html"
+              <a
+                class="nav-link"
+                href="/pages/old-seasons/old-seasons-index.html"
                 >過往節氣</a
               >
             </li>
