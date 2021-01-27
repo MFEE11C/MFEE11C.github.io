@@ -21,6 +21,7 @@
     <!-- 導入全組通用css -->
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="style-guide-draft.css" />
+    <link rel="stylesheet" href="code-example-style.css" />
   </head>
 
   <body>
@@ -32,8 +33,8 @@
       <h1 class="responsive-title my-5" style="text-align: center">
         Style Guide (整理中)
       </h1>
-      <p>
-        最後編輯日期 2021-01-27 ，老翰。<a href="#mod-record">查看修訂紀錄</a>
+      <p style="text-align: right">
+        最後編輯日期 2021-01-28 ，老翰。<a href="#mod-record">查看修訂紀錄</a>
       </p>
 
       <h4>顏色</h4>
@@ -64,6 +65,34 @@
           honki-white<br />
           #ffffff
         </div>
+      </div>
+
+      <div class="row d-flex justify-content-center">
+        <!-- Code card start -->
+        <div class="col-lg-8 mt-5 card">
+          <div class="card-body">
+            <h5 class="card-title">色碼使用說明</h5>
+            <p>色碼已更新到共用的 style.css ，可以如以下方式使用</p>
+
+            <figure>
+              <figcaption>
+                以一個 80x80 的正方形為例，在 css 中引用已定好的顏色：
+              </figcaption>
+              <pre><code>
+.color-name-example1 {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+
+  background-color: var(--honki-red);
+}
+              </code></pre>
+            </figure>
+            <p>應用結果如下：</p>
+            <div class="color-name-example1"></div>
+          </div>
+        </div>
+        <!-- Code card end -->
       </div>
 
       <div class="row my-1">
@@ -111,6 +140,11 @@
                 <td>2021/01/27</td>
                 <td>老翰</td>
                 <td>設定顏色方塊。</td>
+              </tr>
+              <tr>
+                <td>2021/01/28</td>
+                <td>老翰</td>
+                <td>新增顏色使用說明。</td>
               </tr>
             </tbody>
           </table>

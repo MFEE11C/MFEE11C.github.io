@@ -36,15 +36,3 @@ h5 {
 h6 {
   font-size: 16px;
 }
-
-/* 顯示程式碼的部分 hans */
-
-pre > code {
-  margin-top: 5px;
-  border-radius: 5px;
-  font-family: monospace, monospace;
-  background-color: #eee;
-  display: block;
-  padding: 1rem;
-  word-wrap: normal;
-}

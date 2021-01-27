@@ -1,0 +1,9 @@
+/* style-guide-draft.html 中範例程式碼用的 */
+
+.color-name-example1 {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+
+  background-color: var(--honki-red);
+}
