@@ -22,13 +22,13 @@
 
       /* 調整 bootstrap 4 navbar 底色為 honki-red */
       .honki-nav {
-        padding: 0 0;
+        padding: 7px 0;
         background-color: var(--honki-red);
       }
 
       /* 使桌面版 navbar 在寬度小於 1200px */
-      @media only screen and (max-width: 1200px) {
-        .disable-honki-red-on-1200 {
+      @media only screen and (max-width: 992px) {
+        .disable-honki-red-on-992 {
           display: none;
         }
       }
@@ -68,19 +68,18 @@
   <body>
     <!-- navbar 模板 start -->
     <nav
-      class="navbar navbar-expand-xl navbar-dark honki-nav disable-honki-red-on-1200"
+      class="navbar navbar-expand-md navbar-dark honki-nav disable-honki-red-on-992"
     >
-      <div class="container col-12">
+      <div class="container col-12" style="padding: 0 16px">
         <a
           class="navbar-brand"
           href="/"
-          style="padding-right: 18px; padding-left: 9px"
+          style="padding-left: 8px; padding-right: 18px"
         >
           <!-- LOGO SVG -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="72"
-            height="55.532"
+            height="56"
             viewBox="0 0 80 55.532"
           >
             <g id="LOGO" transform="translate(-25 -11.282)">
