@@ -6,7 +6,7 @@ navTemplate.innerHTML = `
 
 <nav
       class="navbar navbar-expand-xl navbar-dark"
-      style="padding: 7px; background-color: #e83015"
+      style="padding: 7px; background-color: var(--honki-red)"
     >
       <div class="container col-12">
         <a class="navbar-brand" href="/">
@@ -170,26 +170,33 @@ document.getElementById("navbarTemp").appendChild(navTemplate.content);
 const footerTemplate = document.createElement("template");
 footerTemplate.innerHTML = `
 
-<nav class="navbar navbar-expand-xl navbar-dark" style="height: 280px; background-color: #F3EEE7">
-  </nav>
-  <nav class="navbar navbar-expand-xl navbar-dark" style="height: 80px; background-color: #e83015">
-    <div class="container col-12">
-      <ul class="navbar-nav mr-auto">
-        <a class="navbar-brand mr-auto" href="/pages/staff/staff.html">© HONKI 2021</a>
-      </ul>
-      <ul class="navbar-nav">
-        <li class="nav-item active mx-2">
-          <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
-        </li>
-        <li class="nav-item active mx-2">
-          <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
-        </li>
-        <li class="nav-item active mx-2">
-          <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+<nav
+      class="navbar navbar-expand-xl navbar-dark"
+      style="height: 280px; background-color: #f3eee7"
+    ></nav>
+    <nav
+      class="navbar navbar-expand-xl navbar-dark"
+      style="height: 80px; background-color: var(--honki-red)"
+    >
+      <div class="container col-12">
+        <ul class="navbar-nav mr-auto">
+          <a class="navbar-brand mr-auto" href="/pages/staff/staff.html"
+            >© HONKI 2021</a
+          >
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item active mx-2">
+            <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li class="nav-item active mx-2">
+            <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="nav-item active mx-2">
+            <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
 `;
 
