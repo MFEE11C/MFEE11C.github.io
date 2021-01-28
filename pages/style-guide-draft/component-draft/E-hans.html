@@ -26,8 +26,18 @@
         background-color: var(--honki-red);
       }
 
-      /* 使桌面版 navbar 在寬度小於 1200px */
-      /* @media only screen and (max-width: 992px) {
+      @media only screen and (max-width: 1250px) {
+        .nav-item-65px {
+          width: 65px;
+        }
+
+        .nav-item-60px {
+          width: 60px;
+        }
+      }
+      
+      /* 使桌面版 navbar 在寬度小於 992px */
+      @media only screen and (max-width: 992px) {
         .disable-honki-red-on-992 {
           display: none;
         }
@@ -66,7 +76,7 @@
   </head>
 
   <body>
-    <!-- navbar 模板 start -->
+    <!-- 桌機版 navbar start -->
     <nav
       class="navbar navbar-expand-md navbar-dark honki-nav disable-honki-red-on-992"
     >
@@ -174,31 +184,31 @@
           <ul class="navbar-nav mr-auto">
             <li class="nav-item honki-nav-item active">
               <a
-                class="nav-link honki-nav-link"
+                class="nav-link honki-nav-link nav-item-60px"
                 href="/pages/bookstore/merch-list.html"
                 >所有商品</a
               >
             </li>
             <li class="nav-item honki-nav-item active">
               <a
-                class="nav-link honki-nav-link"
+                class="nav-link honki-nav-link nav-item-60px"
                 href="/pages/activity/bookmarket.html"
                 >活動講座</a
               >
             </li>
             <li class="nav-item honki-nav-item active">
               <a
-                class="nav-link honki-nav-link"
+                class="nav-link honki-nav-link nav-item-65px"
                 href="/pages/used-books/used-books-index.html"
                 >二手書交換</a
               >
             </li>
             <li class="nav-item honki-nav-item active">
-              <a class="nav-link honki-nav-link" href="＃">讀者感言</a>
+              <a class="nav-link honki-nav-link nav-item-60px" href="＃">讀者感言</a>
             </li>
             <li class="nav-item honki-nav-item active">
               <a
-                class="nav-link honki-nav-link"
+                class="nav-link honki-nav-link nav-item-60px"
                 href="/pages/old-seasons/old-seasons-index.html"
                 >過往節氣</a
               >
@@ -231,11 +241,11 @@
         </div>
       </div>
     </nav>
-    <!-- navbar 模板 end -->
+    <!-- 桌機版 navbar  end -->
 
     <div class="container mt-5">
-      <h1>元件分工</h1>
-      <h3>撰寫者：Hans（老翰）</h3>
+      <h4>元件分工</h1>
+      <h6>撰寫者：Hans（老翰）</h3>
     </div>
 
     <!-- Bootstrap 4 JS 與 jQuery 3 -->
