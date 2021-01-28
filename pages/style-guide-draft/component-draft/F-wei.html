@@ -20,9 +20,12 @@
 
     <style>
       /* CSS 直接寫在 style */
+      .navbar-brand {
+        z-index: 1;
+      }
       .navbar-mobile {
         background-color: transparent;
-        padding: 24px 12px;
+        padding: 12px 24px;
         margin-bottom: 24px;
       }
       .nav-circle {
@@ -44,48 +47,36 @@
         font-size: 10px;
       }
       .nav-mobile-link {
-        margin-right: 8px;
+        margin-left: 8px;
       }
 
-      /* 點開選單 */
-      /* .nav-burger.active .nav-burger-circle {
-        fill: white;
+      .wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: var(--honki-red);
+        /* clip-path: url(#myClip); */
+        clip-path: circle(10px at calc(100% - 40px) 40px);
+        transition: all 0.3s ease-in-out;
       }
-      .nav-burger.active .nav-close-icon {
-        color: var(--honki-red);
-      } */
-      .nav-burger.menu-open svg {
+      .wrapper.active {
+        clip-path: circle(75%);
+      }
+      .wrapper ul {
+        list-style: none;
+      }
+      .nav-burger {
         z-index: 1;
-        animation: grow 1s linear;
-        animation-fill-mode: forwards;
       }
-
-      @keyframes grow {
-        0% {
-          height: 200px;
-          width: 200px;
-          border-radius: 50%;
-          position: absolute;
-          right: -100px;
-          top: -100px;
-        }
-        50% {
-          height: 80vw;
-          width: 80vh;
-          border-radius: 50%;
-          position: absolute;
-          right: -40vw;
-          top: -40vh;
-        }
-        100% {
-          background-color: var(--honki-red);
-          width: 100%;
-          height: 100%;
-          position: fixed;
-          overflow-x: hidden;
-          top: 0;
-          right: 0;
-        }
+      .nav-close-icon {
+        z-index: 1;
+      }
+      /* 點開選單 */
+      .nav-burger.active i::before {
+        content: "\f00d";
+        z-index: 100;
       }
     </style>
   </head>
@@ -242,10 +233,16 @@
             </g>
           </svg>
           <i class="fas fa-bars nav-mobile-icons nav-burger-icon"></i>
-          <i class="fas fa-times nav-mobile-icons nav-close-icon d-none"></i>
         </a>
       </div>
     </nav>
+    <div class="wrapper d-lg-none">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
     <h2>元件分工</h2>
     <h3>撰寫者：李薇宣</h3>
 
@@ -253,14 +250,10 @@
     <script src="/js/jquery-3.5.1.js"></script>
     <script src="/bootstrap-4.5.3-dist/js/bootstrap.bundle.js"></script>
     <script>
-      //
       $(".nav-burger").on("click", function () {
-        $(".nav-burger").toggleClass("menu-open");
+        $(".wrapper").toggleClass("active");
         $(this).toggleClass("active");
-        $(".nav-burger-icon").toggleClass("d-none");
-        $(".nav-close-icon").toggleClass("d-none");
-        $(".nav-close-icon").toggleClass("d-none");
-        $(".nav-close-icon").toggleClass("d-none");
+        // $(".nav-burger-icon").toggleClass("d-none");
       });
     </script>
   </body>
