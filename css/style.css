@@ -16,6 +16,7 @@ body {
   font-family: "Noto Sans TC", sans-serif;
   /* font-family: 'Abel', sans-serif; */
   font-size: 16px;
+  /* 紙質背景 若要改個人顏色就在自己頁面style body background: url(相對路徑到bg_noise) white */
   background: url("../images/style-guide/bg_noise.png") var(--honki-paper);
 }
 h1 {
