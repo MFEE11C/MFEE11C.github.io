@@ -15,8 +15,9 @@
 body {
   font-family: "Noto Sans TC", sans-serif;
   /* font-family: 'Abel', sans-serif; */
-  background-color: var(--lightgrey);
+  background-color: var(--honki-paper);
   font-size: 16px;
+  background: url("../images/style-guide/bg_noise.png");
 }
 h1 {
   font-size: 93px;

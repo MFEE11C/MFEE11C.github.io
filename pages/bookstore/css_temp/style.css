@@ -1,3 +1,6 @@
+body {
+  background: url("../../../images/style-guide/bg_noise.png") white;
+}
 .card-wei {
   background-color: transparent;
   border: none;
@@ -14,7 +17,7 @@
   transition: 0.5s ease-in-out;
 }
 .badge-wei {
-  background-color: var(--darkgrey);
+  background-color: var(--honki-theme);
   color: white;
   font-size: 12px;
   border-radius: 50%;
@@ -30,7 +33,7 @@
   opacity: 1;
 }
 .new-wei {
-  background-color: var(--darkgrey);
+  background-color: var(--honki-theme);
 }
 .sale-wei {
   background-color: coral;
