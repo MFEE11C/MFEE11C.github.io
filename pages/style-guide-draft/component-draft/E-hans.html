@@ -22,13 +22,13 @@
 
       /* 調整 bootstrap 4 navbar 底色為 honki-red */
       .honki-nav {
-        padding: 9px;
+        padding: 7px 0;
         background-color: var(--honki-red);
       }
 
       /* 使桌面版 navbar 在寬度小於 1200px */
-      @media only screen and (max-width: 1200px) {
-        .disable-honki-red-on-1200 {
+      @media only screen and (max-width: 992px) {
+        .disable-honki-red-on-992 {
           display: none;
         }
       }
@@ -40,13 +40,25 @@
       .honki-nav-link {
         font-weight: lighter;
         padding: 0 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
-      .temp-search-box {
+      .honki-nav-link-fa {
+        padding: 8px;
+      }
+
+      .zero-padding {
+        padding: 0;
+      }
+
+      .dummy-search-bar {
         width: 346px;
         height: 36px;
 
-        /* border-radius: ; */
+        border-radius: 25px;
 
         background-color: var(--honki-black);
       }
@@ -56,15 +68,18 @@
   <body>
     <!-- navbar 模板 start -->
     <nav
-      class="navbar navbar-expand-xl navbar-dark honki-nav disable-honki-red-on-1200"
+      class="navbar navbar-expand-md navbar-dark honki-nav disable-honki-red-on-992"
     >
-      <div class="container col-12">
-        <a class="navbar-brand" href="/">
+      <div class="container col-12" style="padding: 0 16px">
+        <a
+          class="navbar-brand"
+          href="/"
+          style="padding-left: 8px; padding-right: 18px"
+        >
           <!-- LOGO SVG -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="72"
-            height="55.532"
+            height="56"
             viewBox="0 0 80 55.532"
           >
             <g id="LOGO" transform="translate(-25 -11.282)">
@@ -190,22 +205,27 @@
             </li>
           </ul>
           <ul class="navbar-nav">
-            <li class="nav-item active mx-2">
-              <div class="temp-search-box honki-nav-link"></div>
+            <li class="nav-item my-auto" style="padding: 0 28px">
+              <div
+                class="dummy-search-bar"
+                style="text-align: center; color: var('--honki-white')"
+              >
+                Dummy Search Bar
+              </div>
             </li>
-            <li class="nav-item active mx-2">
+            <li class="nav-item honki-nav-link-fa active">
               <a
-                class="nav-link honki-nav-link"
+                class="nav-link zero-padding"
                 href="/pages/members/register.html"
-                ><i class="fas fa-user"></i
+                ><i class="fas fa-user fa-lg"></i
               ></a>
             </li>
-            <li class="nav-item active mx-2">
+            <li class="nav-item honki-nav-link-fa active">
               <a
-                class="nav-link honki-nav-link"
+                class="nav-link zero-padding"
                 href="/pages/cart/cart-index.html"
-                ><i class="fas fa-shopping-cart"> test</i></a
-              >
+                ><i class="fas fa-shopping-cart fa-lg"></i
+              ></a>
             </li>
           </ul>
         </div>
@@ -213,7 +233,7 @@
     </nav>
     <!-- navbar 模板 end -->
 
-    <div class="container">
+    <div class="container mt-5">
       <h1>元件分工</h1>
       <h3>撰寫者：Hans（老翰）</h3>
     </div>
