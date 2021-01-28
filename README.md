@@ -32,6 +32,10 @@ https://honkibooks.github.io/
 
 ## 開發記事
 
+### 2021/01/26
+
+- 網站各分頁設計稿定稿。
+
 ### 2021/01/02
 
 - 整理 Github 使用說明的文字與影片，放到 index.html
