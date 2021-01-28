@@ -20,12 +20,137 @@
 
     <style>
       /* CSS 直接寫在 style */
+
+      /* 按鈕(大) */
+      .btn-lg {
+        height: 80px;
+        padding: 24px 72px;
+        border-radius: 4px;
+        font-size: 19px;
+        background-color: var(--honki-red);
+        border-style: none;
+        color: #ffffff;
+        margin-left: 5px;
+      }
+      .fa-shopping-cart {
+        margin-right: 40px;
+      }
+
+      .btn-lg:hover{
+          color:rgb(224, 193, 188)
+      }
+
+      /* 按鈕(中)黑 */
+      .btn-md-dark {
+        height: 40px;
+        padding: 10px 32px;
+        border-radius: 4px;
+        font-size: 14px;
+        border-style: none;
+        background-color: #1c1b1b;
+        color: #ffffff;
+        margin-left: 5px;
+      }
+      .btn-md-dark:hover{
+          background-color:rgb(114, 108, 106)
+      }
+
+      /*  按鈕(中)白 */
+      .btn-md-light {
+        height: 40px;
+        padding: 10px 32px;
+        border-radius: 4px;
+        font-size: 14px;
+        background-color: var(--honki-red);
+        background-color: transparent;
+        color: #1c1b1b;
+        border: 1px solid;
+        margin-left: 5px;
+      }
+      .btn-md-light:hover{
+          background-color:rgb(255, 255, 255);
+      }
+
+      /*  按鈕(小)黑 */
+      .btn-sm-dark {
+        height: 30px;
+        padding: 6px 30px;
+        border-radius: 4px;
+        font-size: 12px;
+        border-style: none;
+        background-color: #1c1b1b;
+        color: #ffffff;
+        margin-left: 5px;
+      }
+      .btn-sm-dark:hover{
+          background-color:rgb(114, 108, 106)
+      }
+
+
+      /* 按鈕(小)白 */
+      .btn-sm-light {
+        height: 30px;
+        padding: 6px 30px;
+        border-radius: 4px;
+        font-size: 12px;
+        background-color: var(--honki-red);
+        background-color: transparent;
+        color: #1c1b1b;
+        border: 1px solid;
+        margin-left: 5px;
+      }
+      .btn-sm-light:hover{
+          background-color:rgb(255, 255, 255);
+      }
+
+      /* 圓角(黑)按鈕 */
+      .btn-rounded-dark {
+        height: 40px;
+        padding: 10px 32px;
+        border-radius: 50px;
+        font-size: 14px;
+        background-color: #1c1b1b;
+        color: #ffffff;
+        margin-left: 5px;
+      }
+      .btn-rounded-dark:hover{
+          background-color:rgb(114, 108, 106)
+      }
+
+      /* 圓角(白)按鈕 */
+      .btn-rounded-light {
+        height: 40px;
+        padding: 10px 32px;
+        border-radius: 50px;
+        font-size: 14px;
+        background-color: transparent;
+        color: #1c1b1b;
+        margin-left: 5px;
+        border: 1px solid;
+      }
+      .btn-rounded-light:hover{
+          background-color:rgb(255, 255, 255);
+      }
     </style>
   </head>
 
   <body>
     <h1>元件分工</h1>
-    <h3>撰寫者：</h3>
+    <h3>撰寫者：簡妤倩</h3>
+
+    <button class="btn-lg"><i class="fas fa-shopping-cart"></i>放入購物車</button>
+    <br /><br />
+    <button class="btn-md-dark">查看</button>
+    <br /><br />
+    <button class="btn-md-light">查看</button>
+    <br /><br />
+    <button class="btn-sm-dark">新增</button>
+    <br /><br />
+    <button class="btn-sm-light">新增</button>
+    <br /><br />
+    <button class="btn-rounded-dark">按鈕</button>
+    <br /><br />
+    <button class="btn-rounded-light">按鈕</button>
 
     <!-- Bootstrap 4 JS 與 jQuery 3 -->
     <script src="/js/jquery-3.5.1.js"></script>
