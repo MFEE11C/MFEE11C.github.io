@@ -30,9 +30,8 @@
         background-color: var(--honki-red);
       }
 
-      .honki-nav-item {
-        /* padding: 0 16px; */
-      }
+      /* .honki-nav-item {
+      } */
 
       .honki-nav-link {
         font-weight: lighter;
@@ -58,7 +57,12 @@
 
         border-radius: 25px;
 
-        background-color: var(--honki-black);
+        color: white;
+
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       @media only screen and (max-width: 1250px) {
@@ -75,17 +79,19 @@
         .nav-item-65px {
           width: 65px;
           margin: unset;
+          transition: margin 3s;
         }
 
         .nav-item-60px {
           width: 60px;
           margin: unset;
+          transition: margin 3s;
         }
       }
       
-      /* 使桌面版 navbar 在寬度小於 992px */
-      @media only screen and (max-width: 992px) {
-        .disable-honki-red-on-992 {
+      /* 使桌面版 navbar 在寬度小於 965px */
+      @media only screen and (max-width: 965px) {
+        .disable-honki-red-on-965 {
           display: none;
         }
       } 
@@ -95,7 +101,7 @@
   <body>
     <!-- 桌機版 navbar start -->
     <nav
-      class="navbar fixed-top navbar-expand-md navbar-dark honki-nav disable-honki-red-on-992"
+      class="navbar fixed-top navbar-expand-md navbar-dark honki-nav disable-honki-red-on-965"
     >
       <div class="container col-12" style="padding: 0 16px">
         <a
@@ -215,9 +221,9 @@
             </li>
             <li class="nav-item honki-nav-item active">
               <a
-                class="nav-link honki-nav-link nav-item-65px"
+                class="nav-link honki-nav-link nav-item-60px"
                 href="/pages/used-books/used-books-index.html"
-                >二手書交換</a
+                >二手交換</a
               >
             </li>
             <li class="nav-item honki-nav-item active">
@@ -235,9 +241,8 @@
             <li class="nav-item my-auto" style="padding: 0 28px">
               <div
                 class="dummy-search-bar"
-                style="text-align: center; color: var('--honki-white')"
               >
-                Dummy Search Bar
+                搜尋欄待新增元件
               </div>
             </li>
             <li class="nav-item honki-nav-link-fa active">
