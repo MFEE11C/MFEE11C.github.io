@@ -121,6 +121,9 @@ navTemplate.innerHTML = `
               >
             </li>
             <li class="nav-item active">
+              <a class="nav-link" href="＃">讀者感言</a>
+            </li>
+            <li class="nav-item active">
               <a
                 class="nav-link"
                 href="/pages/old-seasons/old-seasons-index.html"
