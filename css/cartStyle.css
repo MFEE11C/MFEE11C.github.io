@@ -1,0 +1,11 @@
+/* ////////////////////////////// */
+
+.cartContent {
+  background-image: url(../images/cart/backgroundCut.svg);
+
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  height: 500px;
+  max-width: 100%;
+}
