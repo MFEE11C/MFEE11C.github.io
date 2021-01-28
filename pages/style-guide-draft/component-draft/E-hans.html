@@ -26,30 +26,14 @@
         background-color: var(--honki-red);
       }
 
-      @media only screen and (max-width: 1250px) {
-        .nav-item-65px {
-          width: 65px;
-        }
-
-        .nav-item-60px {
-          width: 60px;
-        }
-      }
-      
-      /* 使桌面版 navbar 在寬度小於 992px */
-      @media only screen and (max-width: 992px) {
-        .disable-honki-red-on-992 {
-          display: none;
-        }
-      } */
-
       .honki-nav-item {
-        padding: 0 16px;
+        /* padding: 0 16px; */
       }
 
       .honki-nav-link {
         font-weight: lighter;
         padding: 0 0;
+        margin: 0 16px;
 
         display: flex;
         justify-content: center;
@@ -72,6 +56,35 @@
 
         background-color: var(--honki-black);
       }
+
+      @media only screen and (max-width: 1250px) {
+        .nav-item-65px {
+          width: 65px;
+        }
+
+        .nav-item-60px {
+          width: 60px;
+        }
+      }
+
+      @media only screen and (max-width: 1200px) {
+        .nav-item-65px {
+          width: 65px;
+          margin: unset;
+        }
+
+        .nav-item-60px {
+          width: 60px;
+          margin: unset;
+        }
+      }
+      
+      /* 使桌面版 navbar 在寬度小於 992px */
+      @media only screen and (max-width: 992px) {
+        .disable-honki-red-on-992 {
+          display: none;
+        }
+      } 
     </style>
   </head>
 
