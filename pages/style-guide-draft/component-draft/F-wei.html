@@ -20,9 +20,11 @@
 
     <style>
       /* 調整 bootstrap 4 navbar 底色為 honki-red */
-
       body {
         padding-top: 80px;
+      }
+      body.active {
+        overflow: hidden;
       }
 
       .honki-nav {
@@ -94,16 +96,12 @@
         .disable-honki-red-on-992 {
           display: none;
         }
-        body {
-          padding-top: 0;
-        }
       }
       /* CSS 直接寫在 style */
       .navbar-brand {
         z-index: 1;
       }
       .navbar-mobile {
-        background-color: transparent;
         padding: 12px 24px;
         margin-bottom: 24px;
       }
@@ -115,7 +113,7 @@
       }
       /* 圓圓icon大小 */
       .nav-mobile-link svg {
-        height: 36px;
+        height: 48px;
       }
       .nav-mobile-icons {
         position: absolute;
@@ -123,7 +121,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-        font-size: 10px;
+        font-size: 16px;
       }
       .nav-mobile-link {
         margin-left: 8px;
@@ -137,7 +135,7 @@
         width: 100%;
         background: var(--honki-red);
         clip-path: circle(10px at calc(100% - 36px) 40px);
-        transition: all 0.4s ease-in-out;
+        transition: all 0.5s ease-in-out;
         opacity: 0;
         overflow-y: scroll;
       }
@@ -372,7 +370,7 @@
       </div>
     </nav>
     <!-- 桌機版 navbar  end -->
-    <nav class="navbar navbar-mobile d-lg-none">
+    <nav class="navbar navbar-mobile d-lg-none fixed-top">
       <a class="navbar-brand" href="#">
         <!-- LOGO SVG -->
         <svg
@@ -703,6 +701,62 @@
     </div>
     <h2>元件分工</h2>
     <h3>撰寫者：李薇宣</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio vel unde
+      perspiciatis, sint quisquam corporis debitis iste ullam, et maxime minima
+      nostrum ex velit dignissimos assumenda? Nobis deserunt minus ipsam labore
+      eligendi distinctio, error excepturi eum pariatur quam doloremque quasi!
+      Quae assumenda, quo consectetur autem itaque iste aliquam, porro eaque vel
+      dolor magnam amet sunt deleniti repudiandae praesentium at? Corrupti
+      reprehenderit dolorum labore error reiciendis cum, esse sequi a adipisci
+      odit natus, doloremque ducimus cumque itaque sit aut mollitia voluptatem
+      fuga obcaecati molestias hic libero! Nesciunt sequi odio molestiae libero
+      fugiat ipsum enim dolorem voluptates quia quis labore aliquam tenetur
+      animi, totam cupiditate? Quae inventore itaque voluptatibus architecto
+      explicabo qui. Repellat est sequi, velit accusamus nihil quo? Quia,
+      veritatis eos ipsam, maxime blanditiis incidunt soluta minima optio fugiat
+      ad ipsa porro ea quaerat. Deserunt dolorum consequuntur rerum sint aut.
+      Placeat nostrum minus eligendi possimus ipsum culpa odit voluptatem
+      ducimus amet! Voluptatibus magnam fugiat odit dignissimos vel neque
+      blanditiis beatae quos, adipisci assumenda dolor debitis expedita tempora
+      praesentium mollitia, libero nulla quasi quibusdam tenetur ducimus
+      obcaecati! Commodi totam magni cupiditate accusantium porro officiis
+      aliquam optio voluptatem, rem qui, aut laboriosam excepturi nemo tempora
+      doloremque tenetur ratione? Omnis voluptates natus, odio non quasi maxime,
+      ullam eveniet sint assumenda dolore doloribus ipsam! Eligendi id repellat
+      et, odit temporibus natus debitis ea nostrum quisquam, porro repudiandae
+      maiores. Ipsum alias ducimus libero, voluptate perferendis dolores. Illo
+      ducimus reiciendis dolorum facere quas ullam obcaecati consequatur facilis
+      dolore quae maxime asperiores recusandae nisi tenetur, fugiat nemo
+      deleniti quod quibusdam cupiditate ab porro ut! Magnam recusandae
+      dignissimos nisi vero impedit tempore quis corrupti, ut veniam et sapiente
+      reiciendis expedita laboriosam voluptatibus debitis! Aperiam consequuntur
+      voluptates, incidunt dignissimos perferendis ea nesciunt quasi alias
+      praesentium necessitatibus, magnam maxime quisquam corrupti deleniti
+      dolores odit libero totam porro velit eaque! Voluptate eos repellat
+      praesentium, eveniet, quidem doloribus deleniti perferendis eum, cumque
+      non neque aperiam exercitationem ipsum modi voluptas? Deserunt qui
+      delectus rerum officiis blanditiis autem eligendi dolorum odio in!
+      Voluptates, distinctio nemo? Neque quis praesentium voluptatum quos
+      veritatis eum velit illum laboriosam minus. Tenetur eaque quis qui
+      nesciunt esse magni quo beatae? Voluptas, eum! Saepe, dolorem corrupti
+      dolores necessitatibus quo beatae quae, tempore quaerat suscipit error
+      animi. Blanditiis beatae et doloribus sint doloremque ab fugiat at nostrum
+      provident, nihil quo. Exercitationem sed iste laudantium, delectus
+      architecto saepe expedita? Doloribus ipsam animi, libero molestias optio
+      cum corporis reprehenderit maiores impedit voluptatibus dolorem sit totam
+      fugiat, voluptate similique? Explicabo, architecto? Consectetur hic
+      tenetur eos, dolore quia odio est veniam nisi pariatur ipsa aliquid a
+      corrupti nostrum eveniet, fuga sunt tempora impedit cupiditate repellat,
+      nobis similique. Molestiae temporibus aliquam voluptatum, tenetur
+      doloremque dolor minima, at minus magni voluptate cupiditate id illum odit
+      porro ea suscipit quas consequatur impedit quam officia quibusdam iure?
+      Voluptate eum sed voluptatum dolore! Voluptatum distinctio saepe, minima
+      necessitatibus cum magnam commodi aut vero ducimus tenetur, ipsam ipsa
+      fugiat repudiandae provident deserunt quia? Animi cumque quas, dolores
+      perspiciatis voluptate temporibus, molestias magnam velit reprehenderit
+      necessitatibus labore consequuntur rerum nam, aperiam beatae possimus.
+    </p>
 
     <!-- Bootstrap 4 JS 與 jQuery 3 -->
     <script src="/js/jquery-3.5.1.js"></script>
@@ -711,6 +765,7 @@
       $(".nav-burger").on("click", function () {
         $(".wrapper").toggleClass("active");
         $(this).toggleClass("active");
+        $("body").toggleClass("active");
       });
     </script>
   </body>
