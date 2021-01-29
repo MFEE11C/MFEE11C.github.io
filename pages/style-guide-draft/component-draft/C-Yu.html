@@ -25,6 +25,7 @@
       font-size: 14px;
     }
 
+
     .search-bar {
       width: 100%;
       height: 100%;
@@ -38,7 +39,7 @@
       border-radius: 40px 0 0 40px;
       color: #fff;
       outline: none;
-      padding-left: 8px;
+      padding-left: 14px;
       text-align: center;
 
     }
@@ -46,7 +47,7 @@
     .select-list .select-box {
       width: 100%;
       line-height: 36px;
-      border-radius: 0px 0 4px 4px;
+      border-radius: 0 0 4px 4px;
       background: #1c1b1b;
       padding: 0;
     }
@@ -56,13 +57,8 @@
       height: 100%;
       line-height: 36px;
       list-style: none;
+      cursor: pointer;
     }
-
-    .select-btn a {
-      text-decoration: none;
-      color: #fff;
-    }
-
 
     .search-input {
       width: 50%;
@@ -87,21 +83,21 @@
   <div class="search-box">
     <form class="d-flex search-bar">
       <div class="select-list">
-        <div class="select-btn" value="bookstore" id="default">
-          <a href="#">
+        <div class="select-btn" value="bookstore" id="selected">
+          <div class="select-text">
             書城&ensp;<i class="fas fa-caret-down"></i>
-          </a>
+          </div>
         </div>
         <div class="select-box d-none">
-          <div class="select-btn" value="used-books" id="used-books">
-            <a href="#">
-              二手書&ensp;<i class="fas fa-caret-down"></i>
-            </a>
+          <div class="select-btn used-books" name="usedBooks" value="usedBooks">
+            <div class="used-books-text">
+              二手書
+            </div>
           </div>
-          <div class="select-btn" value="bookstore" id="bookstore">
-            <a href="#">
-              書城&ensp;<i class="fas fa-caret-down"></i>
-            </a>
+          <div class="select-btn bookstore" name="bookstore" value="bookstore">
+            <div class="bookstore-text">
+              書城
+            </div>
           </div>
         </div>
       </div>
@@ -115,7 +111,39 @@
   <script src="/js/jquery-3.5.1.js"></script>
   <script src="/bootstrap-4.5.3-dist/js/bootstrap.bundle.js"></script>
   <script>
+    $("#selected").click(function () {
+      const hasClass = $(".select-box").hasClass("d-none");
+      console.log(hasClass);
+      if (hasClass === true) {
+        $(".select-box").removeClass("d-none")
+      } else {
+        $(".select-box").addClass("d-none")
+      }
+    });
 
+    $(".used-books").click(function () {
+      const usedBookBtn = $(".used-books-text").html();
+      const hasClass = $(".select-box").hasClass("d-none");
+      $(".select-text").html(usedBookBtn + `&ensp;<i class="fas fa-caret-down"></i>`);
+      console.log(hasClass);
+      if (hasClass === true) {
+        $(".select-box").removeClass("d-none")
+      } else {
+        $(".select-box").addClass("d-none")
+      }
+    });
+
+    $(".bookstore").click(function () {
+      const bookstoreBtn = $(".bookstore-text").html();
+      const hasClass = $(".select-box").hasClass("d-none");
+      $(".select-text").html(bookstoreBtn + `&ensp;<i class="fas fa-caret-down"></i>`);
+      console.log(hasClass);
+      if (hasClass === true) {
+        $(".select-box").removeClass("d-none")
+      } else {
+        $(".select-box").addClass("d-none")
+      }
+    });
   </script>
 </body>
 
