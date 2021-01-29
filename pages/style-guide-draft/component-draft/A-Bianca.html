@@ -29,15 +29,18 @@
         font-size: 19px;
         background-color: var(--honki-red);
         border-style: none;
-        color: #ffffff;
+        color: var(--honki-white);
         margin-left: 5px;
       }
       .fa-shopping-cart {
         margin-right: 40px;
       }
 
-      .btn-lg:hover{
-          color:rgb(224, 193, 188)
+      .btn-lg:hover {
+        color: rgb(224, 193, 188);
+      }
+      .btn-lg:focus {
+        outline: none;
       }
 
       /* 按鈕(中)黑 */
@@ -47,12 +50,15 @@
         border-radius: 4px;
         font-size: 14px;
         border-style: none;
-        background-color: #1c1b1b;
-        color: #ffffff;
+        background-color: var(--honki-black);
+        color: var(--honki-white);
         margin-left: 5px;
       }
-      .btn-md-dark:hover{
-          background-color:rgb(114, 108, 106)
+      .btn-md-dark:hover {
+        background-color: rgb(114, 108, 106);
+      }
+      .btn-md-dark:focus {
+        outline: none;
       }
 
       /*  按鈕(中)白 */
@@ -63,12 +69,15 @@
         font-size: 14px;
         background-color: var(--honki-red);
         background-color: transparent;
-        color: #1c1b1b;
+        color: var(--honki-black);
         border: 1px solid;
         margin-left: 5px;
       }
-      .btn-md-light:hover{
-          background-color:rgb(255, 255, 255);
+      .btn-md-light:hover {
+        background-color: var(--honki-white);
+      }
+      .btn-md-light:focus {
+        outline: none;
       }
 
       /*  按鈕(小)黑 */
@@ -78,14 +87,16 @@
         border-radius: 4px;
         font-size: 12px;
         border-style: none;
-        background-color: #1c1b1b;
-        color: #ffffff;
+        background-color: var(--honki-black);
+        color: var(--honki-white);
         margin-left: 5px;
       }
-      .btn-sm-dark:hover{
-          background-color:rgb(114, 108, 106)
+      .btn-sm-dark:hover {
+        background-color: rgb(114, 108, 106);
       }
-
+      .btn-sm-dark:focus {
+        outline: none;
+      }
 
       /* 按鈕(小)白 */
       .btn-sm-light {
@@ -95,12 +106,15 @@
         font-size: 12px;
         background-color: var(--honki-red);
         background-color: transparent;
-        color: #1c1b1b;
+        color: var(--honki-black);
         border: 1px solid;
         margin-left: 5px;
       }
-      .btn-sm-light:hover{
-          background-color:rgb(255, 255, 255);
+      .btn-sm-light:hover {
+        background-color: var(--honki-white);
+      }
+      .btn-sm-light:focus {
+        outline: none;
       }
 
       /* 圓角(黑)按鈕 */
@@ -109,12 +123,15 @@
         padding: 10px 32px;
         border-radius: 50px;
         font-size: 14px;
-        background-color: #1c1b1b;
-        color: #ffffff;
+        background-color: var(--honki-black);
+        color: var(--honki-white);
         margin-left: 5px;
       }
-      .btn-rounded-dark:hover{
-          background-color:rgb(114, 108, 106)
+      .btn-rounded-dark:hover {
+        background-color: rgb(114, 108, 106);
+      }
+      .btn-rounded-dark:focus {
+        outline: none;
       }
 
       /* 圓角(白)按鈕 */
@@ -124,12 +141,15 @@
         border-radius: 50px;
         font-size: 14px;
         background-color: transparent;
-        color: #1c1b1b;
+        color: var(--honki-black);
         margin-left: 5px;
         border: 1px solid;
       }
-      .btn-rounded-light:hover{
-          background-color:rgb(255, 255, 255);
+      .btn-rounded-light:hover {
+        background-color: var(--honki-white);
+      }
+      .btn-rounded-light:focus {
+        outline: none;
       }
     </style>
   </head>
@@ -138,7 +158,9 @@
     <h1>元件分工</h1>
     <h3>撰寫者：簡妤倩</h3>
 
-    <button class="btn-lg"><i class="fas fa-shopping-cart"></i>放入購物車</button>
+    <button class="btn-lg">
+      <i class="fas fa-shopping-cart"></i>放入購物車
+    </button>
     <br /><br />
     <button class="btn-md-dark">查看</button>
     <br /><br />
