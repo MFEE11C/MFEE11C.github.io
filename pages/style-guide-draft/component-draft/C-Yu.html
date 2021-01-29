@@ -30,22 +30,39 @@
       height: 100%;
     }
 
+
     .select-list {
       width: 30%;
+      height: 100%;
       background: #1c1b1b;
       border-radius: 40px 0 0 40px;
-      text-align: center;
       color: #fff;
-      padding-left: 10%;
+      outline: none;
+      padding-left: 8px;
+      text-align: center;
+
+    }
+
+    .select-list .select-box {
+      width: 100%;
+      line-height: 36px;
+      border-radius: 0px 0 4px 4px;
+      background: #1c1b1b;
+      padding: 0;
     }
 
     .select-btn {
-      text-align: center;
-      color: #fff;
-      padding-left: 5px;
-      border-radius: 4px;
-      padding: 10px;
+      width: 100%;
+      height: 100%;
+      line-height: 36px;
+      list-style: none;
     }
+
+    .select-btn a {
+      text-decoration: none;
+      color: #fff;
+    }
+
 
     .search-input {
       width: 50%;
@@ -69,16 +86,26 @@
 
   <div class="search-box">
     <form class="d-flex search-bar">
-      <!-- <button type="button" class="select-list active" id="select-list">
-        <div class="dropdown-menu select-list">
-          <a class="dropdown-item" href="#">書城</a>
-          <a class="dropdown-item" href="#">二手書</a>
+      <div class="select-list">
+        <div class="select-btn" value="bookstore" id="default">
+          <a href="#">
+            書城&ensp;<i class="fas fa-caret-down"></i>
+          </a>
         </div>
-      </button> -->
-      <select class="select-list" name="select-list">
-        <option class="select-btn" value="">書城</option>
-        <option class="select-btn">二手書</option>
-      </select>
+        <div class="select-box d-none">
+          <div class="select-btn" value="used-books" id="used-books">
+            <a href="#">
+              二手書&ensp;<i class="fas fa-caret-down"></i>
+            </a>
+          </div>
+          <div class="select-btn" value="bookstore" id="bookstore">
+            <a href="#">
+              書城&ensp;<i class="fas fa-caret-down"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
       <input class="search-input" id="search-input" placeholder="搜尋"></input>
       <button type="submit" class="btn btn-dark search-submit" id="search-submit">送出</button>
     </form>
@@ -87,6 +114,9 @@
   <!-- Bootstrap 4 JS 與 jQuery 3 -->
   <script src="/js/jquery-3.5.1.js"></script>
   <script src="/bootstrap-4.5.3-dist/js/bootstrap.bundle.js"></script>
+  <script>
+
+  </script>
 </body>
 
 </html>
