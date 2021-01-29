@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HONKI BOOKS</title>
+
+    <!-- Bootstrap 4 與 Font Awesome 5 -->
+    <link rel="stylesheet" href="/bootstrap-4.5.3-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/fontawesome-free-5.15.1-web/css/all.css" />
+
+    <!-- font 字體 Noto Sans TC + Abel -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 導入全組通用css -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <style>
+      /* hover button CSS 起始 */
+      .button {
+        width: 300px;
+        height: 80px;
+
+        border-radius: 4px;
+        background-color: var(--honki-red);
+
+        transform: translate(0, 0);
+        overflow: hidden;
+      }
+      .btn {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: transparent;
+        /* border: 2px solid white; */
+        outline: none;
+        cursor: pointer;
+
+        /* font-size: 1.4rem; */
+        padding: 0 72px;
+        color: var(--honki-white);
+      }
+
+      .bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 25%;
+        height: 100%;
+        background: var(--honki-theme);
+        z-index: -1;
+        transform: translateY(100%);
+        transition: all 0.4s;
+      }
+
+      .bg:nth-child(3) {
+        left: 75px;
+        transition-delay: 0.1s;
+      }
+
+      .bg:nth-child(4) {
+        left: 150px;
+        transition-delay: 0.2s;
+      }
+
+      .bg:nth-child(5) {
+        left: 225px;
+        transition-delay: 0.3s;
+      }
+
+      .button:hover .bg {
+        transform: translateY(0);
+      }
+
+      /* 調整文字大小與位置 */
+      .text-inside-hover-btn {
+        font-size: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      /* hover button CSS 結束 */
+    </style>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <h2>元件：測試按鈕特效</h2>
+      <h3>撰寫者：老翰</h3>
+  
+      <div class="button">
+        <button class="btn">
+          <div class="text-inside-hover-btn">
+            <i class="fas fa-shopping-cart"></i>
+            <span>放入購物車</span>
+          </div>
+        </button>
+
+        <div class="bg"></div>
+        <div class="bg"></div>
+        <div class="bg"></div>
+        <div class="bg"></div>
+      </div>
+
+    </div>
+
+    <!-- Bootstrap 4 JS 與 jQuery 3 -->
+    <script src="/js/jquery-3.5.1.js"></script>
+    <script src="/bootstrap-4.5.3-dist/js/bootstrap.bundle.js"></script>
+    <script>
+      $(".nav-burger").on("click", function () {
+        $(".wrapper").toggleClass("active");
+        $(this).toggleClass("active");
+      });
+    </script>
+  </body>
+</html>
+
+</html>
