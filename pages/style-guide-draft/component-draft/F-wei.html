@@ -49,7 +49,7 @@
       .nav-mobile-link {
         margin-left: 8px;
       }
-
+      /* 點開選單 */
       .wrapper {
         position: fixed;
         top: 0;
@@ -57,25 +57,74 @@
         height: 100%;
         width: 100%;
         background: var(--honki-red);
-        clip-path: circle(10px at calc(100% - 40px) 40px);
-        transition: all 0.3s ease-in-out;
+        clip-path: circle(10px at calc(100% - 36px) 40px);
+        transition: all 0.4s ease-in-out;
+        opacity: 0;
+        overflow-y: scroll;
       }
       .wrapper.active {
         clip-path: circle(75%);
+        opacity: 1;
       }
-      .wrapper ul {
-        list-style: none;
-      }
-      .nav-burger {
-        z-index: 1;
-      }
+      .nav-burger,
       .nav-close-icon {
         z-index: 1;
       }
-      /* 點開選單 */
+
       .nav-burger.active i::before {
         content: "\f00d";
-        z-index: 100;
+        z-index: 2;
+      }
+      .menu-open {
+        margin-top: 100px;
+        color: var(--honki-white);
+        width: 80%;
+      }
+      .card {
+        border: none;
+      }
+      .menu-open .card,
+      .menu-open .card-header {
+        background-color: transparent;
+      }
+      .menu-open .card-header,
+      .menu-open .card-body {
+        border-bottom: 1px solid white;
+      }
+      .accordion > .card > .card-header {
+        margin-bottom: 0;
+        padding: 1.2rem 1.25rem;
+      }
+
+      .menu-open .card-body ul li {
+        list-style-type: none;
+        margin-top: 16px;
+        font-size: 14px;
+        padding-left: 10px;
+      }
+      .menu-subtitle {
+        font-size: 14px;
+        padding-left: 20px;
+      }
+      .menu-open .btn-link {
+        color: var(--honki-white);
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        padding: 0;
+      }
+      .menu-open .btn-link.collapsed i::before {
+        content: "\f067";
+      }
+      .menu-open .btn-link i::before {
+        content: "\f068";
+      }
+
+      .menu-open .btn-link:focus,
+      .menu-open .btn-link:hover {
+        box-shadow: none;
+        text-decoration: none;
       }
     </style>
   </head>
@@ -236,11 +285,179 @@
       </div>
     </nav>
     <div class="wrapper d-lg-none">
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+      <div class="accordion menu-open mx-auto" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button">首頁</button>
+            </h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+              >
+                所有商品<i class="fas"></i>
+              </button>
+            </h2>
+          </div>
+          <div
+            id="collapseOne"
+            class="collapse"
+            aria-labelledby="headingOne"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              <p class="menu-subtitle">書籍分類</p>
+              <ul>
+                <li>生活風格</li>
+                <li>文學小說</li>
+                <li>商業理財</li>
+                <li>藝術設計</li>
+                <li>心理勵志</li>
+                <li>輕小說 漫畫</li>
+                <li>語言考試</li>
+                <li>親子教養</li>
+                <li>旅遊</li>
+                <li>飲食</li>
+                <li>童書</li>
+                <li>外文書</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                活動講座<i class="fas"></i>
+              </button>
+            </h2>
+          </div>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              <p class="menu-subtitle">活動分類</p>
+              <ul>
+                <li>講座</li>
+                <li>讀書會</li>
+                <li>戶外探索</li>
+                <li>休閒活動</li>
+                <li>活動地區</li>
+                <li>節氣推薦</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                二手書交換<i class="fas"></i>
+              </button>
+            </h2>
+          </div>
+          <div
+            id="collapseThree"
+            class="collapse"
+            aria-labelledby="headingThree"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              <!-- <p class="menu-subtitle">二手書交換</p> -->
+              <ul>
+                <li>一般交換</li>
+                <li>隨機交換</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                讀者感言<i class="fas"></i>
+              </button>
+            </h2>
+          </div>
+          <div
+            id="collapseFour"
+            class="collapse"
+            aria-labelledby="headingFour"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              <p class="menu-subtitle">二手書交換</p>
+              <ul>
+                <li>一般交換</li>
+                <li>隨機交換</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                過往節氣<i class="fas"></i>
+              </button>
+            </h2>
+          </div>
+          <div
+            id="collapseFive"
+            class="collapse"
+            aria-labelledby="headingFive"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              <p class="menu-subtitle">二手書交換</p>
+              <ul>
+                <li>一般交換</li>
+                <li>隨機交換</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <h2>元件分工</h2>
     <h3>撰寫者：李薇宣</h3>
@@ -252,7 +469,6 @@
       $(".nav-burger").on("click", function () {
         $(".wrapper").toggleClass("active");
         $(this).toggleClass("active");
-        // $(".nav-burger-icon").toggleClass("d-none");
       });
     </script>
   </body>
