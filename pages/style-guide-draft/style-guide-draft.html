@@ -258,15 +258,32 @@
     <script>
 
       // 包在一個先去確認點擊到 document 的 function 裡，點下去的時候他會重新確認元素存不存在。這時候按鈕應該已經出現了，所以可以抓到。我想應該是這樣啦。 Hans
-      $(document).on("click", function () {
-        // console.log('clicked');
-        $(".nav-burger").on("click", function () {
-          $(".wrapper").toggleClass("active");
-          $(this).toggleClass("active");
-          $("body").toggleClass("active");
-          // $(this).siblings().toggleClass("d-none");
-        });
-      });
+      
+      console.log(document.querySelector(".nav-burger"));
+
+      // 檢查 nav-burger class 的元素出現後，才啟用 jQuery 設定的行為
+      function checkBurger() {
+        const navBurger = document.querySelector(".nav-burger");
+        if(!navBurger) {
+          setTimeout(() => {
+            checkBurger();
+          }, 500); 
+          /* 每隔500 milliseconds會檢查一次 */
+
+          console.log("等候中...");
+        } else {
+          /* do something*/
+          console.log(' nav-burger 元素出現');
+
+          $(".nav-burger").on("click", function () {
+            $(".wrapper").toggleClass("active");
+            $(this).toggleClass("active");
+            $("body").toggleClass("active");
+            // $(this).siblings().toggleClass("d-none");
+          });
+        }}
+
+        checkBurger();
     </script>
   </body>
 </html>
