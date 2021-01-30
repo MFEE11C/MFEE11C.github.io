@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HONKI BOOKS</title>
+    <!-- 設定 icon 圖片 -->
+    <link rel="icon" href="/images/style-guide/logo.svg" />
 
     <!-- Bootstrap 4 與 Font Awesome 5 -->
     <link rel="stylesheet" href="/bootstrap-4.5.3-dist/css/bootstrap.css" />
@@ -16,12 +18,14 @@
     />
 
     <!-- 導入 navbar 與 footer 的 script -->
-    <script src="/js/navfoot-v1.js" type="text/javascript" defer></script>
+    <script src="/js/navfoot.js" type="text/javascript" defer></script>
 
     <!-- 導入全組通用css -->
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="style-guide-draft.css" />
     <link rel="stylesheet" href="code-example-style.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
   </head>
 
   <body>
@@ -214,6 +218,11 @@
                 <td>老翰</td>
                 <td>新增各製作中元件頁面，方便查閱。</td>
               </tr>
+              <tr>
+                <td>2021/01/30</td>
+                <td>李薇</td>
+                <td>新增icon，navfoot，但navbar-mobile script跑不出～</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -244,5 +253,15 @@
     <!-- Bootstrap 4 JS 與 jQuery 3 -->
     <script src="/js/jquery-3.5.1.js"></script>
     <script src="/bootstrap-4.5.3-dist/js/bootstrap.bundle.js"></script>
+
+    <!-- Navbar script 之後再整個搞成js元件 -->
+    <script>
+      $(".nav-burger").on("click", function () {
+        $(".wrapper").toggleClass("active");
+        $(this).toggleClass("active");
+        $("body").toggleClass("active");
+        // $(this).siblings().toggleClass("d-none");
+      });
+    </script>
   </body>
 </html>
