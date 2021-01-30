@@ -1,0 +1,141 @@
+.wei-bg-black {
+  background: url("/images/style-guide/bg_noise.png") var(--honki-black);
+  height: 480px;
+  position: relative;
+  overflow: hidden;
+}
+
+.wei-bookarea {
+  width: 100%;
+  height: 40%;
+  margin-top: auto;
+  padding: 0;
+}
+.wei-books {
+  position: relative;
+  height: 100%;
+}
+.wei-book {
+  width: 8%;
+  /* 1200px 以上 8% */
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 12px;
+}
+@media (max-width: 992px) {
+  .wei-book {
+    width: 100px;
+    /* position: relative; */
+  }
+}
+.wei-book img {
+  transition: 0.5s cubic-bezier(0.82, 0.25, 0.83, 0.67);
+}
+.wei-book:nth-child(2) {
+  left: 6.25%;
+}
+.wei-book:nth-child(3) {
+  left: 12.5%;
+}
+.wei-book:nth-child(4) {
+  left: 18.75%;
+}
+.wei-book:nth-child(5) {
+  left: 25%;
+}
+.wei-book:nth-child(6) {
+  left: 31.25%;
+}
+.wei-book:nth-child(7) {
+  left: 37.5%;
+}
+.wei-book:nth-child(8) {
+  left: 43.75%;
+}
+.wei-book:nth-child(9) {
+  left: 50%;
+}
+.wei-book:nth-child(10) {
+  left: 56.25%;
+}
+.wei-book:nth-child(11) {
+  left: 62.5%;
+}
+.wei-book:nth-child(12) {
+  left: 68.75%;
+}
+.wei-book:nth-child(13) {
+  left: 75%;
+}
+.wei-book:nth-child(14) {
+  left: 81.25%;
+}
+.wei-book:nth-child(15) {
+  left: 87.5%;
+}
+.wei-book:nth-child(16) {
+  left: 93.75%;
+}
+.wei-bookshelf {
+  z-index: 2;
+  width: 100%;
+  height: 25px;
+  position: absolute;
+  bottom: 0;
+  background: url("/images/style-guide/bg_noise.png") #564030;
+}
+
+/* card */
+.wei-card {
+  margin-top: 2rem;
+}
+
+.wei-card-pic {
+  /* text-align: center; */
+  background: url("/images/style-guide/bg_noise.png") white;
+  border-radius: 15px;
+  padding: 40px 20px;
+  /* height: 240px; */
+  width: 100%;
+}
+
+.wei-book-pic img {
+  height: 168px;
+  object-fit: contain;
+  -webkit-filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.2));
+}
+.wei-card-icon {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: -24px;
+  left: 24px;
+  border-radius: 50%;
+  background-color: var(--honki-red);
+  color: white;
+  line-height: 48px;
+  text-align: center;
+  font-family: abel, sans-serif;
+  font-size: 13px;
+}
+.wei-book-text {
+  margin-top: 20px;
+}
+.wei-book-title {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+.wei-book-author {
+  font-size: 12px;
+  color: #707070;
+}
+.wei-book-price {
+  font-size: 16px;
+  text-align: right;
+  font-weight: bold;
+}

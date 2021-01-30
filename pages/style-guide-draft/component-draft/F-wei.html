@@ -110,6 +110,7 @@
       }
       .nav-mobile-link {
         position: relative;
+        margin-left: 12px;
       }
       /* 圓圓icon大小 */
       .nav-mobile-link svg {
@@ -122,9 +123,6 @@
         transform: translate(-50%, -50%);
         color: white;
         font-size: 16px;
-      }
-      .nav-mobile-link {
-        margin-left: 8px;
       }
       /* 點開選單 */
       .wrapper {
@@ -766,6 +764,7 @@
         $(".wrapper").toggleClass("active");
         $(this).toggleClass("active");
         $("body").toggleClass("active");
+        // $(this).siblings().toggleClass("d-none");
       });
     </script>
   </body>
