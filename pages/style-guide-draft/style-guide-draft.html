@@ -256,11 +256,16 @@
 
     <!-- Navbar script 之後再整個搞成js元件 -->
     <script>
-      $(".nav-burger").on("click", function () {
-        $(".wrapper").toggleClass("active");
-        $(this).toggleClass("active");
-        $("body").toggleClass("active");
-        // $(this).siblings().toggleClass("d-none");
+
+      // 包在一個先去確認點擊到 document 的 function 裡，點下去的時候他會重新確認元素存不存在。這時候按鈕應該已經出現了，所以可以抓到。我想應該是這樣啦。 Hans
+      $(document).on("click", function () {
+        // console.log('clicked');
+        $(".nav-burger").on("click", function () {
+          $(".wrapper").toggleClass("active");
+          $(this).toggleClass("active");
+          $("body").toggleClass("active");
+          // $(this).siblings().toggleClass("d-none");
+        });
       });
     </script>
   </body>
