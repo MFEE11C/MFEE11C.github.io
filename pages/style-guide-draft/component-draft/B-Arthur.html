@@ -110,6 +110,10 @@
       background-color: unset !important;
     }
 
+    select:disabled {
+      background: url(/images/style-guide/select-btn-disabled.png) no-repeat 100%;
+    }
+
     button:disabled {
       background-color: #CCCCCC !important;
       border: hidden;
@@ -166,7 +170,7 @@ https://www.codeply.com/go/NKtDpPXv2x */
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 56px;
+
     }
 
     .page-link {
@@ -352,10 +356,9 @@ https://www.codeply.com/go/NKtDpPXv2x */
     <br>例如col-5改成col-2，col-7改成col-10。
   </h6>
   <h6>
-    2.form比例:col 3比9、form寬度預設295(手機板280)。</h6>
+    2.form寬度預設295(手機板280)。</h6>
 
   <form>
-
     <!-- 比例 -->
     <div class=" form-width-height">
       <!-- 表單標題 -->
@@ -425,7 +428,6 @@ https://www.codeply.com/go/NKtDpPXv2x */
   </form>
   <br>
   <br>
-
   <!-- disabled -->
   <form>
     <!-- 比例 -->
@@ -498,30 +500,27 @@ https://www.codeply.com/go/NKtDpPXv2x */
           <button type="button" class="form-button form-control">新增</button>
         </div>
       </div>
+    </div>
   </form>
-
   <!-- 分頁 Pagination-->
-  <nav aria-label="...">
-    <ul class="pagination">
-      <li class="page-item page-left disabled">
-        <a class="page-link" href="#pagination" tabindex="-1" aria-disabled="true">←</a>
-      </li>
-      <li class="page-item page-num page-start active"><a class="page-link" href="#pagination">1</a></li>
-      <li class="page-item page-num">
-        <a class="page-link" href="#pagination">2</a>
-      </li>
-      <li class="page-item page-num page-end"><a class="page-link" href="#pagination">3</a></li>
-      <li class="page-item  page-right">
-        <a class="page-link " href="#pagination" aria-disabled="true">→</a>
-      </li>
-    </ul>
-  </nav>
+  <ul class="pagination">
+    <li class="page-item page-left disabled">
+      <a class="page-link" href="#pagination" tabindex="-1" aria-disabled="true">←</a>
+    </li>
+    <li class="page-item page-num page-start active"><a class="page-link" href="#pagination">1</a></li>
+    <li class="page-item page-num">
+      <a class="page-link" href="#pagination">2</a>
+    </li>
+    <li class="page-item page-num page-end"><a class="page-link" href="#pagination">3</a></li>
+    <li class="page-item  page-right">
+      <a class="page-link " href="#pagination" aria-disabled="true">→</a>
+    </li>
+  </ul>
 
   <!-- Bootstrap 4 JS 與 jQuery 3 -->
   <script src="/js/jquery-3.5.1.js"></script>
   <script src="/bootstrap-4.5.3-dist/js/bootstrap.bundle.js"></script>
   <script>
-
     // 分頁 Pagination 之 active 與disabled判斷
     $(".page-num").on('click', function () {
       $('.page-num').removeClass('active');
