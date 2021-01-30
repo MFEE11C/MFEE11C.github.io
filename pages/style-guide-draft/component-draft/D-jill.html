@@ -19,6 +19,8 @@
 
     <style>
         /* CSS 直接寫在 style */
+
+        /* Top我刻的 */
         .backtoTop {
             width: 80px;
             height: 80px;
@@ -42,32 +44,154 @@
             font-size: 25px;
         }
 
-        .modal-footer .btn-danger {
-            background-color: #e83015;
-            border: none;
+        @media only screen and (max-width: 768px) {
+            .backtoTop {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background-color: #303030;
+            }
+
+            .fa-caret-up {
+                color: #fff;
+                padding: 0px 18px;
+                font-size: 20px;
+                margin-top: 5px;
+            }
+
+            .top {
+                color: #fff;
+                padding-left: 15px;
+                padding-bottom: 0px;
+                margin-top: -10px;
+                font-family: abel;
+                font-size: 14px;
+            }
         }
 
-        .modal-footer .btn-danger:active {
-            background-color: #e83015;
-            border: none;
+        /* 左右slider */
+        .slider {
+            height: 110px;
+            width: 32px;
+            background-color: var(--honki-black);
+            margin-right: 260px;
         }
 
-        .modal-footer .btn-danger:focus {
+        .fa-chevron-left {
+            color: #fff;
+            margin: 45px 10px;
+        }
+
+        .fa-chevron-right {
+            color: #fff;
+            margin: 45px 10px;
+        }
+
+
+
+        /*Modal互動視窗 */
+        .btn-danger {
+            background-color: #e83015;
             border: none;
+            height: 30px;
+            padding: 6px 30px;
+            border-radius: 4px;
+            font-size: 12px;
+            border-style: none;
+            margin-left: 5px;
+        }
+
+
+        .btn-danger:active {
+            background-color: #e83015;
+            border: none;
+            box-shadow: none;
+            outline: none;
+        }
+
+        .btn-danger:focus {
+            border: none;
+            box-shadow: none;
+            outline: none;
+            border-style: none;
+        }
+
+
+
+        .btn-danger:not(:disabled):not(.disabled):active:focus {
             box-shadow: none;
         }
 
-        .modal-footer .btn-secondary {
+        .btn-secondary {
             background-color: #303030;
             border: none;
+            height: 30px;
+            padding: 6px 30px;
+            border-radius: 4px;
+            font-size: 12px;
+            border-style: none;
+            margin-left: 5px;
         }
+
+        .btn-secondary:active {
+            background-color: #e83015;
+            border: none;
+            box-shadow: none;
+            outline: none;
+        }
+
+        .btn-secondary:focus {
+            border: none;
+            box-shadow: none;
+            outline: none;
+            border-style: none;
+        }
+
+
 
         .modal-title {
             text-align: center;
+            font-size: 19px;
+        }
+
+        .modal-subtitle {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 16px;
         }
 
         .modal-body {
-            text-align: center;
+            padding: 10px 80px;
+            font-size: 12px;
+        }
+
+
+
+        /* 麵包屑 */
+        .breadcrumb {
+            color: var(--honki-black);
+            font-size: 19px;
+            background-color: transparent;
+        }
+
+        .breadcrumb-honki a {
+            color: var(--honki-black);
+            text-decoration: none;
+        }
+
+        .breadcrumb>li+li:before {
+            color: var(--honki-black);
+            content: ">";
+            padding: 0 24px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .breadcrumb {
+                color: var(--honki-black);
+                font-size: 12px;
+                background-color: transparent;
+            }
+
         }
     </style>
 </head>
@@ -76,7 +200,7 @@
     <h1>元件分工D</h1>
     <h3>撰寫者：宜君</h3>
     <!-- 我刻的 -->
-    <h5>電腦版(我刻的)</h5>
+    <h5>回頂部-電腦版(我刻的)</h5>
     <div class="backtoTop">
         <i class="fas fa-caret-up"></i>
         <p class="top">Top</p>
@@ -84,8 +208,9 @@
     </div>
 
     <!-- XD檔案copy SVG code -->
-    <h5>回頂部-電腦版(XD檔案SVG)</h5>
-    <div class="toTop">
+    <h5>回頂部(SVG)</h5>
+    <!-- 電腦版d-md-block就會出現 -->
+    <div class="toTop d-none d-sm-none d-md-block">
         <a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="79" height="79" viewBox="0 0 79 79">
                 <g id="Group_1009" data-name="Group 1009" transform="translate(-1267.558 -1955)">
@@ -104,9 +229,8 @@
             </svg>
         </a>
     </div>
-
-    <h5>回頂部-手機版(XD檔案SVG)</h5>
-    <div class="toTopM">
+    <!-- 電腦版d-sm-block就會出現 -->
+    <div class="toTopM d-block d-sm-block d-md-none">
         <a href="#">
             <svg id="Group_1009" data-name="Group 1009" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
                 viewBox="0 0 48 48">
@@ -123,61 +247,25 @@
 
         </a>
     </div>
-    <h5>左右slider(XD檔案SVG)</h5>
-    <div class="slider">
-        <svg id="slider-button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="320" height="110" viewBox="0 0 320 107.919">
-            <defs>
-                <clipPath id="clip-path">
-                    <path id="Shape"
-                        d="M-7.266,9.562a.74.74,0,0,0,.1-.01.727.727,0,0,0,.268-.1.836.836,0,0,0,.112-.088l4.254-4.1a.693.693,0,0,0,.064-.07A.68.68,0,0,0-2.4,5.075a.665.665,0,0,0,0-.587.68.68,0,0,0-.075-.119.693.693,0,0,0-.064-.07L-6.789.2A.7.7,0,0,0-6.862.139.725.725,0,0,0-7.17.01a.739.739,0,0,0-.241,0A.731.731,0,0,0-7.6.066.69.69,0,0,0-8,.613a.662.662,0,0,0,.03.277.675.675,0,0,0,.111.206.693.693,0,0,0,.064.07l3.753,3.615L-7.792,8.4l-.033.034a.683.683,0,0,0-.058.074.672.672,0,0,0-.1.213A.661.661,0,0,0-8,8.9a.686.686,0,0,0,.361.572.729.729,0,0,0,.227.078.74.74,0,0,0,.1.01Z"
-                        transform="translate(8)" fill="#fff" />
-                </clipPath>
-                <clipPath id="clip-path-2">
-                    <path id="Shape-2" data-name="Shape"
-                        d="M4.939,9.562a.74.74,0,0,1-.1-.01.727.727,0,0,1-.268-.1.836.836,0,0,1-.112-.088L.207,5.264a.693.693,0,0,1-.064-.07.68.68,0,0,1-.075-.119.665.665,0,0,1,0-.587.68.68,0,0,1,.075-.119A.693.693,0,0,1,.207,4.3L4.462.2A.7.7,0,0,1,4.535.139.725.725,0,0,1,4.843.01a.739.739,0,0,1,.241,0,.731.731,0,0,1,.184.056.69.69,0,0,1,.4.547.662.662,0,0,1-.03.277.675.675,0,0,1-.111.206.693.693,0,0,1-.064.07L1.711,4.781,5.464,8.4l.033.034a.683.683,0,0,1,.058.074.672.672,0,0,1,.1.213.661.661,0,0,1,.02.185.686.686,0,0,1-.361.572.729.729,0,0,1-.227.078.74.74,0,0,1-.1.01Z"
-                        fill="#fff" />
-                </clipPath>
-            </defs>
-            <g id="Group_374" data-name="Group 374" transform="translate(289)">
-                <g id="BG" style="isolation: isolate">
-                    <rect id="BG-2" data-name="BG" width="31" height="110" fill="#1c1b1b" />
-                </g>
-                <g id="Icon" transform="translate(4.247 45.956)">
-                    <path id="Shape-3" data-name="Shape" d="M0,0H17.017V16.393H0Z" fill="none" />
-                    <g id="Group_16" data-name="Group 16" transform="translate(11.574 3.653)">
-                        <path id="Shape-4" data-name="Shape"
-                            d="M-7.266,9.562a.74.74,0,0,0,.1-.01.727.727,0,0,0,.268-.1.836.836,0,0,0,.112-.088l4.254-4.1a.693.693,0,0,0,.064-.07A.68.68,0,0,0-2.4,5.075a.665.665,0,0,0,0-.587.68.68,0,0,0-.075-.119.693.693,0,0,0-.064-.07L-6.789.2A.7.7,0,0,0-6.862.139.725.725,0,0,0-7.17.01a.739.739,0,0,0-.241,0A.731.731,0,0,0-7.6.066.69.69,0,0,0-8,.613a.662.662,0,0,0,.03.277.675.675,0,0,0,.111.206.693.693,0,0,0,.064.07l3.753,3.615L-7.792,8.4l-.033.034a.683.683,0,0,0-.058.074.672.672,0,0,0-.1.213A.661.661,0,0,0-8,8.9a.686.686,0,0,0,.361.572.729.729,0,0,0,.227.078.74.74,0,0,0,.1.01Z"
-                            transform="translate(8)" fill="#fff" />
-                        <g id="Mask_Group_16" data-name="Mask Group 16" clip-path="url(#clip-path)">
-                            <g id="Icon_Fill" data-name="Icon Fill" transform="translate(-6.381 -3.415)">
-                                <rect id="BG-3" data-name="BG" width="17.017" height="16.393" fill="#fff" />
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </g>
-            <g id="Group_375" data-name="Group 375">
-                <rect id="BG-4" data-name="BG" width="31" height="110" fill="#1c1b1b" />
-                <g id="Group_15" data-name="Group 15" transform="translate(12.321 49.771)">
-                    <path id="Shape-5" data-name="Shape"
-                        d="M4.939,9.562a.74.74,0,0,1-.1-.01.727.727,0,0,1-.268-.1.836.836,0,0,1-.112-.088L.207,5.264a.693.693,0,0,1-.064-.07.68.68,0,0,1-.075-.119.665.665,0,0,1,0-.587.68.68,0,0,1,.075-.119A.693.693,0,0,1,.207,4.3L4.462.2A.7.7,0,0,1,4.535.139.725.725,0,0,1,4.843.01a.739.739,0,0,1,.241,0,.731.731,0,0,1,.184.056.69.69,0,0,1,.4.547.662.662,0,0,1-.03.277.675.675,0,0,1-.111.206.693.693,0,0,1-.064.07L1.711,4.781,5.464,8.4l.033.034a.683.683,0,0,1,.058.074.672.672,0,0,1,.1.213.661.661,0,0,1,.02.185.686.686,0,0,1-.361.572.729.729,0,0,1-.227.078.74.74,0,0,1-.1.01Z"
-                        transform="translate(0)" fill="#fff" />
-                    <g id="Mask_Group_15" data-name="Mask Group 15" transform="translate(0)"
-                        clip-path="url(#clip-path-2)">
-                        <g id="Icon_Fill-2" data-name="Icon Fill" transform="translate(-4.963 -3.415)">
-                            <rect id="BG-5" data-name="BG" width="17.017" height="16.393" fill="#fff" />
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </svg>
+
+
+    <h5>左右slider</h5>
+    <div class="slider-aria d-flex">
+        <div class="slider">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slider">
+            <i class="fas fa-chevron-right"></i>
+        </div>
 
     </div>
+
+
+    <!-- Modal互動視窗 -->
     <h5>Modal互動視窗</h5>
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-        點我demo
+    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+        點我
     </button>
 
     <!-- Modal -->
@@ -192,9 +280,10 @@
                         <span aria-hidden="true"><i class="fas fa-times"></i></span>
                     </button>
                 </div>
-                <h5 class="modal-title">訊息</h5>
+                <h5 class="modal-subtitle">訊息</h5>
                 <div class="modal-body">
-                    <p>我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容我是內容
+                    <p> 而這些並不是完全重要，更加重要的問題是，我們可以很篤定的說，這需要花很多時間來嚴謹地論證。普魯塔克曾說過一句意義深遠的話，衡量人生的標準是看其是否有意義;
+                        而不是看其有多長。希望各位能用心體會這段話。honki似乎是一種巧合，但如果我們從一個更大的角度看待問題，這似乎是一種不可避免的事實。
                     </p>
                 </div>
                 <div class="modal-footer">
@@ -205,25 +294,26 @@
         </div>
     </div>
 
+    <!-- 麵包屑rwd手機版 字12px -->
     <h5>麵包屑</h5>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item active" aria-current="page">首頁</li>
+            <li class="breadcrumb-honki active" aria-current="page">首頁</li>
         </ol>
     </nav>
 
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">首頁</a></li>
-            <li class="breadcrumb-item active" aria-current="page">二手交換</li>
+            <li class="breadcrumb-honki"><a href="#">首頁</a></li>
+            <li class="active" aria-current="page">二手交換</li>
         </ol>
     </nav>
 
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">首頁</a></li>
-            <li class="breadcrumb-item"><a href="#">二手交換</a></li>
-            <li class="breadcrumb-item active" aria-current="page">一般交換</li>
+            <li class="breadcrumb-honki"><a href="#">首頁</a></li>
+            <li class="breadcrumb-honki"><a href="#">二手交換</a></li>
+            <li class="breadcrumb-honki active" aria-current="page">一般交換</li>
         </ol>
     </nav>
 
@@ -231,6 +321,7 @@
     <!-- Bootstrap 4 JS 與 jQuery 3 -->
     <script src="/js/jquery-3.5.1.js"></script>
     <script src="/bootstrap-4.5.3-dist/js/bootstrap.bundle.js"></script>
+
 </body>
 
 </html>
