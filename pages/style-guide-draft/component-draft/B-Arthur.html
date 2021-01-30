@@ -20,24 +20,326 @@
   <style>
     /* CSS 直接寫在 style */
 
+    /* 可自行調整form的寬度 */
+    .form-width-height {
+      width: 295px;
+      height: auto;
+    }
+
+    .form-tittle {
+      margin-bottom: 17px !important;
+      width: 295px;
+      height: auto;
+    }
+
+    /* 電腦版CSS */
+    .form-group {
+      margin-bottom: 1.5rem !important;
+      font-size: 16px !important;
+    }
+
     .formInput {
-      max-width: 240px !important;
       height: 36px !important;
-      position: absolute;
-      left: 143px;
+      border-color: #303030;
+    }
+
+    textarea.form-control {
+      border-color: #303030;
     }
 
     .formItems {
-      height: 36px;
       align-items: center;
+      margin: 0;
     }
 
     .inputText {
       margin-bottom: 0;
+      padding-left: 0;
     }
 
-    .formItems {
-      margin: 0;
+    .button-group {
+      margin-top: 24px;
+    }
+
+    .form-control:focus {
+      box-shadow: 0 0 0 0.2rem rgb(232 48 21 / 33%);
+      ;
+      border-color: rgb(232 48 21);
+    }
+
+    /* 表單按鈕樣式 */
+    .form-button {
+      margin-top: 0.75rem;
+      width: 100%;
+      background-color: black;
+      color: white;
+      border-radius: 4px;
+      border-color: #303030;
+      height: 40px;
+
+    }
+
+    .form-button:focus {
+      margin-top: 0.75rem;
+      width: 100%;
+      background-color: black;
+      color: white;
+      border-radius: 4px;
+      border-color: #303030;
+      height: 40px;
+      box-shadow: unset;
+    }
+
+    /* select樣式 */
+    select {
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      background: url(/images/style-guide/select-btn.png) no-repeat 100%;
+    }
+
+    select::-ms-expand {
+      display: none;
+    }
+
+    /* disabled樣式 */
+    select:disabled,
+    textarea:disabled,
+    input:disabled {
+      border-color: #CCCCCC !important;
+      background-color: unset !important;
+    }
+
+    button:disabled {
+      background-color: #CCCCCC !important;
+      border: hidden;
+    }
+
+    /* 修改radio樣式
+https://www.codeply.com/go/NKtDpPXv2x */
+
+    .radio-item {
+      display: inline-block;
+      position: relative;
+      padding: 0 6px;
+    }
+
+    .radio-item input[type='radio'] {
+      display: none;
+    }
+
+    .radio-item label {
+      color: #666;
+      font-weight: normal;
+
+    }
+
+    .radio-item label:before {
+      content: " ";
+      display: inline-block;
+      position: relative;
+      margin: 0 5px 0 0;
+      width: 12px;
+      height: 12px;
+      border-radius: 11px;
+      border: 1px solid #303030;
+      background-color: transparent;
+
+    }
+
+    .radio-item input[type=radio]:checked+label:after {
+      border-radius: 11px;
+      width: 6px;
+      height: 6px;
+      position: absolute;
+      top: 10px;
+      left: 9px;
+      content: " ";
+      display: block;
+      background: #303030;
+
+    }
+
+    /* 分頁css */
+    .pagination {
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 56px;
+    }
+
+    .page-link {
+      background-color: unset !important;
+      border: 0;
+      color: #303030;
+      margin-left: 0;
+      padding: 0;
+    }
+
+    .page-item {
+      width: 56px;
+      height: 56px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .page-left {
+      margin-right: 46.5px;
+    }
+
+    .page-right {
+      margin-left: 46.5px;
+    }
+
+    .page-item.active .page-link {
+      width: 56px;
+      height: 56px;
+      border: 0;
+      color: #303030;
+      background-color: rgb(232 48 21 / 33%) !important;
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0px;
+    }
+
+    .page-link:hover {
+      color: rgb(232 48 21 / 33%);
+    }
+
+    .page-link:focus,
+    .page-link:active {
+      box-shadow: unset;
+      background-color: rgb(232 48 21 / 33%);
+    }
+
+
+
+    /* 手機板 CSS*/
+    @media (max-width:576px),
+    print {
+      .form-group {
+        margin-bottom: 1rem !important;
+        font-size: 12px !important;
+      }
+
+      .form-width-height {
+        width: 280px;
+        height: auto;
+        border-radius: 15px;
+        background-color: #fff;
+        padding: 1rem 1.25rem 3.5rem 0.75rem;
+      }
+
+      .form-tittle {
+        margin-bottom: 25px !important;
+        padding-top: 1rem !important;
+        width: auto;
+        align-items: center;
+        text-align: center;
+      }
+
+      .form-group>.row {
+        display: block;
+      }
+
+      .inputText {
+        max-width: 100%;
+        margin-bottom: 0.5rem;
+        padding-left: 0px;
+        padding-right: 0px;
+
+      }
+
+      .form-control {
+        flex: unset;
+        max-width: 100%;
+        margin-bottom: 0.5rem;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+      }
+
+      .button-group {
+        margin-top: 24px
+      }
+
+      .form-button {
+        margin-top: 8px
+      }
+
+      .radio-item input[type=radio]:checked+label:after {
+        border-radius: 11px;
+        width: 6px;
+        height: 6px;
+        position: absolute;
+        top: 5px;
+        left: 9px;
+        content: " ";
+        display: block;
+        background: #303030;
+        /* 分頁css手機板 */
+      }
+
+      .pagination {
+        font-size: 15px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .page-link {
+        background-color: unset !important;
+        border: 0;
+        color: #303030;
+        margin-left: 0;
+        padding: 0.5rem 0.75rem
+      }
+
+      .page-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .page-item.active .page-link {
+        width: 30px;
+        height: 30px;
+        border: 0;
+        color: #303030;
+        background-color: rgb(232 48 21 / 33%) !important;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0px;
+      }
+
+      .page-left {
+        margin: 0;
+      }
+
+      .page-right {
+        margin: 0;
+      }
+
+      .page-link:hover {
+        color: rgb(232 48 21 / 33%);
+      }
+
+      .page-link:focus,
+      .page-link:active {
+        box-shadow: unset;
+        background-color: rgb(232 48 21 / 33%);
+      }
     }
   </style>
 </head>
@@ -46,46 +348,223 @@
   <h1>元件分工</h1>
   <h3>撰寫者：Arthur(翊民)</h3>
 
-  <form>
-    <div class="form-group">
-      <h5>標題</h5>
-      <div class="formItems row">
+  <h6>1.若覺得label與input距離太遠，可以將col取代成想要的比例
+    <br>例如col-5改成col-2，col-7改成col-10。
+  </h6>
+  <h6>
+    2.form比例:col 3比9、form寬度預設295(手機板280)。</h6>
 
-        <label class="inputText" for="exampleFormControlInput1">姓名</label>
-        <input type="email" class="form-control formInput" id="exampleFormControlInput1" placeholder="name@example.com">
+  <form>
+
+    <!-- 比例 -->
+    <div class=" form-width-height">
+      <!-- 表單標題 -->
+      <div class="form-tittle">
+        <h5>標題</h5>
       </div>
-    </div>
-    <div class="form-group">
-      <div class="formItems row">
-        <label for="exampleFormControlSelect1">Example select</label>
-        <select class="form-control formInput" id="exampleFormControlSelect1">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
+      <!-- 一般input -->
+      <div class="form-group ">
+        <div class="formItems row d-flex">
+          <label class="inputText col-5" for="exampleFormControlInput1">姓名</label>
+          <input type="text" class="form-control formInput col-7 " placeholder="ex:吳阿民">
+        </div>
       </div>
-    </div>
-    <div class="form-group">
-      <label for="exampleFormControlSelect2">Example multiple select</label>
-      <select multiple class="form-control" id="exampleFormControlSelect2">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="exampleFormControlTextarea1">Example textarea</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <!-- 信箱input -->
+      <div class="form-group ">
+        <div class="formItems row d-flex">
+          <label class="inputText col-5">信箱</label>
+          <input type="email" class="form-control formInput col-7" placeholder="example@hotmail.com">
+        </div>
+      </div>
+      <!-- 地址input -->
+      <div class="form-group  ">
+        <div class="formItems row d-flex">
+          <label class="inputText col-5" for="exampleFormControlTextarea1">地址測試長度 </label>
+          <textarea class="form-control  col-7 " id="exampleFormControlTextarea1" placeholder="ex:100台北市中正區重慶南路一段122號"
+            rows="2 "></textarea>
+        </div>
+      </div>
+      <!-- select -->
+      <div class="form-group ">
+        <div class="formItems row d-flex">
+          <label class="inputText col-5" for="exampleFormControlSelect1">星期</label>
+          <select class="form-control formInput  col-7" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+          </select>
+        </div>
+      </div>
+      <!-- select_radio -->
+      <div class="form-group ">
+        <div class="formItems row">
+          <label class="inputText col-5" for="exampleFormControlSelect1">性別</label>
+          <div class="col-7">
+            <div class="form-check form-check-inline radio-item">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">男</label>
+            </div>
+            <div class="form-check form-check-inline radio-item">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">女</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 按鈕 -->
+      <div class="form-group button-group">
+        <div class="d-flex">
+          <button type="button" class="form-button form-control ">新增</button>
+        </div>
+      </div>
     </div>
   </form>
+  <br>
+  <br>
+
+  <!-- disabled -->
+  <form>
+    <!-- 比例 -->
+    <div class=" form-width-height">
+      <!-- 表單標題 -->
+      <div class="form-tittle">
+        <h5>標題_disabled</h5>
+      </div>
+      <!-- 一般input_disabled -->
+      <div class="form-group ">
+        <div class="formItems row  d-flex">
+          <label class="inputText col-5" for="exampleFormControlInput1">姓名</label>
+          <input type="text" class="form-control formInput col-7 " placeholder="ex:吳阿民" disabled>
+        </div>
+      </div>
+      <!-- 信箱input_disabled -->
+      <div class="form-group ">
+        <div class="formItems row  d-flex">
+          <label class="inputText col-5">信箱</label>
+          <input type="email" class="form-control formInput col-7" placeholder="example@hotmail.com" disabled>
+        </div>
+      </div>
+      <!-- 地址input_disabled -->
+      <div class="form-group  ">
+        <div class="formItems row  d-flex">
+          <label class="inputText col-5" for="exampleFormControlTextarea1">地址測試長度 </label>
+          <textarea class="form-control  col-7 " id="exampleFormControlTextarea1" placeholder="ex:100台北市中正區重慶南路一段122號"
+            rows="2 " disabled></textarea>
+        </div>
+      </div>
+      <!-- select_disabled -->
+      <div class="form-group ">
+        <div class="formItems row  d-flex">
+          <label class="inputText col-5" for="exampleFormControlSelect1">星期</label>
+          <select class="form-control formInput  col-7" id="exampleFormControlSelect1" disabled>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+          </select>
+        </div>
+      </div>
+      <!-- select_radio_disabled -->
+      <div class="form-group ">
+        <div class="formItems row">
+          <label class="inputText col-5" for="exampleFormControlSelect1">性別</label>
+          <div class="col-7" disabled>
+            <div class="form-check form-check-inline  ">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"
+                disabled>
+              <label class="form-check-label" for="inlineRadio1">男</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"
+                disabled>
+              <label class="form-check-label" for="inlineRadio2">女</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 按鈕_disabled -->
+      <div class="form-group button-group">
+        <div class="d-flex">
+          <button type="button" class="form-button form-control" disabled>修改</button>
+        </div>
+        <div class="d-flex">
+          <button type="button" class="form-button form-control">新增</button>
+        </div>
+      </div>
+  </form>
+
+  <!-- 分頁 Pagination-->
+  <nav aria-label="...">
+    <ul class="pagination">
+      <li class="page-item page-left disabled">
+        <a class="page-link" href="#pagination" tabindex="-1" aria-disabled="true">←</a>
+      </li>
+      <li class="page-item page-num page-start active"><a class="page-link" href="#pagination">1</a></li>
+      <li class="page-item page-num">
+        <a class="page-link" href="#pagination">2</a>
+      </li>
+      <li class="page-item page-num page-end"><a class="page-link" href="#pagination">3</a></li>
+      <li class="page-item  page-right">
+        <a class="page-link " href="#pagination" aria-disabled="true">→</a>
+      </li>
+    </ul>
+  </nav>
 
   <!-- Bootstrap 4 JS 與 jQuery 3 -->
   <script src="/js/jquery-3.5.1.js"></script>
   <script src="/bootstrap-4.5.3-dist/js/bootstrap.bundle.js"></script>
+  <script>
+
+    // 分頁 Pagination 之 active 與disabled判斷
+    $(".page-num").on('click', function () {
+      $('.page-num').removeClass('active');
+      $(this).addClass('active');
+      const hasClass = ($(this).hasClass("page-start") || $(this).hasClass("page-end"))
+      console.log(hasClass);
+      $('.page-item').removeClass('disabled')
+      if ($('.active').hasClass("page-start")) {
+        $('.page-left').addClass('disabled')
+      }
+      else {
+        if ($('.active').hasClass("page-end")) {
+          $(".page-right").addClass('disabled')
+        }
+        else { $(".page-left").removeClass('disabled') }
+      }
+    }
+    );
+
+    $(".page-right").on('click', function () {
+      const checkfunRight = $(".active").next().hasClass("page-right")
+      const checkfunRightNext = $(".active").next().next().hasClass("page-right")
+      if (!checkfunRight === true) {
+        $('.page-item').removeClass('disabled')
+        $(".active").removeClass('active').next().addClass('active');
+        if (checkfunRightNext === true) {
+          $(".active").next().addClass('disabled');
+        }
+      }
+    }
+    );
+    $(".page-left").on('click', function () {
+      const checkfunLeft = $(".active").prev().hasClass("page-left")
+      const checkfunLeftNext = $(".active").prev().prev().hasClass("page-left")
+      if (!checkfunLeft === true) {
+        $('.page-item').removeClass('disabled');
+        $(".active").removeClass('active').prev().addClass('active');
+        if (checkfunLeftNext === true) {
+          $(".active").prev().addClass('disabled');
+        }
+      }
+    });
+  </script>
 </body>
 
 </html>
