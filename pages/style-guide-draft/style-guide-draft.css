@@ -22,9 +22,18 @@ textarea.showcase {
   width: 100%;
   resize: none;
   margin-top: 20px;
+  margin-bottom: 24px;
 }
 textarea.showcase:focus {
   outline: none;
+}
+pre > xmp {
+  background-color: white;
+  font-family: abel;
+  border: 1px solid black;
+  font-size: 16px;
+  overflow-x: scroll;
+  border-radius: 4px;
 }
 /* Color */
 
