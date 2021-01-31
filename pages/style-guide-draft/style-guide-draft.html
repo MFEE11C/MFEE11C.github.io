@@ -1048,39 +1048,63 @@
   </script>
   <script>
     // 搜尋欄下拉式選單
-    $(".selected").click(function () {
-      const hasClass = $(".select-box").hasClass("d-none");
-      console.log(hasClass);
-      if (hasClass === true) {
-        $(".select-box").removeClass("d-none")
-      } else {
-        $(".select-box").addClass("d-none")
-      }
-    });
 
-    $(".used-books").click(function () {
-      const usedBookBtn = $(".used-books-text").html();
-      const hasClass = $(".select-box").hasClass("d-none");
-      $(".select-text").html(usedBookBtn + `&ensp;<i class="fas fa-caret-down"></i>`);
-      console.log(hasClass);
-      if (hasClass === true) {
-        $(".select-box").removeClass("d-none")
-      } else {
-        $(".select-box").addClass("d-none")
-      }
-    });
+    // 檢查 selected class 的元素出現後，才啟用 jQuery 設定的行為
+    function checkSelected() {
+      const honkiNav = document.querySelector("#nav-search-cat-select");
+      const navSelected = document.querySelector(".selected");
 
-    $(".bookstore").click(function () {
-      const bookstoreBtn = $(".bookstore-text").html();
-      const hasClass = $(".select-box").hasClass("d-none");
-      $(".select-text").html(bookstoreBtn + `&ensp;<i class="fas fa-caret-down"></i>`);
-      console.log(hasClass);
-      if (hasClass === true) {
-        $(".select-box").removeClass("d-none")
+      // console.log(honkiNav, '\n', navSelected);
+
+      if (!(navSelected.parentNode == honkiNav)) {
+        setTimeout(() => {
+          checkSelected();
+        }, 500);
+        /* 每隔500 milliseconds會檢查一次 */
+        console.log("沒找到 selected 元素");
+        console.log("等候中...");
       } else {
-        $(".select-box").addClass("d-none")
+        /* do something*/
+        console.log("selected 元素出現");
+
+        // 搜尋欄下拉式選單 jQuery 程式主體
+        $(".selected").click(function () {
+          const hasClass = $(".select-box").hasClass("d-none");
+          console.log(hasClass);
+          if (hasClass === true) {
+            $(".select-box").removeClass("d-none")
+          } else {
+            $(".select-box").addClass("d-none")
+          }
+        });
+
+        $(".used-books").click(function () {
+          const usedBookBtn = $(".used-books-text").html();
+          const hasClass = $(".select-box").hasClass("d-none");
+          $(".select-text").html(usedBookBtn + `&ensp;<i class="fas fa-caret-down"></i>`);
+          console.log(hasClass);
+          if (hasClass === true) {
+            $(".select-box").removeClass("d-none")
+          } else {
+            $(".select-box").addClass("d-none")
+          }
+        });
+
+        $(".bookstore").click(function () {
+          const bookstoreBtn = $(".bookstore-text").html();
+          const hasClass = $(".select-box").hasClass("d-none");
+          $(".select-text").html(bookstoreBtn + `&ensp;<i class="fas fa-caret-down"></i>`);
+          console.log(hasClass);
+          if (hasClass === true) {
+            $(".select-box").removeClass("d-none")
+          } else {
+            $(".select-box").addClass("d-none")
+          }
+        });
       }
-    });
+    }
+
+    checkSelected()
   </script>
 </body>
 
