@@ -529,6 +529,7 @@ https://www.codeply.com/go/NKtDpPXv2x */
   width: 50%;
   border: 1px solid #1c1b1b;
   background-color: #fff;
+  border-radius: 0;
 }
 .search-input:focus {
   outline: none;
@@ -589,6 +590,7 @@ https://www.codeply.com/go/NKtDpPXv2x */
   width: 45%;
   border: 1px solid #1c1b1b;
   background-color: #fff;
+  border-radius: 0;
 }
 .search-input-m:focus {
   outline: none;
