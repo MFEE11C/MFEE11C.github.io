@@ -42,12 +42,13 @@ h6 {
 /* A 按鈕（倩） */
 .btn-lg {
   height: 80px;
-  padding: 24px 72px;
+  padding: 0 72px;
   border-radius: 4px;
   font-size: 19px;
   background-color: var(--honki-red);
   border-style: none;
   color: var(--honki-white);
+  line-height: 80px;
 }
 .fa-shopping-cart {
   margin-right: 40px;
@@ -63,12 +64,13 @@ h6 {
 /* 按鈕(中)黑 */
 .btn-md-dark {
   height: 40px;
-  padding: 10px 32px;
+  padding: 0 32px;
   border-radius: 4px;
   font-size: 14px;
   border-style: none;
   background-color: var(--honki-black);
   color: var(--honki-white);
+  line-height: 40px;
 }
 .btn-md-dark:hover {
   background-color: rgb(114, 108, 106);
@@ -80,13 +82,14 @@ h6 {
 /*  按鈕(中)白 */
 .btn-md-light {
   height: 40px;
-  padding: 10px 32px;
+  padding: 0 32px;
   border-radius: 4px;
   font-size: 14px;
   background-color: var(--honki-red);
   background-color: transparent;
   color: var(--honki-black);
   border: 1px solid;
+  line-height: 40px;
 }
 .btn-md-light:hover {
   background-color: var(--honki-white);
@@ -98,7 +101,8 @@ h6 {
 /*  按鈕(小)黑 */
 .btn-sm-dark {
   height: 30px;
-  padding: 6px 30px;
+  line-height: 30px;
+  padding: 0 30px;
   border-radius: 4px;
   font-size: 12px;
   border-style: none;
@@ -115,7 +119,8 @@ h6 {
 /* 按鈕(小)白 */
 .btn-sm-light {
   height: 30px;
-  padding: 6px 30px;
+  line-height: 30px;
+  padding: 0 30px;
   border-radius: 4px;
   font-size: 12px;
   background-color: var(--honki-red);
@@ -133,7 +138,8 @@ h6 {
 /* 圓角(黑)按鈕 */
 .btn-rounded-dark {
   height: 40px;
-  padding: 10px 32px;
+  line-height: 40px;
+  padding: 0 32px;
   border-radius: 50px;
   font-size: 14px;
   background-color: var(--honki-black);
@@ -150,7 +156,8 @@ h6 {
 /* 圓角(白)按鈕 */
 .btn-rounded-light {
   height: 40px;
-  padding: 10px 32px;
+  line-height: 40px;
+  padding: 0 32px;
   border-radius: 50px;
   font-size: 14px;
   background-color: transparent;
