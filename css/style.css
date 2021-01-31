@@ -226,7 +226,9 @@ textarea.form-control {
   border-color: #303030;
   height: 40px;
 }
-
+.form-button:hover {
+  background-color: rgb(114, 108, 106);
+}
 .form-button:focus {
   margin-top: 0.75rem;
   width: 100%;
@@ -281,28 +283,37 @@ https://www.codeply.com/go/NKtDpPXv2x */
 }
 
 .radio-item label {
+  display: flex;
   color: #666;
   font-weight: normal;
+  text-align: center;
+  align-items: center;
+}
+.radio-center {
+  display: flex;
+  align-items: center;
 }
 
 .radio-item label:before {
   content: " ";
-  display: inline-block;
+  display: flex;
   position: relative;
   margin: 0 5px 0 0;
-  width: 12px;
-  height: 12px;
-  border-radius: 11px;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
   border: 1px solid #303030;
   background-color: transparent;
+  text-align: center;
+  align-items: center;
 }
 
 .radio-item input[type="radio"]:checked + label:after {
-  border-radius: 11px;
-  width: 6px;
-  height: 6px;
+  border-radius: 4px;
+  width: 8px;
+  height: 8px;
   position: absolute;
-  top: 10px;
+  top: 33.3333%;
   left: 9px;
   content: " ";
   display: block;
@@ -418,15 +429,8 @@ https://www.codeply.com/go/NKtDpPXv2x */
   }
 
   .radio-item input[type="radio"]:checked + label:after {
-    border-radius: 11px;
-    width: 6px;
-    height: 6px;
-    position: absolute;
-    top: 5px;
-    left: 9px;
-    content: " ";
-    display: block;
-    background: #303030;
+    top: 30%;
+
     /* 分頁css手機板 */
   }
 
@@ -529,6 +533,7 @@ https://www.codeply.com/go/NKtDpPXv2x */
   width: 50%;
   border: 1px solid #1c1b1b;
   background-color: #fff;
+  border-radius: 0;
 }
 .search-input:focus {
   outline: none;
@@ -589,6 +594,7 @@ https://www.codeply.com/go/NKtDpPXv2x */
   width: 45%;
   border: 1px solid #1c1b1b;
   background-color: #fff;
+  border-radius: 0;
 }
 .search-input-m:focus {
   outline: none;

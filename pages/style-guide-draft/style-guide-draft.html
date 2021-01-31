@@ -37,16 +37,13 @@
       Style Guide (整理中)
     </h1>
     <p style="text-align: right">
-      最後編輯日期 2021-01-29 ，老翰。<a href="#mod-record">查看修訂紀錄</a>
+      <a href="#mod-record">查看修訂紀錄</a><br>
+      <a href="https://github.com/honkibooks/honkibooks.github.io">查看整個 Repo</a>
     </p>
-
-    <h4>製作中的元件連結</h4>
+    <h4>元件原稿連結：</h4>
     <div class="row">
+
       <ul>
-        <li>
-          <a href="https://github.com/honkibooks/honkibooks.github.io">查看整個 Repo
-          </a>
-        </li>
         <li><a href="component-draft/A-Bianca.html">A ：按鈕</a></li>
         <li>
           <a href="component-draft/B-Arthur.html">B ：input 與分頁（ pagination ）</a>
@@ -233,7 +230,7 @@
             <div class="form-group">
               <div class="formItems row">
                 <label class="inputText col-5" for="exampleFormControlSelect1">性別</label>
-                <div class="col-7">
+                <div class="col-7 radio-center">
                   <div class="form-check form-check-inline radio-item">
                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
                       value="option1" />
@@ -1048,39 +1045,63 @@
   </script>
   <script>
     // 搜尋欄下拉式選單
-    $(".selected").click(function () {
-      const hasClass = $(".select-box").hasClass("d-none");
-      console.log(hasClass);
-      if (hasClass === true) {
-        $(".select-box").removeClass("d-none")
-      } else {
-        $(".select-box").addClass("d-none")
-      }
-    });
 
-    $(".used-books").click(function () {
-      const usedBookBtn = $(".used-books-text").html();
-      const hasClass = $(".select-box").hasClass("d-none");
-      $(".select-text").html(usedBookBtn + `&ensp;<i class="fas fa-caret-down"></i>`);
-      console.log(hasClass);
-      if (hasClass === true) {
-        $(".select-box").removeClass("d-none")
-      } else {
-        $(".select-box").addClass("d-none")
-      }
-    });
+    // 檢查 selected class 的元素出現後，才啟用 jQuery 設定的行為
+    function checkSelected() {
+      const honkiNav = document.querySelector("#nav-search-cat-select");
+      const navSelected = document.querySelector(".selected");
 
-    $(".bookstore").click(function () {
-      const bookstoreBtn = $(".bookstore-text").html();
-      const hasClass = $(".select-box").hasClass("d-none");
-      $(".select-text").html(bookstoreBtn + `&ensp;<i class="fas fa-caret-down"></i>`);
-      console.log(hasClass);
-      if (hasClass === true) {
-        $(".select-box").removeClass("d-none")
+      // console.log(honkiNav, '\n', navSelected);
+
+      if (!(navSelected.parentNode == honkiNav)) {
+        setTimeout(() => {
+          checkSelected();
+        }, 500);
+        /* 每隔500 milliseconds會檢查一次 */
+        console.log("沒找到 selected 元素");
+        console.log("等候中...");
       } else {
-        $(".select-box").addClass("d-none")
+        /* do something*/
+        console.log("selected 元素出現");
+
+        // 搜尋欄下拉式選單 jQuery 程式主體
+        $(".selected").click(function () {
+          const hasClass = $(".select-box").hasClass("d-none");
+          console.log(hasClass);
+          if (hasClass === true) {
+            $(".select-box").removeClass("d-none")
+          } else {
+            $(".select-box").addClass("d-none")
+          }
+        });
+
+        $(".used-books").click(function () {
+          const usedBookBtn = $(".used-books-text").html();
+          const hasClass = $(".select-box").hasClass("d-none");
+          $(".select-text").html(usedBookBtn + `&ensp;<i class="fas fa-caret-down"></i>`);
+          console.log(hasClass);
+          if (hasClass === true) {
+            $(".select-box").removeClass("d-none")
+          } else {
+            $(".select-box").addClass("d-none")
+          }
+        });
+
+        $(".bookstore").click(function () {
+          const bookstoreBtn = $(".bookstore-text").html();
+          const hasClass = $(".select-box").hasClass("d-none");
+          $(".select-text").html(bookstoreBtn + `&ensp;<i class="fas fa-caret-down"></i>`);
+          console.log(hasClass);
+          if (hasClass === true) {
+            $(".select-box").removeClass("d-none")
+          } else {
+            $(".select-box").addClass("d-none")
+          }
+        });
       }
-    });
+    }
+
+    checkSelected()
   </script>
 </body>
 
