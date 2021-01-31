@@ -3,6 +3,7 @@
 
 const navTemplate = document.createElement("template");
 navTemplate.innerHTML = `
+
 <!-- 桌機版 navbar start -->
     <nav
       class="navbar fixed-top navbar-expand-md navbar-dark honki-nav disable-honki-red-on-992"
@@ -145,7 +146,37 @@ navTemplate.innerHTML = `
           </ul>
           <ul class="navbar-nav">
             <li class="nav-item my-auto" style="padding: 0 28px">
-              <div class="dummy-search-bar">搜尋欄待新增元件</div>
+              <!-- <div class="dummy-search-bar">搜尋欄待新增元件</div> -->
+              
+              <!-- 搜尋欄(大)，桌面版 navbar 用 -->
+              <div class="search-box">
+                <form class="d-flex search-bar">
+                  <div class="select-list">
+                    <div class="select-btn selected" value="bookstore">
+                      <div class="select-text">
+                        書城 <i class="fas fa-caret-down"></i>
+                      </div>
+                    </div>
+                    <div class="select-box d-none">
+                      <div class="select-btn used-books" name="usedBooks" value="usedBooks">
+                        <div class="used-books-text">
+                          二手書
+                        </div>
+                      </div>
+                      <div class="select-btn bookstore" name="bookstore" value="bookstore">
+                        <div class="bookstore-text">
+                          書城
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <input class="search-input" id="search-input" placeholder="搜尋"></input>
+  
+                  <button type="submit" class="btn btn-dark search-submit" id="search-submit"><i class="fas fa-search"></i></button>
+                </form>
+              </div>
+              
             </li>
             <li class="nav-item honki-nav-link-fa active">
               <a
@@ -495,6 +526,7 @@ navTemplate.innerHTML = `
         </div>
       </div>
     </div>
+
 `;
 
 document.getElementById("navbarTemp").appendChild(navTemplate.content);
