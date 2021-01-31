@@ -146,12 +146,11 @@ navTemplate.innerHTML = `
           </ul>
           <ul class="navbar-nav">
             <li class="nav-item my-auto" style="padding: 0 28px">
-              <!-- <div class="dummy-search-bar">搜尋欄待新增元件</div> -->
-              
+
               <!-- 搜尋欄(大)，桌面版 navbar 用 -->
               <div class="search-box">
                 <form class="d-flex search-bar">
-                  <div class="select-list">
+                  <div class="select-list" id="nav-search-cat-select">
                     <div class="select-btn selected" value="bookstore">
                       <div class="select-text">
                         書城 <i class="fas fa-caret-down"></i>
