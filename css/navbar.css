@@ -24,26 +24,20 @@ body.active {
   align-items: center;
 }
 
+.honki-nav-link:hover {
+  font-weight: bold;
+}
+
 .honki-nav-link-fa {
   padding: 8px;
 }
 
-.zero-padding {
-  padding: 0;
+.honki-nav-link-fa:hover {
+  font-weight: bold;
 }
 
-.dummy-search-bar {
-  width: 346px;
-  height: 36px;
-
-  border-radius: 25px;
-
-  color: white;
-
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.zero-padding {
+  padding: 0;
 }
 
 @media only screen and (max-width: 1250px) {
