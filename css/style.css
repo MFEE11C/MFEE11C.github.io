@@ -523,7 +523,9 @@ https://www.codeply.com/go/NKtDpPXv2x */
   border: 1px solid #1c1b1b;
   background-color: #fff;
 }
-
+.search-input:focus {
+  outline: none;
+}
 .search-submit {
   width: 20%;
   border-radius: 0 40px 40px 0;
@@ -581,7 +583,9 @@ https://www.codeply.com/go/NKtDpPXv2x */
   border: 1px solid #1c1b1b;
   background-color: #fff;
 }
-
+.search-input-m:focus {
+  outline: none;
+}
 .search-submit-m {
   width: 20%;
   border-radius: 0 40px 40px 0;
