@@ -1,0 +1,97 @@
+.jill-index-title {
+  text-align: center;
+}
+
+.jill-index-bg {
+  width: 676px;
+  height: 378px;
+  background-image: url(../pages/used-books/page-images/index-background.jpg);
+  opacity: 24%;
+  margin-bottom: 192px;
+  margin-left: calc(19%);
+}
+
+.jill-changemode {
+  /* margin-top: -500px;
+  margin-left: 330px; */
+  margin-top: -45%;
+  margin-left: 30%;
+}
+
+.jill-modebtn {
+  margin-top: -30%;
+  margin-left: 30%;
+}
+
+.jill-modebtn button {
+  margin: 0px 54px;
+}
+
+@media only screen and (max-width: 768px) {
+  .jill-index-bg {
+    width: 360px;
+    height: 378px;
+    background-image: url(../pages/used-books/page-images/index-background.jpg);
+    opacity: 24%;
+    margin-bottom: 192px;
+    margin-left: 15%;
+  }
+
+  .jill-changemode {
+    /* margin-top: -500px;
+    margin-left: 330px; */
+    margin-top: -118%;
+    margin-left: 15%;
+  }
+
+  .jill-modebtn {
+    margin-top: -118%;
+    margin-left: 50%;
+  }
+
+  .jill-modebtn button {
+    margin: 82px 54px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .jill-index-bg {
+    width: 240px;
+    height: 378px;
+    background-image: url(../pages/used-books/page-images/index-background.jpg);
+    opacity: 24%;
+    margin-bottom: 192px;
+    margin-left: 8%;
+  }
+
+  .jill-changemode {
+    /* margin-top: -500px;
+      margin-left: 330px; */
+    margin-top: -180%;
+    margin-left: 10%;
+  }
+
+  .jill-changemode svg {
+    width: 50%;
+  }
+
+  .jill-randompic {
+    margin-top: -80px;
+  }
+
+  .jill-modebtn {
+    margin-top: -156%;
+    margin-left: 40%;
+  }
+
+  .jill-modebtn button {
+    /* margin: 82px 54px; */
+    width: 100px;
+    padding: 0px;
+    margin-top: 0px;
+    margin-left: 38px;
+  }
+
+  .jill-normalbtn {
+  }
+}
