@@ -706,6 +706,7 @@ https://www.codeply.com/go/NKtDpPXv2x */
   color: var(--honki-black);
   font-size: 19px;
   background-color: transparent;
+  padding-left: 0px;
 }
 
 .breadcrumb-honki a {
