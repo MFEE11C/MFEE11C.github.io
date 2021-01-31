@@ -44,7 +44,11 @@
       <h4>製作中的元件連結</h4>
       <div class="row">
         <ul>
-          <li><a href="https://github.com/honkibooks/honkibooks.github.io">查看整個 Repo </a></li>
+          <li>
+            <a href="https://github.com/honkibooks/honkibooks.github.io"
+              >查看整個 Repo
+            </a>
+          </li>
           <li><a href="component-draft/A-Bianca.html">A ：按鈕</a></li>
           <li>
             <a href="component-draft/B-Arthur.html"
@@ -139,21 +143,840 @@
       <div class="row">
         <div class="col-lg-12 py-4">
           <h4>按鈕</h4>
+          <!-- A -->
+          <button class="btn-lg">
+            <i class="fas fa-shopping-cart"></i>放入購物車
+          </button>
+          <br />
+          <textarea class="showcase" rows="4" readonly>
+            <button class="btn-lg">
+              <i class="fas fa-shopping-cart"></i>放入購物車
+            </button>
+          </textarea>
+          <br />
+          <button class="btn-md-dark">查看</button>
+          <br />
+          <textarea class="showcase" rows="2" readonly>
+            <button class="btn-md-dark">查看</button>
+          </textarea
+          ><br />
+          <button class="btn-md-light">查看</button>
+          <br />
+          <textarea class="showcase" rows="2" readonly>
+            <button class="btn-md-light">查看</button>
+          </textarea
+          ><br />
+          <button class="btn-sm-dark">新增</button>
+          <br />
+          <textarea class="showcase" rows="2" readonly>
+            <button class="btn-sm-dark">新增</button>
+          </textarea
+          ><br />
+          <button class="btn-sm-light">新增</button>
+          <br /><textarea class="showcase" rows="2" readonly>
+            <button class="btn-sm-light">新增</button>
+          </textarea
+          ><br />
+          <button class="btn-rounded-dark">按鈕</button>
+          <br />
+          <textarea class="showcase" rows="2" readonly>
+            <button class="btn-rounded-dark">按鈕</button>
+          </textarea>
+          <br />
+          <button class="btn-rounded-light">按鈕</button>
+          <br />
+          <textarea class="showcase" rows="2" readonly>
+            <button class="btn-rounded-light">按鈕</button>
+          </textarea>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-12 py-4">
           <h4>元件</h4>
+          <!-- B -->
+          <h5>表單</h5>
+          <h6>
+            1.若覺得label與input距離太遠，可以將col取代成想要的比例
+            <br />例如col-5改成col-2，col-7改成col-10。
+          </h6>
+          <h6>2.form寬度預設295(手機板280)。</h6>
+          <br />
+          <form>
+            <!-- 比例 -->
+            <div class="form-width-height">
+              <!-- 表單標題 -->
+              <div class="form-tittle">
+                <h5>標題</h5>
+              </div>
+              <!-- 一般input -->
+              <div class="form-group">
+                <div class="formItems row d-flex">
+                  <label class="inputText col-5" for="exampleFormControlInput1"
+                    >姓名</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control formInput col-7"
+                    placeholder="ex:吳阿民"
+                  />
+                </div>
+              </div>
+              <!-- 信箱input -->
+              <div class="form-group">
+                <div class="formItems row d-flex">
+                  <label class="inputText col-5">信箱</label>
+                  <input
+                    type="email"
+                    class="form-control formInput col-7"
+                    placeholder="example@hotmail.com"
+                  />
+                </div>
+              </div>
+              <!-- 地址input -->
+              <div class="form-group">
+                <div class="formItems row d-flex">
+                  <label
+                    class="inputText col-5"
+                    for="exampleFormControlTextarea1"
+                    >地址測試長度
+                  </label>
+                  <textarea
+                    class="form-control col-7"
+                    id="exampleFormControlTextarea1"
+                    placeholder="ex:100台北市中正區重慶南路一段122號"
+                    rows="2 "
+                  ></textarea>
+                </div>
+              </div>
+              <!-- select -->
+              <div class="form-group">
+                <div class="formItems row d-flex">
+                  <label class="inputText col-5" for="exampleFormControlSelect1"
+                    >星期</label
+                  >
+                  <select
+                    class="form-control formInput col-7"
+                    id="exampleFormControlSelect1"
+                  >
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                  </select>
+                </div>
+              </div>
+              <!-- select_radio -->
+              <div class="form-group">
+                <div class="formItems row">
+                  <label class="inputText col-5" for="exampleFormControlSelect1"
+                    >性別</label
+                  >
+                  <div class="col-7">
+                    <div class="form-check form-check-inline radio-item">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio1"
+                        value="option1"
+                      />
+                      <label class="form-check-label" for="inlineRadio1"
+                        >男</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline radio-item">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio2"
+                        value="option2"
+                      />
+                      <label class="form-check-label" for="inlineRadio2"
+                        >女</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 按鈕 -->
+              <div class="form-group button-group">
+                <div class="d-flex">
+                  <button type="button" class="form-button form-control">
+                    新增
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+          <pre>
+            <xmp>
+              <form>
+                <!-- 比例 -->
+                <div class=" form-width-height">
+                  <!-- 表單標題 -->
+                  <div class="form-tittle">
+                    <h5>標題</h5>
+                  </div>
+                  <!-- 一般input -->
+                  <div class="form-group ">
+                    <div class="formItems row d-flex">
+                      <label class="inputText col-5" for="exampleFormControlInput1">姓名</label>
+                      <input type="text" class="form-control formInput col-7 " placeholder="ex:吳阿民">
+                    </div>
+                  </div>
+                  <!-- 信箱input -->
+                  <div class="form-group ">
+                    <div class="formItems row d-flex">
+                      <label class="inputText col-5">信箱</label>
+                      <input type="email" class="form-control formInput col-7" placeholder="example@hotmail.com">
+                    </div>
+                  </div>
+                  <!-- 地址input -->
+                  <div class="form-group  ">
+                    <div class="formItems row d-flex">
+                      <label class="inputText col-5" for="exampleFormControlTextarea1">地址測試長度 </label>
+                      <textarea class="form-control  col-7 " id="exampleFormControlTextarea1" placeholder="ex:100台北市中正區重慶南路一段122號"
+                        rows="2 "></textarea>
+                    </div>
+                  </div>
+                  <!-- select -->
+                  <div class="form-group ">
+                    <div class="formItems row d-flex">
+                      <label class="inputText col-5" for="exampleFormControlSelect1">星期</label>
+                      <select class="form-control formInput  col-7" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- select_radio -->
+                  <div class="form-group ">
+                    <div class="formItems row">
+                      <label class="inputText col-5" for="exampleFormControlSelect1">性別</label>
+                      <div class="col-7">
+                        <div class="form-check form-check-inline radio-item">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                          <label class="form-check-label" for="inlineRadio1">男</label>
+                        </div>
+                        <div class="form-check form-check-inline radio-item">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                          <label class="form-check-label" for="inlineRadio2">女</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 按鈕 -->
+                  <div class="form-group button-group">
+                    <div class="d-flex">
+                      <button type="button" class="form-button form-control ">新增</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </xmp>
+          </pre>
+          <br />
+          <br />
+          <!-- disabled -->
+          <form>
+            <!-- 比例 -->
+            <div class="form-width-height">
+              <!-- 表單標題 -->
+              <div class="form-tittle">
+                <h5>標題_disabled</h5>
+              </div>
+              <!-- 一般input_disabled -->
+              <div class="form-group">
+                <div class="formItems row d-flex">
+                  <label class="inputText col-5" for="exampleFormControlInput1"
+                    >姓名</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control formInput col-7"
+                    placeholder="ex:吳阿民"
+                    disabled
+                  />
+                </div>
+              </div>
+              <!-- 信箱input_disabled -->
+              <div class="form-group">
+                <div class="formItems row d-flex">
+                  <label class="inputText col-5">信箱</label>
+                  <input
+                    type="email"
+                    class="form-control formInput col-7"
+                    placeholder="example@hotmail.com"
+                    disabled
+                  />
+                </div>
+              </div>
+              <!-- 地址input_disabled -->
+              <div class="form-group">
+                <div class="formItems row d-flex">
+                  <label
+                    class="inputText col-5"
+                    for="exampleFormControlTextarea1"
+                    >地址測試長度
+                  </label>
+                  <textarea
+                    class="form-control col-7"
+                    id="exampleFormControlTextarea1"
+                    placeholder="ex:100台北市中正區重慶南路一段122號"
+                    rows="2 "
+                    disabled
+                  ></textarea>
+                </div>
+              </div>
+              <!-- select_disabled -->
+              <div class="form-group">
+                <div class="formItems row d-flex">
+                  <label class="inputText col-5" for="exampleFormControlSelect1"
+                    >星期</label
+                  >
+                  <select
+                    class="form-control formInput col-7"
+                    id="exampleFormControlSelect1"
+                    disabled
+                  >
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                  </select>
+                </div>
+              </div>
+              <!-- select_radio_disabled -->
+              <div class="form-group">
+                <div class="formItems row">
+                  <label class="inputText col-5" for="exampleFormControlSelect1"
+                    >性別</label
+                  >
+                  <div class="col-7" disabled>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio1"
+                        value="option1"
+                        disabled
+                      />
+                      <label class="form-check-label" for="inlineRadio1"
+                        >男</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio2"
+                        value="option2"
+                        disabled
+                      />
+                      <label class="form-check-label" for="inlineRadio2"
+                        >女</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 按鈕_disabled -->
+              <div class="form-group button-group">
+                <div class="d-flex">
+                  <button
+                    type="button"
+                    class="form-button form-control"
+                    disabled
+                  >
+                    修改
+                  </button>
+                </div>
+                <div class="d-flex">
+                  <button type="button" class="form-button form-control">
+                    新增
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+          <br />
+          <pre>
+            <xmp>
+              <form>
+                <!-- 比例 -->
+                <div class="form-width-height">
+                  <!-- 表單標題 -->
+                  <div class="form-tittle">
+                    <h5>標題_disabled</h5>
+                  </div>
+                  <!-- 一般input_disabled -->
+                  <div class="form-group">
+                    <div class="formItems row d-flex">
+                      <label class="inputText col-5" for="exampleFormControlInput1"
+                        >姓名</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control formInput col-7"
+                        placeholder="ex:吳阿民"
+                        disabled
+                      />
+                    </div>
+                  </div>
+                  <!-- 信箱input_disabled -->
+                  <div class="form-group">
+                    <div class="formItems row d-flex">
+                      <label class="inputText col-5">信箱</label>
+                      <input
+                        type="email"
+                        class="form-control formInput col-7"
+                        placeholder="example@hotmail.com"
+                        disabled
+                      />
+                    </div>
+                  </div>
+                  <!-- 地址input_disabled -->
+                  <div class="form-group">
+                    <div class="formItems row d-flex">
+                      <label
+                        class="inputText col-5"
+                        for="exampleFormControlTextarea1"
+                        >地址測試長度
+                      </label>
+                      <textarea
+                        class="form-control col-7"
+                        id="exampleFormControlTextarea1"
+                        placeholder="ex:100台北市中正區重慶南路一段122號"
+                        rows="2 "
+                        disabled
+                      ></textarea>
+                    </div>
+                  </div>
+                  <!-- select_disabled -->
+                  <div class="form-group">
+                    <div class="formItems row d-flex">
+                      <label class="inputText col-5" for="exampleFormControlSelect1"
+                        >星期</label
+                      >
+                      <select
+                        class="form-control formInput col-7"
+                        id="exampleFormControlSelect1"
+                        disabled
+                      >
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- select_radio_disabled -->
+                  <div class="form-group">
+                    <div class="formItems row">
+                      <label class="inputText col-5" for="exampleFormControlSelect1"
+                        >性別</label
+                      >
+                      <div class="col-7" disabled>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="inlineRadioOptions"
+                            id="inlineRadio1"
+                            value="option1"
+                            disabled
+                          />
+                          <label class="form-check-label" for="inlineRadio1"
+                            >男</label
+                          >
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="inlineRadioOptions"
+                            id="inlineRadio2"
+                            value="option2"
+                            disabled
+                          />
+                          <label class="form-check-label" for="inlineRadio2"
+                            >女</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 按鈕_disabled -->
+                  <div class="form-group button-group">
+                    <div class="d-flex">
+                      <button
+                        type="button"
+                        class="form-button form-control"
+                        disabled
+                      >
+                        修改
+                      </button>
+                    </div>
+                    <div class="d-flex">
+                      <button type="button" class="form-button form-control">
+                        新增
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </xmp>
+          </pre>
+          <!-- 分頁 Pagination-->
+          <ul class="pagination">
+            <li class="page-item page-left disabled">
+              <a
+                class="page-link"
+                href="#pagination"
+                tabindex="-1"
+                aria-disabled="true"
+                >←</a
+              >
+            </li>
+            <li class="page-item page-num page-start active">
+              <a class="page-link" href="#pagination">1</a>
+            </li>
+            <li class="page-item page-num">
+              <a class="page-link" href="#pagination">2</a>
+            </li>
+            <li class="page-item page-num page-end">
+              <a class="page-link" href="#pagination">3</a>
+            </li>
+            <li class="page-item page-right">
+              <a class="page-link" href="#pagination" aria-disabled="true">→</a>
+            </li>
+          </ul>
+          <br />
+          <textarea class="showcase" rows="23" readonly>
+            <ul class="pagination">
+              <li class="page-item page-left disabled">
+                <a
+                  class="page-link"
+                  href="#pagination"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >←</a
+                >
+              </li>
+              <li class="page-item page-num page-start active">
+                <a class="page-link" href="#pagination">1</a>
+              </li>
+              <li class="page-item page-num">
+                <a class="page-link" href="#pagination">2</a>
+              </li>
+              <li class="page-item page-num page-end">
+                <a class="page-link" href="#pagination">3</a>
+              </li>
+              <li class="page-item page-right">
+                <a class="page-link" href="#pagination" aria-disabled="true">→</a>
+              </li>
+            </ul>
+          </textarea>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-12 py-4">
-          <h4>Icon</h4>
+          <!-- C -->
+          <h4>搜尋欄</h4>
+          <p>搜尋欄(大)</p>
+
+          <div class="search-box">
+            <form class="d-flex search-bar">
+              <div class="select-list">
+                <div class="select-btn selected" value="bookstore">
+                  <div class="select-text">
+                    書城&ensp;<i class="fas fa-caret-down"></i>
+                  </div>
+                </div>
+                <div class="select-box d-none">
+                  <div class="select-btn used-books" name="usedBooks" value="usedBooks">
+                    <div class="used-books-text">
+                      二手書
+                    </div>
+                  </div>
+                  <div class="select-btn bookstore" name="bookstore" value="bookstore">
+                    <div class="bookstore-text">
+                      書城
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <input class="search-input" id="search-input" placeholder="搜尋"></input>
+        
+              <button type="submit" class="btn btn-dark search-submit" id="search-submit"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+        
+          <textarea class="showcase" rows="25" readonly>
+            <div class="search-box">
+              <form class="d-flex search-bar">
+                <div class="select-list">
+                  <div class="select-btn selected" value="bookstore">
+                    <div class="select-text">
+                      書城&ensp;<i class="fas fa-caret-down"></i>
+                    </div>
+                  </div>
+                  <div class="select-box d-none">
+                    <div class="select-btn used-books" name="usedBooks" value="usedBooks">
+                      <div class="used-books-text">
+                        二手書
+                      </div>
+                    </div>
+                    <div class="select-btn bookstore" name="bookstore" value="bookstore">
+                      <div class="bookstore-text">
+                        書城
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <input class="search-input" id="search-input" placeholder="搜尋"></input>
+
+                <button type="submit" class="btn btn-dark search-submit" id="search-submit"><i class="fas fa-search"></i></button>
+              </form>
+            </div>
+          </textarea>
+          <br>
+          <br>
+          <p>搜尋欄(小)</p>
+          <div class="search-box-m">
+            <form class="d-flex search-bar-m">
+              <div class="select-list-m select-list">
+                <div class="select-btn-m selected" value="bookstore">
+                  <div class="select-text select-text-m">
+                    書城&ensp;<i class="fas fa-caret-down"></i>
+                  </div>
+                </div>
+                <div class="select-box select-box-m d-none">
+                  <div class="select-btn-m used-books" name="usedBooks" value="usedBooks">
+                    <div class="used-books-text">
+                      二手書
+                    </div>
+                  </div>
+                  <div class="select-btn-m bookstore" name="bookstore" value="bookstore">
+                    <div class="bookstore-text">
+                      書城
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <input class="search-input-m" id="search-input" placeholder="搜尋"></input>
+        
+              <button type="submit" class="btn btn-dark search-submit-m" id="search-submit">
+                <i class="fas fa-search fa-search-m"></i>
+              </button>
+            </form>
+          </div>
+          <br>
+          <textarea class="showcase" rows="33" readonly>
+            <div class="search-box-m">
+              <form class="d-flex search-bar-m">
+                <div class="select-list-m select-list">
+                  <div class="select-btn-m selected" value="bookstore">
+                    <div class="select-text select-text-m">
+                      書城&ensp;<i class="fas fa-caret-down"></i>
+                    </div>
+                  </div>
+                  <div class="select-box select-box-m d-none">
+                    <div class="select-btn-m used-books" name="usedBooks" value="usedBooks">
+                      <div class="used-books-text">
+                        二手書
+                      </div>
+                    </div>
+                    <div class="select-btn-m bookstore" name="bookstore" value="bookstore">
+                      <div class="bookstore-text">
+                        書城
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+                <input class="search-input-m" id="search-input" placeholder="搜尋"></input>
+          
+                <button type="submit" class="btn btn-dark search-submit-m" id="search-submit">
+                  <i class="fas fa-search fa-search-m"></i>
+                </button>
+              </form>
+            </div>
+          </textarea>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-12 py-4">
-          <h4>共用圖片素材</h4>
+          <h4>左右slider</h4>
+          <h6>slider可調寬度</h6>
+        <div class="slider-aria d-flex">
+            <div class="slider"><a href="#">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            </div>
+            <div class="slider"><a href="#">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+
+        </div>
+        <textarea class="showcase" rows="11" readonly>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><i
+                                class="fas fa-exclamation-circle">&nbsp;&nbsp;&nbsp;互動視窗</i>
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                        </button>
+                    </div>
+                    <h5 class="modal-subtitle">訊息</h5>
+                    <div class="modal-body">
+                        <p> 而這些並不是完全重要，更加重要的問題是，我們可以很篤定的說，這需要花很多時間來嚴謹地論證。普魯塔克曾說過一句意義深遠的話，衡量人生的標準是看其是否有意義;
+                            而不是看其有多長。希望各位能用心體會這段話。honki似乎是一種巧合，但如果我們從一個更大的角度看待問題，這似乎是一種不可避免的事實。
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-danger">新增</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </textarea>
+
+
+    <!-- Modal互動視窗 -->
+    <h4>Modal互動視窗</h4>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+        點我
+    </button>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><i
+                            class="fas fa-exclamation-circle">&nbsp;&nbsp;&nbsp;互動視窗</i>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                </div>
+                <h5 class="modal-subtitle">訊息</h5>
+                <div class="modal-body">
+                    <p> 而這些並不是完全重要，更加重要的問題是，我們可以很篤定的說，這需要花很多時間來嚴謹地論證。普魯塔克曾說過一句意義深遠的話，衡量人生的標準是看其是否有意義;
+                        而不是看其有多長。希望各位能用心體會這段話。honki似乎是一種巧合，但如果我們從一個更大的角度看待問題，這似乎是一種不可避免的事實。
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-danger">新增</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <textarea class="showcase" rows="27" readonly>
+      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+        點我
+      </button>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><i
+                            class="fas fa-exclamation-circle">&nbsp;&nbsp;&nbsp;互動視窗</i>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                </div>
+                <h5 class="modal-subtitle">訊息</h5>
+                <div class="modal-body">
+                    <p> 而這些並不是完全重要，更加重要的問題是，我們可以很篤定的說，這需要花很多時間來嚴謹地論證。普魯塔克曾說過一句意義深遠的話，衡量人生的標準是看其是否有意義;
+                        而不是看其有多長。希望各位能用心體會這段話。honki似乎是一種巧合，但如果我們從一個更大的角度看待問題，這似乎是一種不可避免的事實。
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-danger">新增</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </textarea>
+
+    <!-- 麵包屑rwd手機版 字12px -->
+    <h4>麵包屑</h4>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-honki active" aria-current="page">首頁</li>
+        </ol>
+    </nav>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-honki"><a href="#">首頁</a></li>
+            <li class="active" aria-current="page">二手交換</li>
+        </ol>
+    </nav>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-honki"><a href="#">首頁</a></li>
+            <li class="breadcrumb-honki"><a href="#">二手交換</a></li>
+            <li class="breadcrumb-honki active" aria-current="page">一般交換</li>
+        </ol>
+    </nav>
+    <textarea class="showcase" rows="20" readonly>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-honki active" aria-current="page">首頁</li>
+        </ol>
+    </nav>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-honki"><a href="#">首頁</a></li>
+            <li class="active" aria-current="page">二手交換</li>
+        </ol>
+    </nav>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-honki"><a href="#">首頁</a></li>
+            <li class="breadcrumb-honki"><a href="#">二手交換</a></li>
+            <li class="breadcrumb-honki active" aria-current="page">一般交換</li>
+        </ol>
+    </nav>
+    </textarea>
+
         </div>
       </div>
 
@@ -227,7 +1050,10 @@
               <tr>
                 <td>2021/01/31</td>
                 <td>老翰</td>
-                <td>應該是解了這個 navbar-mobile script 跑不出的問題。（寫 JS 檢查元件出現後才執行 jQuery 的 script ）</td>
+                <td>
+                  應該是解了這個 navbar-mobile script 跑不出的問題。（寫 JS
+                  檢查元件出現後才執行 jQuery 的 script ）
+                </td>
               </tr>
             </tbody>
           </table>
@@ -262,24 +1088,23 @@
 
     <!-- Navbar script 之後再整個搞成js元件 -->
     <script>
-
       // 包在一個先去確認點擊到 document 的 function 裡，點下去的時候他會重新確認元素存不存在。這時候按鈕應該已經出現了，所以可以抓到。我想應該是這樣啦。 Hans
-      
+
       console.log(document.querySelector(".nav-burger"));
 
       // 檢查 nav-burger class 的元素出現後，才啟用 jQuery 設定的行為
       function checkBurger() {
         const navBurger = document.querySelector(".nav-burger");
-        if(!navBurger) {
+        if (!navBurger) {
           setTimeout(() => {
             checkBurger();
-          }, 500); 
+          }, 500);
           /* 每隔500 milliseconds會檢查一次 */
 
           console.log("等候中...");
         } else {
           /* do something*/
-          console.log(' nav-burger 元素出現');
+          console.log(" nav-burger 元素出現");
 
           $(".nav-burger").on("click", function () {
             $(".wrapper").toggleClass("active");
@@ -287,9 +1112,95 @@
             $("body").toggleClass("active");
             // $(this).siblings().toggleClass("d-none");
           });
-        }}
+        }
+      }
 
-        checkBurger();
+      checkBurger();
     </script>
+    <script>
+      // 分頁 Pagination 之 active 與disabled判斷
+      $(".page-num").on("click", function () {
+        $(".page-num").removeClass("active");
+        $(this).addClass("active");
+        const hasClass =
+          $(this).hasClass("page-start") || $(this).hasClass("page-end");
+        console.log(hasClass);
+        $(".page-item").removeClass("disabled");
+        if ($(".active").hasClass("page-start")) {
+          $(".page-left").addClass("disabled");
+        } else {
+          if ($(".active").hasClass("page-end")) {
+            $(".page-right").addClass("disabled");
+          } else {
+            $(".page-left").removeClass("disabled");
+          }
+        }
+      });
+
+      $(".page-right").on("click", function () {
+        const checkfunRight = $(".active").next().hasClass("page-right");
+        const checkfunRightNext = $(".active")
+          .next()
+          .next()
+          .hasClass("page-right");
+        if (!checkfunRight === true) {
+          $(".page-item").removeClass("disabled");
+          $(".active").removeClass("active").next().addClass("active");
+          if (checkfunRightNext === true) {
+            $(".active").next().addClass("disabled");
+          }
+        }
+      });
+      $(".page-left").on("click", function () {
+        const checkfunLeft = $(".active").prev().hasClass("page-left");
+        const checkfunLeftNext = $(".active")
+          .prev()
+          .prev()
+          .hasClass("page-left");
+        if (!checkfunLeft === true) {
+          $(".page-item").removeClass("disabled");
+          $(".active").removeClass("active").prev().addClass("active");
+          if (checkfunLeftNext === true) {
+            $(".active").prev().addClass("disabled");
+          }
+        }
+      });
+    </script>
+      <script>
+      // 搜尋欄下拉式選單
+        $(".selected").click(function () {
+          const hasClass = $(".select-box").hasClass("d-none");
+          console.log(hasClass);
+          if (hasClass === true) {
+            $(".select-box").removeClass("d-none")
+          } else {
+            $(".select-box").addClass("d-none")
+          }
+        });
+    
+        $(".used-books").click(function () {
+          const usedBookBtn = $(".used-books-text").html();
+          const hasClass = $(".select-box").hasClass("d-none");
+          $(".select-text").html(usedBookBtn + `&ensp;<i class="fas fa-caret-down"></i>`);
+          console.log(hasClass);
+          if (hasClass === true) {
+            $(".select-box").removeClass("d-none")
+          } else {
+            $(".select-box").addClass("d-none")
+          }
+        });
+    
+        $(".bookstore").click(function () {
+          const bookstoreBtn = $(".bookstore-text").html();
+          const hasClass = $(".select-box").hasClass("d-none");
+          $(".select-text").html(bookstoreBtn + `&ensp;<i class="fas fa-caret-down"></i>`);
+          console.log(hasClass);
+          if (hasClass === true) {
+            $(".select-box").removeClass("d-none")
+          } else {
+            $(".select-box").addClass("d-none")
+          }
+        });
+      </script>
   </body>
 </html>

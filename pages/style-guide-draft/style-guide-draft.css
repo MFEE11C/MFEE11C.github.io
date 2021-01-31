@@ -18,6 +18,14 @@ pre > code {
   word-wrap: normal;
 }
 
+textarea.showcase {
+  width: 100%;
+  resize: none;
+  margin-top: 20px;
+}
+textarea.showcase:focus {
+  outline: none;
+}
 /* Color */
 
 .honki-red {
