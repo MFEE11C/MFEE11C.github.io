@@ -128,40 +128,47 @@ https://www.codeply.com/go/NKtDpPXv2x */
       padding: 0 6px;
     }
 
-    .radio-item input[type='radio'] {
+    .radio-item input[type="radio"] {
       display: none;
     }
 
     .radio-item label {
+      display: flex;
       color: #666;
       font-weight: normal;
+      text-align: center;
+      align-items: center;
+    }
 
+    .radio-center {
+      display: flex;
+      align-items: center;
     }
 
     .radio-item label:before {
       content: " ";
-      display: inline-block;
+      display: flex;
       position: relative;
       margin: 0 5px 0 0;
-      width: 12px;
-      height: 12px;
-      border-radius: 11px;
+      width: 14px;
+      height: 14px;
+      border-radius: 7px;
       border: 1px solid #303030;
       background-color: transparent;
-
+      text-align: center;
+      align-items: center;
     }
 
-    .radio-item input[type=radio]:checked+label:after {
-      border-radius: 11px;
-      width: 6px;
-      height: 6px;
+    .radio-item input[type="radio"]:checked+label:after {
+      border-radius: 4px;
+      width: 8px;
+      height: 8px;
       position: absolute;
-      top: 10px;
+      top: 33.3333%;
       left: 9px;
       content: " ";
       display: block;
       background: #303030;
-
     }
 
     /* 分頁css */
@@ -278,16 +285,8 @@ https://www.codeply.com/go/NKtDpPXv2x */
         margin-top: 8px
       }
 
-      .radio-item input[type=radio]:checked+label:after {
-        border-radius: 11px;
-        width: 6px;
-        height: 6px;
-        position: absolute;
-        top: 5px;
-        left: 9px;
-        content: " ";
-        display: block;
-        background: #303030;
+      .radio-item input[type="radio"]:checked+label:after {
+        top: 30%;
         /* 分頁css手機板 */
       }
 
@@ -406,7 +405,7 @@ https://www.codeply.com/go/NKtDpPXv2x */
       <div class="form-group ">
         <div class="formItems row">
           <label class="inputText col-5" for="exampleFormControlSelect1">性別</label>
-          <div class="col-7">
+          <div class="col-7 radio-center">
             <div class="form-check form-check-inline radio-item">
               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
               <label class="form-check-label" for="inlineRadio1">男</label>
