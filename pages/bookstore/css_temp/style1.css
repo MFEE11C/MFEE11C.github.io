@@ -5,6 +5,23 @@
   overflow: hidden;
 }
 
+.wei-grasshopper {
+  width: 48px;
+  transform: scaleX(-1);
+}
+
+.wei-bg-black:hover .wei-grasshopper {
+  animation: jump 1s ease-in infinite;
+}
+@keyframes jump {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: scale(3);
+  }
+}
+
 .wei-bookarea {
   width: 100%;
   margin-top: auto;
