@@ -114,6 +114,7 @@ body.active {
 }
 .wrapper.active {
   clip-path: circle(75%);
+  display: block;
   opacity: 1;
 }
 .nav-burger,
