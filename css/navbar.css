@@ -85,6 +85,11 @@ body.active {
   position: relative;
   margin-left: 12px;
 }
+@media (max-width: 330px) {
+  .nav-mobile-link {
+    margin-left: 6px;
+  }
+}
 /* 圓圓icon大小 */
 .nav-mobile-link svg {
   height: 48px;
