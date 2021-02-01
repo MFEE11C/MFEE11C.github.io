@@ -1,27 +1,61 @@
+.wei-body {
+  padding-top: 0;
+}
 .wei-bg-black {
   background: url("/images/style-guide/bg_noise.png") var(--honki-black);
-  height: 480px;
+  height: 80vh;
   position: relative;
   overflow: hidden;
 }
 
-.wei-grasshopper {
-  width: 48px;
+.wei-bg-black::before {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 45px;
+  background-image: url("/pages/bookstore/images_temp/cricket.svg");
+  background-repeat: no-repeat;
+  position: absolute;
   transform: scaleX(-1);
+  top: calc(40vh - 73px);
+  left: calc(50% - 180px);
 }
-
-.wei-bg-black:hover .wei-grasshopper {
-  animation: jump 1s ease-in infinite;
+.wei-bg-black:hover.wei-bg-black::before {
+  animation: jump 2s infinite;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
 }
 @keyframes jump {
   0% {
-    transform: translate(0, 0);
+    transform: scale(-1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(-1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(-0.9, 1.1) translateY(-100px);
   }
   50% {
-    transform: scale(3);
+    transform: scale(-1.05, 0.95) translateY(0);
+  }
+  57% {
+    transform: scale(-1, 1) translateY(-5px);
+  }
+  64% {
+    transform: scale(-1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(-1, 1) translateY(0);
   }
 }
-
+.wei-searcharea {
+  height: 50%;
+}
+.wei-search-box {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
 .wei-bookarea {
   width: 100%;
   margin-top: auto;
@@ -113,9 +147,24 @@
   background: url("/images/style-guide/bg_noise.png") #564030;
 }
 
+/* breadcrumb */
+.wei-breadcrumb {
+  margin-left: 57px;
+  padding: 0;
+  margin-bottom: 0;
+}
+/* button group */
+.wei-button-group {
+  margin-right: 57px;
+}
 /* card */
 .wei-card {
-  margin-top: 2rem;
+  margin-top: 5rem;
+}
+@media (min-width: 1200px) {
+  .wei-card {
+    padding: 0 40px;
+  }
 }
 
 .wei-card-pic {
@@ -125,6 +174,21 @@
   padding: 40px 20px;
   /* height: 240px; */
   width: 100%;
+  transition: all 0.5s;
+}
+.wei-card:hover .wei-card-icon {
+  transform: translateX(-2rem);
+  opacity: 0;
+}
+.wei-card:hover .wei-card-pic {
+  background: url("/images/style-guide/bg_noise.png");
+}
+.wei-card:hover .wei-card-pic img {
+  transform: scale(1.2);
+}
+.wei-card:hover .wei-heart-bg {
+  right: 3%;
+  opacity: 1;
 }
 
 .wei-book-pic img {
@@ -132,8 +196,10 @@
   object-fit: contain;
   -webkit-filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.2));
   filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.2));
+  transition: all 0.5s;
 }
 .wei-card-icon {
+  z-index: 1;
   width: 48px;
   height: 48px;
   position: absolute;
@@ -146,6 +212,32 @@
   text-align: center;
   font-family: abel, sans-serif;
   font-size: 13px;
+  transition: all 0.5s;
+}
+@media (min-width: 1200px) {
+  .wei-card-icon {
+    left: 64px;
+  }
+}
+.wei-heart-bg {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -3%;
+  width: 12%;
+  height: 40%;
+  border-radius: 1rem 0 0 1rem;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.wei-heart {
+  font-size: 1rem;
+  color: grey;
+  cursor: pointer;
 }
 .wei-book-text {
   margin-top: 20px;
@@ -159,11 +251,29 @@
   font-size: 14px;
 }
 .wei-book-author {
-  font-size: 12px;
-  color: #707070;
+  font-size: 14px;
+  color: #afafaf;
 }
 .wei-book-price {
-  font-size: 16px;
+  font-size: 18px;
   text-align: right;
   font-weight: bold;
+}
+.wei-categories {
+  margin-top: 5rem;
+}
+.wei-categories-title {
+  margin-bottom: 3rem;
+}
+
+.wei-category {
+  list-style-type: none;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+/* pagination */
+.wei-pagination {
+  margin-bottom: 192px;
+  margin-top: 110px;
 }

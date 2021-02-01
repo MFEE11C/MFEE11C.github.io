@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HONKI模板</title>
+    <!-- 設定 icon 圖片 -->
+    <link rel="icon" href="/images/style-guide/logo.svg" />
 
     <!-- Bootstrap 4 與 Font Awesome 5 -->
     <link rel="stylesheet" href="/bootstrap-4.5.3-dist/css/bootstrap.css" />
@@ -27,7 +29,7 @@
     <link rel="stylesheet" href="./css_temp/style1.css" />
   </head>
 
-  <body>
+  <body class="wei-body">
     <!-- JS 導入 navbar 模板 -->
     <div id="navbarTemp"></div>
 
@@ -35,10 +37,36 @@
     <div class="container-fluid">
       <div class="row wei-bg-black">
         <div class="col-12 wei-searcharea">
-          <div class="wei-grasshopper">
+          <!-- <div class="wei-grasshopper">
             <img src="./images_temp/cricket.svg" class="w-100" alt="" />
+          </div> -->
+          <div class="search-box wei-search-box">
+              <form class="d-flex search-bar">
+                <div class="select-list">
+                  <div class="select-btn selected" value="bookstore">
+                    <div class="select-text">
+                      書城 <i class="fas fa-caret-down"></i>
+                    </div>
+                  </div>
+                  <div class="select-box d-none">
+                    <div class="select-btn used-books" name="usedBooks" value="usedBooks">
+                      <div class="used-books-text">
+                        二手書
+                      </div>
+                    </div>
+                    <div class="select-btn bookstore" name="bookstore" value="bookstore">
+                      <div class="bookstore-text">
+                        書城
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <input class="search-input" id="search-input" placeholder="搜尋"></input>
+
+                <button type="submit" class="btn btn-dark search-submit" id="search-submit"><i class="fas fa-search"></i></button>
+              </form>
           </div>
-          <div class="wei-searchbar"></div>
           <div class="wei-hotsearch"></div>
         </div>
         <div class="col-12 wei-bookarea">
@@ -112,26 +140,58 @@
         <div class="col-12 wei-bookshelf"></div>
       </div>
     </div>
-    <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="d-none d-lg-block col-2">
-          <div class="wei-menu">
-            <div class="wei-category-title">
-              <ul></ul>
-            </div>
+    <div class="container-fluid my-5">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-6">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb wei-breadcrumb">
+                <li class="breadcrumb-honki"><a href="#">首頁</a></li>
+                <li class="active" aria-current="page">所有商品</li>
+            </ol>
+        </nav>
+        </div>
+        <div class="col-6 d-flex justify-content-end">
+          <div class="wei-button-group">
+            <button class="btn-rounded-dark mr-3">出版日期</button>
+            <button class="btn-rounded-dark mr-3"><i class="fas fa-list-ul"></i></button>
+            <button class="btn-rounded-dark"><i class="fas fa-th-large"></i></button>
           </div>
         </div>
-        <div class="col-11 col-lg-9">
+      </div>
+      <div class="row justify-content-center">
+        <div class="d-none d-lg-block col-2">
+          <div class="wei-categories">
+            <h6 class="wei-categories-title">書籍分類</h6>
+              <ul>
+                <li class="wei-category">生活風格</li>
+                <li class="wei-category">文學小說</li>
+                <li class="wei-category">商業理財</li>
+                <li class="wei-category">藝術設計</li>
+                <li class="wei-category">心理勵志</li>
+                <li class="wei-category">輕小說 漫畫</li>
+                <li class="wei-category">語言考試</li>
+                <li class="wei-category">親子教養</li>
+                <li class="wei-category">旅遊</li>
+                <li class="wei-category">飲食</li>
+                <li class="wei-category">童書</li>
+                <li class="wei-category">外文書</li>
+              </ul>
+          </div>
+        </div>
+        <div class="col-11 col-lg-10 col-xl-9">
           <div class="row">
             <div class="col-6 col-sm-6 col-md-4 col-lg-3 wei-card">
               <div class="wei-card-icon">NEW</div>
-              <div class="wei-card-pic">
+              <div class="wei-card-pic position-relative">
                 <div class="wei-book-pic">
                   <img
                     class="w-100"
                     src="/images/books/5ffd7ab5a282a.jpg"
                     alt=""
                   />
+                </div>
+                <div class="wei-heart-bg">
+                  <i class="fas fa-heart wei-heart"></i>
                 </div>
               </div>
               <div class="wei-book-text">
@@ -144,13 +204,16 @@
             </div>
             <div class="col-6 col-sm-6 col-md-4 col-lg-3 wei-card">
               <div class="wei-card-icon">NEW</div>
-              <div class="wei-card-pic">
+              <div class="wei-card-pic position-relative">
                 <div class="wei-book-pic">
                   <img
                     class="w-100"
                     src="/images/books/5ffd7ab5a282a.jpg"
                     alt=""
                   />
+                </div>
+                <div class="wei-heart-bg">
+                  <i class="fas fa-heart wei-heart"></i>
                 </div>
               </div>
               <div class="wei-book-text">
@@ -163,13 +226,16 @@
             </div>
             <div class="col-6 col-sm-6 col-md-4 col-lg-3 wei-card">
               <div class="wei-card-icon">NEW</div>
-              <div class="wei-card-pic">
+              <div class="wei-card-pic position-relative">
                 <div class="wei-book-pic">
                   <img
                     class="w-100"
                     src="/images/books/5ffd7ab5a282a.jpg"
                     alt=""
                   />
+                </div>
+                <div class="wei-heart-bg">
+                  <i class="fas fa-heart wei-heart"></i>
                 </div>
               </div>
               <div class="wei-book-text">
@@ -182,13 +248,38 @@
             </div>
             <div class="col-6 col-sm-6 col-md-4 col-lg-3 wei-card">
               <div class="wei-card-icon">NEW</div>
-              <div class="wei-card-pic">
+              <div class="wei-card-pic position-relative">
                 <div class="wei-book-pic">
                   <img
                     class="w-100"
                     src="/images/books/5ffd7ab5a282a.jpg"
                     alt=""
                   />
+                </div>
+                <div class="wei-heart-bg">
+                  <i class="fas fa-heart wei-heart"></i>
+                </div>
+              </div>
+              <div class="wei-book-text">
+                <p class="wei-book-title">
+                  婚禮之途: 美學大師約翰．伯格在生命流動中見證永恆的小說
+                </p>
+                <p class="wei-book-author">約翰．伯格</p>
+                <div class="wei-book-price">$300</div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 wei-card">
+              <div class="wei-card-icon">NEW</div>
+              <div class="wei-card-pic position-relative">
+                <div class="wei-book-pic">
+                  <img
+                    class="w-100"
+                    src="/images/books/5ffd7ab5a282a.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="wei-heart-bg">
+                  <i class="fas fa-heart wei-heart"></i>
                 </div>
               </div>
               <div class="wei-book-text">
@@ -200,6 +291,33 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="row justify-content-end ">
+        <div class="col-11 col-lg-10 col-xl-9">
+          <ul class="pagination wei-pagination">
+            <li class="page-item page-left disabled">
+              <a
+                class="page-link"
+                href="#pagination"
+                tabindex="-1"
+                aria-disabled="true"
+                >←</a
+              >
+            </li>
+            <li class="page-item page-num page-start active">
+              <a class="page-link" href="#pagination">1</a>
+            </li>
+            <li class="page-item page-num">
+              <a class="page-link" href="#pagination">2</a>
+            </li>
+            <li class="page-item page-num page-end">
+              <a class="page-link" href="#pagination">3</a>
+            </li>
+            <li class="page-item page-right">
+              <a class="page-link" href="#pagination" aria-disabled="true">→</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
