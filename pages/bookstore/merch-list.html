@@ -16,13 +16,15 @@
     />
 
     <!-- 導入 navbar 與 footer 的 script -->
-    <script src="/js/navfoot-v1.js" type="text/javascript" defer></script>
+    <script src="/js/navfoot.js" type="text/javascript" defer></script>
 
     <!-- 導入全組通用css -->
     <link rel="stylesheet" href="/css/style.css" />
-    
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+
     <!-- temp css wei -->
-    <link rel="stylesheet" href="./css_temp/style.css">
+    <link rel="stylesheet" href="./css_temp/style1.css" />
   </head>
 
   <body>
@@ -30,274 +32,173 @@
     <div id="navbarTemp"></div>
 
     <!-- 頁面內容 start -->
-    <div class="container">
-      <div class="row mt-5 justify-content-center">
-          <div class="col-12">
-            <h5>動態效果a</h5>
-          </div>
-          <div class="col-8 col-sm-6 col-md-4 col-lg-3">
-            <div class="card card-wei">
-                <div class="book-pic-wei text-center">
-                    <div class="badge-wei new-wei">NEW</div>
-                    <a href="#">
-                        <img src="./images_temp/5fe40d0e7148e.png" alt="">
-                    </a>
-                    <div class="heart-bg-wei">
-                        <div class="heart-wei">
-                            <i class="fas fa-heart"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <h6 class="card-title"><strong>死神的浮力</strong></h6>
-                    <div class="d-flex justify-content-between">
-                        <p class="card-text author">伊坂幸太郎</p>
-                        <p class="card-text final_price">NT$ 450</p>
-                    </div>
-                </div>
+    <div class="container-fluid">
+      <div class="row wei-bg-black">
+        <div class="col-12 wei-searcharea">
+          <div class="wei-grasshopper"></div>
+          <div class="wei-searchbar"></div>
+          <div class="wei-hotsearch"></div>
+        </div>
+        <div class="col-12 wei-bookarea">
+          <div class="wei-books mx-auto">
+            <!-- 1 -->
+            <div class="wei-book">
+              <img class="w-100" src="/images/books/5fe1e6b4a812e.png" alt="" />
+            </div>
+            <!-- 2 -->
+            <div class="wei-book">
+              <img class="w-100" src="/images/books/5ffd774fed874.jpg" alt="" />
+            </div>
+            <!-- 3 -->
+            <div class="wei-book">
+              <img class="w-100" src="/images/books/5fe1e25e7712a.png" alt="" />
+            </div>
+            <!-- 4 -->
+            <div class="wei-book">
+              <img class="w-100" src="/images/books/5ffd4315e718e.png" alt="" />
+            </div>
+            <!-- 5 -->
+            <div class="wei-book">
+              <img class="w-100" src="/images/books/5ffd76f536e17.jpg" alt="" />
+            </div>
+            <!-- 6 -->
+            <div class="wei-book">
+              <img class="w-100" src="/images/books/5fe1ece65a1ed.jpg" alt="" />
+            </div>
+            <!-- 7 -->
+            <div class="wei-book">
+              <img class="w-100" src="/images/books/5fe2b8f3e050e.jpg" alt="" />
+            </div>
+            <!-- 8 -->
+            <div class="wei-book">
+              <img class="w-100" src="/images/books/5ffd494742e81.jpg" alt="" />
+            </div>
+            <!-- 9 -->
+            <div class="wei-book">
+              <img class="w-100" src="/images/books/5ffd8432b6bea.png" alt="" />
+            </div>
+            <!-- 10 -->
+            <div class="wei-book">
+              <img class="w-100" src="/images/books/5fe424a314978.png" alt="" />
+            </div>
+            <!-- 11 -->
+            <div class="wei-book">
+              <img class="w-100" src="/images/books/5fe3efd8f1856.jpg" alt="" />
+            </div>
+            <!-- 12 -->
+            <div class="wei-book">
+              <img class="w-100" src="/images/books/5ff2c60b2dd5d.jpg" alt="" />
+            </div>
+            <!-- 13 -->
+            <div class="wei-book">
+              <img class="w-100" src="/images/books/5ffd6044c062c.jpg" alt="" />
+            </div>
+            <!-- 14 -->
+            <div class="wei-book">
+              <img class="w-100" src="/images/books/5fe44c4c1f286.png" alt="" />
+            </div>
+            <!-- 15 -->
+            <div class="wei-book">
+              <img class="w-100" src="/images/books/5fe4544c89b6f.jpg" alt="" />
+            </div>
+            <!-- 16 -->
+            <div class="wei-book">
+              <img class="w-100" src="/images/books/5fe47b1418006.png" alt="" />
             </div>
           </div>
-          <div class="col-8 col-sm-6 col-md-4 col-lg-3">
-            <div class="card card-wei">
-                <div class="book-pic-wei text-center">
-                    <div class="badge-wei new-wei">NEW</div>
-                    <a href="#">
-                        <img src="./images_temp/5fe30a4524730.png" alt="">
-                    </a>
-                    <div class="heart-bg-wei">
-                        <div class="heart-wei">
-                            <i class="fas fa-heart"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <h6 class="card-title"><strong>死神的浮力</strong></h6>
-                    <div class="d-flex justify-content-between">
-                        <p class="card-text author">伊坂幸太郎</p>
-                        <p class="card-text final_price">NT$ 450</p>
-                    </div>
-                </div>
+        </div>
+        <div class="col-12 wei-bookshelf"></div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="d-none d-lg-block col-2">
+          <div class="wei-menu">
+            <div class="wei-category-title">
+              <ul></ul>
             </div>
           </div>
-          <div class="col-8 col-sm-6 col-md-4 col-lg-3">
-            <div class="card card-wei">
-                <div class="book-pic-wei text-center">
-                    <a href="#">
-                        <img src="./images_temp/5fe47b6eed6b5.png" alt="">
-                    </a>
-                    <div class="heart-bg-wei">
-                        <div class="heart-wei">
-                            <i class="fas fa-heart"></i>
-                        </div>
-                    </div>
+        </div>
+        <div class="col-11 col-lg-9">
+          <div class="row">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 wei-card">
+              <div class="wei-card-icon">NEW</div>
+              <div class="wei-card-pic">
+                <div class="wei-book-pic">
+                  <img
+                    class="w-100"
+                    src="/images/books/5ffd7ab5a282a.jpg"
+                    alt=""
+                  />
                 </div>
-                <div class="card-body">
-                    <h6 class="card-title"><strong>死神的浮力</strong></h6>
-                    <div class="d-flex justify-content-between">
-                        <p class="card-text author">伊坂幸太郎</p>
-                        <p class="card-text final_price">NT$ 450</p>
-                    </div>
+              </div>
+              <div class="wei-book-text">
+                <p class="wei-book-title">
+                  婚禮之途: 美學大師約翰．伯格在生命流動中見證永恆的小說
+                </p>
+                <p class="wei-book-author">約翰．伯格</p>
+                <div class="wei-book-price">$300</div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 wei-card">
+              <div class="wei-card-icon">NEW</div>
+              <div class="wei-card-pic">
+                <div class="wei-book-pic">
+                  <img
+                    class="w-100"
+                    src="/images/books/5ffd7ab5a282a.jpg"
+                    alt=""
+                  />
                 </div>
+              </div>
+              <div class="wei-book-text">
+                <p class="wei-book-title">
+                  婚禮之途: 美學大師約翰．伯格在生命流動中見證永恆的小說
+                </p>
+                <p class="wei-book-author">約翰．伯格</p>
+                <div class="wei-book-price">$300</div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 wei-card">
+              <div class="wei-card-icon">NEW</div>
+              <div class="wei-card-pic">
+                <div class="wei-book-pic">
+                  <img
+                    class="w-100"
+                    src="/images/books/5ffd7ab5a282a.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="wei-book-text">
+                <p class="wei-book-title">
+                  婚禮之途: 美學大師約翰．伯格在生命流動中見證永恆的小說
+                </p>
+                <p class="wei-book-author">約翰．伯格</p>
+                <div class="wei-book-price">$300</div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 wei-card">
+              <div class="wei-card-icon">NEW</div>
+              <div class="wei-card-pic">
+                <div class="wei-book-pic">
+                  <img
+                    class="w-100"
+                    src="/images/books/5ffd7ab5a282a.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="wei-book-text">
+                <p class="wei-book-title">
+                  婚禮之途: 美學大師約翰．伯格在生命流動中見證永恆的小說
+                </p>
+                <p class="wei-book-author">約翰．伯格</p>
+                <div class="wei-book-price">$300</div>
+              </div>
             </div>
           </div>
-          <div class="col-8 col-sm-6 col-md-4 col-lg-3">
-            <div class="card card-wei">
-                <div class="book-pic-wei text-center">
-                    <a href="#">
-                        <img src="./images_temp/5fe47db48384c.png" alt="">
-                    </a>
-                    <div class="heart-bg-wei">
-                        <div class="heart-wei">
-                            <i class="fas fa-heart"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <h6 class="card-title"><strong>死神的浮力</strong></h6>
-                    <div class="d-flex justify-content-between">
-                        <p class="card-text author">伊坂幸太郎</p>
-                        <p class="card-text final_price">NT$ 450</p>
-                    </div>
-                </div>
-            </div>
-          </div>
-          <div class="col-8 col-sm-6 col-md-4 col-lg-3">
-            <div class="card card-wei">
-                <div class="book-pic-wei text-center">
-                    <a href="#">
-                        <img src="./images_temp/5fe4130530384.jpg" alt="">
-                    </a>
-                    <div class="heart-bg-wei">
-                        <div class="heart-wei">
-                            <i class="fas fa-heart"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <h6 class="card-title"><strong>死神的浮力</strong></h6>
-                    <div class="d-flex justify-content-between">
-                        <p class="card-text author">伊坂幸太郎</p>
-                        <p class="card-text final_price">NT$ 450</p>
-                    </div>
-                </div>
-            </div>
-          </div>
-          <div class="col-8 col-sm-6 col-md-4 col-lg-3">
-            <div class="card card-wei">
-                <div class="book-pic-wei text-center">
-                    <div class="badge-wei sale-wei">SALE</div>
-                    <a href="#">
-                        <img src="./images_temp/5fe5421120524.png" alt="">
-                    </a>
-                    <div class="heart-bg-wei">
-                        <div class="heart-wei">
-                            <i class="fas fa-heart"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <h6 class="card-title"><strong>死神的浮力</strong></h6>
-                    <div class="d-flex justify-content-between">
-                        <p class="card-text author">伊坂幸太郎</p>
-                        <p class="card-text final_price">NT$ 450</p>
-                    </div>
-                </div>
-            </div>
-          </div>
-          <div class="col-8 col-sm-6 col-md-4 col-lg-3">
-            <div class="card card-wei">
-                <div class="book-pic-wei text-center">
-                    <div class="badge-wei sale-wei">SALE</div>
-                    <a href="#">
-                        <img src="./images_temp/5fe422ca006c3.jpg" alt="">
-                    </a>
-                    <div class="heart-bg-wei">
-                        <div class="heart-wei">
-                            <i class="fas fa-heart"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <h6 class="card-title"><strong>死神的浮力</strong></h6>
-                    <div class="d-flex justify-content-between">
-                        <p class="card-text author">伊坂幸太郎</p>
-                        <p class="card-text final_price">NT$ 450</p>
-                    </div>
-                </div>
-            </div>
-          </div>
-          <div class="col-8 col-sm-6 col-md-4 col-lg-3">
-            <div class="card card-wei">
-                <div class="book-pic-wei text-center">
-                    <div class="badge-wei sale-wei">SALE</div>
-                    <a href="#">
-                        <img src="./images_temp/5fe422ca006c3.jpg" alt="">
-                    </a>
-                    <div class="heart-bg-wei">
-                        <div class="heart-wei">
-                            <i class="fas fa-heart"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <h6 class="card-title"><strong>死神的浮力</strong></h6>
-                    <div class="d-flex justify-content-between">
-                        <p class="card-text author">伊坂幸太郎</p>
-                        <p class="card-text final_price">NT$ 450</p>
-                    </div>
-                </div>
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div class="col-12">
-                  <h5>排版參考(書城)</h5>
-            </div>
-            <div class="col-12 col-md-6">
-                <img src="./images_temp/1.jpg" class="w-100" alt="">
-            </div>
-            <div class="col-12 col-md-6">
-                <img src="./images_temp/2.jpg" class="w-100" alt="">
-            </div>
-            <div class="col-12 col-md-6">
-                  <img src="./images_temp/3.jpg" class="w-100" alt="">
-            </div>
-            <div class="col-12 col-md-6">
-                <img src="./images_temp/4.jpg" class="w-100" alt="">
-            </div>
-            <div class="col-12 col-md-6">
-                <img src="./images_temp/5.jpg" class="w-100" alt="">
-            </div>
-            <div class="col-12 col-md-6">
-                <img src="./images_temp/6.jpg" class="w-100" alt="">
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div class="col-12">
-                  <h5>排版參考(會員)</h5>
-            </div>
-            <div class="col-12 col-md-6">
-                <img src="./images_temp/U1.jpg" class="w-100" alt="">
-            </div>
-            <div class="col-12 col-md-6">
-                <img src="./images_temp/U2.jpg" class="w-100" alt="">
-            </div>
-            <div class="col-12 col-md-6">
-                  <img src="./images_temp/U3.jpg" class="w-100" alt="">
-            </div>
-            <div class="col-12 col-md-6">
-                <img src="./images_temp/U4.jpg" class="w-100" alt="">
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div class="col-12">
-                  <h5>排版參考(購物車)</h5>
-            </div>
-            <div class="col-12 col-md-6">
-                <img src="./images_temp/C1.jpg" class="w-100" alt="">
-            </div>
-            <div class="col-12 col-md-6">
-                <img src="./images_temp/C2.jpg" class="w-100" alt="">
-            </div>
-            <div class="col-12 col-md-6">
-                  <img src="./images_temp/C3.jpg" class="w-100" alt="">
-            </div>
-            <div class="col-12 col-md-6">
-                <img src="./images_temp/C4.jpg" class="w-100" alt="">
-            </div>
-            <div class="col-12 col-md-6">
-                <img src="./images_temp/C-end.jpg" class="w-100" alt="">
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div class="col-12">
-                  <h5>排版參考(Landing Page)</h5>
-            </div>
-            <div class="col-12 col-md-6">
-                <img src="./images_temp/L1.jpg" class="w-100" alt="">
-            </div>
-            <div class="col-12 col-md-6">
-                <img src="./images_temp/L2.jpg" class="w-100" alt="">
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div class="col-12">
-                  <h5>排版參考(活動)</h5>
-            </div>
-            <div class="col-12 col-md-6">
-                <img src="./images_temp/7.jpg" class="w-100" alt="">
-            </div>
-            <div class="col-12 col-md-6">
-                <img src="./images_temp/8.jpg" class="w-100" alt="">
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div class="col-12">
-                  <h5>排版參考(企劃書哈哈哈)</h5>
-            </div>
-            <div class="col-12">
-                <img src="./images_temp/presentation.jpg" class="w-100" alt="">
-            </div>
-          </div>
+        </div>
       </div>
     </div>
     <!-- 頁面內容 end -->
@@ -308,20 +209,7 @@
     <!-- Bootstrap 4 JS 與 jQuery 3 -->
     <script src="/js/jquery-3.5.1.js"></script>
     <script src="/bootstrap-4.5.3-dist/js/bootstrap.bundle.js"></script>
-    <script>
-        $('.book-pic-wei').hover(function(){
-            $(this).find('.badge-wei').css('transform','translateX(-2rem)').css('opacity','0');
-            $(this).find('img').css('transform','scale(1.2)');
-            $(this).find('.heart-bg-wei').css('transform','translateX(0)').css('opacity','1');
-        })
-        $('.book-pic-wei').mouseleave(function(){
-            $(this).find('.badge-wei').css('transform','translateX(0)').css('opacity','1');
-            $(this).find('img').css('transform','scale(1)');
-            $(this).find('.heart-bg-wei').css('transform','translateX(2rem)').css('opacity','0');
-        })
-        $('.heart-wei').on('click',function(){
-            $(this).toggleClass('hearted-wei');
-        });
-    </script>
+    <!-- 通用元件js -->
+    <script src="/js/index.js"></script>
   </body>
 </html>
