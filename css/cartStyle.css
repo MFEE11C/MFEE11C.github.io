@@ -1,6 +1,6 @@
 /* ////////////////////////////// */
 
-.cartContent {
+.aw-cartBackground-left {
   background-image: url(../images/cart/backgroundCut.svg);
 
   background-repeat: no-repeat;
@@ -8,4 +8,13 @@
   background-size: cover;
   height: 500px;
   max-width: 100%;
+  z-index: -1;
+}
+.aw-cartBackground-right {
+  z-index: -1;
+}
+.aw-cartContent {
+  position: absolute;
+  display: flex;
+  justify-content: center;
 }
