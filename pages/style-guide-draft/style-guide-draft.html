@@ -92,37 +92,48 @@
       </div>
     </div>
 
-    <div class="row d-flex justify-content-center">
+
+    <div class="d-flex justify-content-center">
+      <button class="btn-md-dark mt-3 d-flex justify-content-center" type="button" data-toggle="collapse" data-target="#colorTicketDesc" aria-expanded="false" aria-controls="colorTicketDesc">查看使用說明</button>
+    </div>
+    <div class="collapse" id="colorTicketDesc">
+
+    <div class="d-flex justify-content-center">
       <!-- Code card start -->
-      <div class="col-lg-8 mt-5 card">
+      <div class="col-lg-8 mt-3 card">
         <div class="card-body">
-          <h5 class="card-title">色碼使用說明</h5>
-          <p>
-            色碼已更新到共用的
-            <a href="https://github.com/honkibooks/honkibooks.github.io/blob/master/css/style.css">style.css</a>
-            ，可以如以下方式使用
-          </p>
-
-          <figure>
-            <figcaption>
-              以一個 80x80 的正方形為例，在 css 中引用已定好的顏色：
-            </figcaption>
-            <pre><code>
-.color-name-example1 {
-  width: 80px;
-  height: 80px;
-  border-radius: 5px;
-
-  background-color: var(--honki-red);
-}
-              </code></pre>
-          </figure>
-          <p>應用結果如下：</p>
-          <div class="color-name-example1"></div>
+          
+            <h5 class="card-title">色碼使用說明</h5>
+            <p>
+              色碼已更新到共用的
+              <a href="https://github.com/honkibooks/honkibooks.github.io/blob/master/css/style.css">style.css</a>
+              ，可以如以下方式使用
+            </p>
+  
+            <figure>
+              <figcaption>
+                以一個 80x80 的正方形為例，在 css 中引用已定好的顏色：
+              </figcaption>
+              <pre><code>
+  .color-name-example1 {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+  
+    background-color: var(--honki-red);
+  }
+                </code></pre>
+            </figure>
+            <p>應用結果如下：</p>
+            <div class="color-name-example1"></div>            
+          
         </div>
       </div>
       <!-- Code card end -->
     </div>
+    </div>
+
+    
 
     <div class="row">
       <div class="col-lg-12 py-4">
