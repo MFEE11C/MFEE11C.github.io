@@ -10,3 +10,16 @@
   --scontent--: 14px;
 }
 */
+
+/* 桌機版設定 */
+
+.solar-term-plate {
+  height: 715px;
+  width: 715px;
+
+  transform: translate(-81px, -165px);
+
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
