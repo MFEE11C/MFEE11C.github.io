@@ -101,40 +101,40 @@ https://codepen.io/ant1mas/pen/MeJjaK
   transform-origin: 100% 100%;
 }
 .slice:nth-child(1) {
-  transform: rotate(15deg) skewY(60deg);
+  transform: rotate(1deg) skewY(60deg);
 }
 .slice:nth-child(2) {
-  transform: rotate(45deg) skewY(60deg);
+  transform: rotate(31deg) skewY(60deg);
 }
 .slice:nth-child(3) {
-  transform: rotate(75deg) skewY(60deg);
+  transform: rotate(61deg) skewY(60deg);
 }
 .slice:nth-child(4) {
-  transform: rotate(105deg) skewY(60deg);
+  transform: rotate(91deg) skewY(60deg);
 }
 .slice:nth-child(5) {
-  transform: rotate(135deg) skewY(60deg);
+  transform: rotate(121deg) skewY(60deg);
 }
 .slice:nth-child(6) {
-  transform: rotate(165deg) skewY(60deg);
+  transform: rotate(151deg) skewY(60deg);
 }
 .slice:nth-child(7) {
-  transform: rotate(195deg) skewY(60deg);
+  transform: rotate(181deg) skewY(60deg);
 }
 .slice:nth-child(8) {
-  transform: rotate(225deg) skewY(60deg);
+  transform: rotate(211deg) skewY(60deg);
 }
 .slice:nth-child(9) {
-  transform: rotate(255deg) skewY(60deg);
+  transform: rotate(241deg) skewY(60deg);
 }
 .slice:nth-child(10) {
-  transform: rotate(285deg) skewY(60deg);
+  transform: rotate(271deg) skewY(60deg);
 }
 .slice:nth-child(11) {
-  transform: rotate(315deg) skewY(60deg);
+  transform: rotate(301deg) skewY(60deg);
 }
 .slice:nth-child(12) {
-  transform: rotate(345deg) skewY(60deg);
+  transform: rotate(331deg) skewY(60deg);
 }
 
 .slice-contents {
