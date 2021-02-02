@@ -67,7 +67,7 @@ https://codepen.io/ant1mas/pen/MeJjaK
   list-style: none;
 
   /* transform: translate(0px, 0px); */
-  /* transform: translate(-81px, -265px); */
+  transform: translate(-81px, -265px);
 }
 
 /* .solar-term-plate-v2:hover {
@@ -103,6 +103,7 @@ https://codepen.io/ant1mas/pen/MeJjaK
 }
 .slice:nth-child(1) {
   transform: rotate(1deg) skewY(60deg);
+  opacity: 0;
 }
 .slice:nth-child(2) {
   transform: rotate(31deg) skewY(60deg);
@@ -140,9 +141,9 @@ https://codepen.io/ant1mas/pen/MeJjaK
 .slice:nth-child(13) {
   transform: rotate(361deg) skewY(60deg);
 }
-.slice:nth-child(14) {
+/* .slice:nth-child(14) {
   transform: rotate(391deg) skewY(60deg);
-}
+} */
 
 .slice-contents {
   position: absolute;
@@ -151,12 +152,13 @@ https://codepen.io/ant1mas/pen/MeJjaK
   height: 200%;
   border-radius: 50%;
   background: var(--honki-black);
+  opacity: 70%;
 }
 .slice:first-child .slice-contents {
   transform: skewY(22.5deg); /* unskew slice contents */
 }
-/* 
-.slice:hover .slice-contents {
-  background: var(--honki-red);
+
+/* .slice:hover .slice-contents {
+  opacity: 0;
   transition: 0.5s;
-}  */
+} */
