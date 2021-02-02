@@ -9,7 +9,7 @@ body {
 }
 
 /* header start */
-.header {
+.yen-header {
   padding: 0;
   width: 100%;
   height: 100vh;
@@ -30,8 +30,6 @@ body {
 .yen-bg-img {
   width: 60%;
   height: 100vh;
-  /* background: rgb(255, 174, 0); */
-  /* opacity: 0.7; */
 }
 
 .yen-pics-right {
@@ -54,7 +52,7 @@ body {
   opacity: 0.5;
 }
 
-.yen-header-box {
+/* .yen-header-box {
   z-index: 10;
   position: absolute;
   left: 20%;
@@ -66,17 +64,190 @@ body {
 }
 
 .yen-header-text {
-  /* font-family: "Noto Sans CJK TC DemiLight"; */
   padding-left: 10%;
   margin-top: 3%;
   width: 80%;
   height: 80%;
   position: absolute;
+} */
+
+.yen-header-ladybug {
+  position: absolute;
+  bottom: -4%;
+  right: -4%;
+  width: 6%;
 }
 
 .yen-arrow-down {
   font-size: 80px;
+  z-index: 9;
   position: absolute;
-  bottom: 0px;
+  bottom: -8px;
   color: #fff;
+  padding-left: 50%;
+  animation: Updown 1s infinite alternate;
+}
+
+@keyframes Updown {
+  from {
+    bottom: -16px;
+  }
+  to {
+    bottom: -8px;
+  }
+}
+
+/* header media query */
+@media screen and (min-width: 992px) {
+  .yen-header-box {
+    z-index: 10;
+    position: absolute;
+    left: 20%;
+    right: 30%;
+    top: 22%;
+    bottom: 15%;
+    border: 8px solid #fff;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+  }
+
+  .yen-header-text {
+    padding-left: 10%;
+    margin-top: 3%;
+    width: 70%;
+    height: 70%;
+    position: absolute;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .yen-header-box {
+    z-index: 10;
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    top: 30%;
+    bottom: 30%;
+    border: 4px solid #fff;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+  }
+
+  .yen-header-text {
+    padding-left: 10%;
+    margin-top: 3%;
+    width: 80%;
+    position: absolute;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .yen-header-box {
+    z-index: 10;
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    top: 30%;
+    bottom: 30%;
+    border: 4px solid #fff;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+  }
+
+  .yen-header-text {
+    padding-left: 5%;
+    margin-top: 3%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+}
+
+@media (max-width: 575px) {
+  .yen-header-box {
+    z-index: 10;
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    top: 35%;
+    bottom: 40%;
+    border: 4px solid #fff;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+  }
+
+  .yen-header-text {
+    padding-left: 5%;
+    margin-top: 3%;
+    width: 85%;
+    height: 85%;
+    position: absolute;
+  }
+}
+/* header media query */
+/* header end */
+
+/* hot start */
+.yen-hot {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 72px;
+  height: 100vh;
+  overflow: visible;
+}
+
+.yen-title-box {
+  width: 100%;
+  position: relative;
+}
+
+.yen-circle {
+  width: 7%;
+  position: absolute;
+  top: 0;
+}
+
+.yen-title-text {
+  padding-left: 9%;
+  padding-top: 4%;
+  font-size: 24px;
+}
+
+.yen-hot-card-box {
+  display: flex;
+  margin-top: 2%;
+  height: 80%;
+  width: 100%;
+  background: #ccc;
+  overflow-x: visible;
+  position: relative;
+}
+
+.overflow-box {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.yen-hot-cards-s {
+  margin-top: 4rem;
+  background: #adc;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 12%;
+  padding-right: 12%;
+  /* width: 40%; */
+  height: 80%;
+  z-index: 10;
+}
+
+.yen-hot-cards-l {
+  background: #acf;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 12%;
+  padding-right: 12%;
+  /* width: 40%; */
+  height: 100%;
+  z-index: 10;
 }
