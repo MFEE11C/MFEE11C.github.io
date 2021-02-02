@@ -147,7 +147,7 @@ body.active {
 .menu-open .card-body {
   border-bottom: 1px solid white;
 }
-.accordion > .card > .card-header {
+.menu-open .accordion > .card > .card-header {
   margin-bottom: 0;
   padding: 1.2rem 1.25rem;
 }
