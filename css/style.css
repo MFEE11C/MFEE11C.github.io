@@ -43,7 +43,7 @@ h6 {
 .btn-lg {
   height: 80px;
   padding: 0 72px;
-  border-radius: 4px;
+  border-radius: 10px;
   font-size: 19px;
   background-color: var(--honki-red);
   border-style: none;
