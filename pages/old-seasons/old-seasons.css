@@ -94,13 +94,11 @@ https://codepen.io/ant1mas/pen/MeJjaK
 
   /* border: 5px solid var(--honki-paper); */
 
-  margin: -500px;
+  margin-top: -5000px;
+  margin-left: -5000px;
 
-  /* margin-top: -500px;
-  margin-left: -500px; */
-
-  width: 500px;
-  height: 500px;
+  width: 5000px;
+  height: 5000px;
   transform-origin: 100% 100%;
 }
 .slice:nth-child(1) {
@@ -138,6 +136,12 @@ https://codepen.io/ant1mas/pen/MeJjaK
 }
 .slice:nth-child(12) {
   transform: rotate(331deg) skewY(60deg);
+}
+.slice:nth-child(13) {
+  transform: rotate(361deg) skewY(60deg);
+}
+.slice:nth-child(14) {
+  transform: rotate(391deg) skewY(60deg);
 }
 
 .slice-contents {
