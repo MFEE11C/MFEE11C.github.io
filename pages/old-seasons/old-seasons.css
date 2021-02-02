@@ -91,10 +91,13 @@ https://codepen.io/ant1mas/pen/MeJjaK
   position: absolute;
   top: 50%;
   left: 50%;
+
   /* border: 5px solid var(--honki-paper); */
 
-  margin-top: -500px;
-  margin-left: -500px;
+  margin: -500px;
+
+  /* margin-top: -500px;
+  margin-left: -500px; */
 
   width: 500px;
   height: 500px;
