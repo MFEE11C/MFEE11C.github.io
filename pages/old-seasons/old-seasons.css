@@ -36,7 +36,7 @@ https://codepen.io/ant1mas/pen/MeJjaK
 
 @media only screen and (max-width: 1200px) {
   .responsive-title {
-    font-size: 2em;
+    font-size: 2rem;
   }
 }
 
@@ -101,40 +101,40 @@ https://codepen.io/ant1mas/pen/MeJjaK
   transform-origin: 100% 100%;
 }
 .slice:nth-child(1) {
-  transform: rotate(15deg) skewY(60deg);
+  transform: rotate(15deg) skewY(55deg);
 }
 .slice:nth-child(2) {
-  transform: rotate(45deg) skewY(60deg);
+  transform: rotate(45deg) skewY(55deg);
 }
 .slice:nth-child(3) {
-  transform: rotate(75deg) skewY(60deg);
+  transform: rotate(75deg) skewY(55deg);
 }
 .slice:nth-child(4) {
-  transform: rotate(105deg) skewY(60deg);
+  transform: rotate(105deg) skewY(55deg);
 }
 .slice:nth-child(5) {
-  transform: rotate(135deg) skewY(60deg);
+  transform: rotate(135deg) skewY(55deg);
 }
 .slice:nth-child(6) {
-  transform: rotate(165deg) skewY(60deg);
+  transform: rotate(165deg) skewY(55deg);
 }
 .slice:nth-child(7) {
-  transform: rotate(195deg) skewY(60deg);
+  transform: rotate(195deg) skewY(55deg);
 }
 .slice:nth-child(8) {
-  transform: rotate(225deg) skewY(60deg);
+  transform: rotate(225deg) skewY(55deg);
 }
 .slice:nth-child(9) {
-  transform: rotate(255deg) skewY(60deg);
+  transform: rotate(255deg) skewY(55deg);
 }
 .slice:nth-child(10) {
-  transform: rotate(285deg) skewY(60deg);
+  transform: rotate(285deg) skewY(55deg);
 }
 .slice:nth-child(11) {
-  transform: rotate(315deg) skewY(60deg);
+  transform: rotate(315deg) skewY(55deg);
 }
 .slice:nth-child(12) {
-  transform: rotate(344deg) skewY(60deg);
+  transform: rotate(345deg) skewY(55deg);
 }
 
 .slice-contents {
