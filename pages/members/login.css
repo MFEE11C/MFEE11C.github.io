@@ -29,6 +29,10 @@
   border: 1px solid var(--honki-black);
 }
 
+.yu-checkbox {
+  padding-right: 50px;
+}
+
 .yu-save {
   font-size: 14px;
 }
