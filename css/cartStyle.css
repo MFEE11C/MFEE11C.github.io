@@ -3,39 +3,44 @@
 .cartBackground-left-aw {
   position: relative;
   background-image: url(../images/cart/backgroundCut.svg);
-
   background-repeat: no-repeat;
   background-position: top right;
   background-size: cover;
   height: 144vh;
   max-width: 100%;
-  z-index: -1;
   margin: 0 0 272px 0;
 }
 .cartBackground-right-aw {
-  z-index: -1;
+  /* z-index: -1; */
 }
-.cartContent-aw {
-  height: 500px;
-  /* position: absolute; */
-  /* display: flex;
-  justify-content: center; */
+.aw-cartContent {
+  margin-top: 130px;
+}
+.aw-cart-page1-subtitle {
+  margin-bottom: 20px;
 }
 .aw-productArea {
-  position: absolute;
-  /* top: 17%;
+  /* position: absolute;
+  top: 17%;
   left: 26.88%; */
-  max-width: 51.84vw;
-  height: 70vh;
+  /* width: 51.84vw; */
+
+  height: 68vh;
   overflow-y: scroll;
   margin: 0;
-  padding: 0;
+  padding-left: 20px;
   overflow-x: hidden;
 }
-
+.aw-productAreaPadding {
+  padding: 20px 0;
+  border: solid;
+  border-width: 1px 0;
+  border-color: #707070;
+}
+/* 卷軸 */
 /* width */
 .aw-productArea::-webkit-scrollbar {
-  width: 15px;
+  width: 32px;
 }
 
 /* Track */
@@ -51,4 +56,53 @@
 /* Handle on hover */
 .aw-productArea::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+/* 商品項目 */
+.aw-card {
+  margin-bottom: 12px;
+}
+
+.aw-card-pic {
+  /* text-align: center; */
+  background: url("/images/style-guide/bg_noise.png") white;
+  border-radius: 4px;
+  padding: 9px;
+  /* height: 240px; */
+  width: 100%;
+  /* transition: all 0.5s; */
+}
+
+.aw-book-pic img {
+  height: 160px;
+  object-fit: contain;
+  /* -webkit-filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.2)); */
+  /* transition: all 0.5s; */
+}
+.aw-book-text {
+}
+.aw-book-title {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+.aw-book-author {
+  font-size: 14px;
+  color: #afafaf;
+}
+.aw-book-price {
+  font-size: 18px;
+  text-align: right;
+  font-weight: bold;
+}
+.aw-delete-cross {
+  font-size: 1.5rem;
+}
+
+.aw-cart-page1-subtitle {
+  padding-left: 20px;
 }
