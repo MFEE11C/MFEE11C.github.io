@@ -35,27 +35,27 @@ https://codepen.io/ant1mas/pen/MeJjaK
 */
 
 .rotate {
-  animation: rotation 36s infinite linear;
+  animation: rotation 120s infinite linear;
 }
 
 @keyframes rotation {
   from {
-    transform: rotate(0deg);
-    /* transform: translate(-500px, -300px) rotate(0deg); */
+    /* transform: rotate(0deg); */
+    transform: translate(-81px, -265px) rotate(0deg);
   }
   to {
-    transform: rotate(359deg);
-    /* transform: translate(-500px, -300px) rotate(359deg); */
+    /* transform: rotate(359deg); */
+    transform: translate(-81px, -265px) rotate(359deg);
   }
 }
 
 .solar-term-plate-v2 {
   overflow: hidden;
-  /* position: relative; */
+  position: absolute;
   margin: 1em auto;
   padding: 0;
   width: 715px;
-  height: 700px;
+  height: 715px;
   /* border: 1px solid black; */
   border-radius: 50%;
   list-style: none;
@@ -86,11 +86,11 @@ https://codepen.io/ant1mas/pen/MeJjaK
   left: 50%;
   border: 5px solid var(--honki-paper);
 
-  margin-top: -5000px;
-  margin-left: -5000px;
+  margin-top: -500px;
+  margin-left: -500px;
 
-  width: 5000px;
-  height: 5000px;
+  width: 500px;
+  height: 500px;
   transform-origin: 100% 100%;
 }
 .slice:nth-child(1) {
