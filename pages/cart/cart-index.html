@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HONKI模板</title>
+    <title>HONKI BOOKS</title>
+    <!-- 設定 icon 圖片 -->
+    <link rel="icon" href="/images/style-guide/logo.svg" />
 
     <!-- Bootstrap 4 與 Font Awesome 5 -->
     <link rel="stylesheet" href="/bootstrap-4.5.3-dist/css/bootstrap.css" />
@@ -15,10 +17,12 @@
         rel="stylesheet" />
 
     <!-- 導入 navbar 與 footer 的 script -->
-    <script src="/js/navfoot-v1.js" type="text/javascript" defer></script>
+    <script src="/js/navfoot.js" type="text/javascript" defer></script>
 
     <!-- 導入全組通用css -->
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
     <!-- 導入購物車css -->
     <link rel="stylesheet" href="/css/cartStyle.css" />
 
@@ -40,19 +44,32 @@
         <div class="row">
 
 
-            <div class=" col-10 aw-cartBackground-left">
-                <div class="aw-cartContent">
+            <div class=" col-10 cartBackground-left-aw">
 
-                    <H1> test12 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consectetur recusandae
-                        molestiae.
-                        Architecto sunt quam dolorem. Commodi, cupiditate assumenda! Exercitationem porro accusamus
-                        fugit
-                        aspernatur? Molestias sequi qui reprehenderit error dolorem.</H1>
 
+
+                <div class="row cartContent-aw">
+                    <div class="col-3"></div>
+                    <div class="col-7">
+
+                        <div class="d-flex justify-content-center">
+                            <h6>商品明細</h6>
+                        </div>
+
+                        <div class="aw-productArea">
+                            <h1> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
+                                quisquam iste fugit voluptas minus labore atque pariatur dicta laborum modi officiis
+                                voluptates eaque iure officia, molestiae, nihil quas nisi optio.</h1>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
                 </div>
 
+
+
+
             </div>
-            <div class="col-2 aw-cartBackground-right"> </div>
+            <div class="col-2 cartBackground-right-aw"> </div>
 
         </div>
 
@@ -65,6 +82,9 @@
     <!-- Bootstrap 4 JS 與 jQuery 3 -->
     <script src="/js/jquery-3.5.1.js"></script>
     <script src="/bootstrap-4.5.3-dist/js/bootstrap.bundle.js"></script>
+
+    <!-- 通用元件js -->
+    <script src="/js/index.js"></script>
 </body>
 
 </html>

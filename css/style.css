@@ -43,7 +43,7 @@ h6 {
 .btn-lg {
   height: 80px;
   padding: 0 72px;
-  border-radius: 4px;
+  border-radius: 10px;
   font-size: 19px;
   background-color: var(--honki-red);
   border-style: none;
@@ -733,4 +733,96 @@ https://www.codeply.com/go/NKtDpPXv2x */
     background-color: transparent;
   }
 }
+
+/* 收合選單 */
+
+/* holder */
+.holder {
+  width: 100%;
+}
+.holder label {
+  margin-bottom: 0;
+}
+.holder-radio {
+  display: none;
+}
+.tabs {
+  width: 100%;
+  text-align: center;
+}
+.tab {
+  cursor: pointer;
+  padding: 16px 20px;
+  background: #f1f1f1a6;
+  display: inline-block;
+  color: var(--honki-black);
+  width: 33.3%;
+  border-radius: 15px 15px 0 0;
+  border-bottom: 3px solid transparent;
+}
+.panels {
+  background: #f1f1f1a6;
+  min-height: 200px;
+  width: 100%;
+  border-radius: 0 0 15px 15px;
+  overflow: hidden;
+  padding: 64px;
+}
+.panel {
+  display: none;
+  animation: fadein 0.8s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.panel-title {
+  font-size: 23px;
+  font-weight: medium;
+  border-bottom: 3px solid var(--honki-yellow);
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel {
+  display: block;
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab {
+  background: #f1f1f1a6;
+  color: #000;
+  border-bottom: 3px solid var(--honki-theme);
+  box-sizing: border-box;
+}
+/* mobile holder */
+.holder-mobile {
+  width: 100%;
+  margin-top: 2rem;
+}
+.holder-mobile .card {
+  border-radius: 15px 15px 0 0;
+  background: #f1f1f1a6;
+}
+.holder-mobile .card-body {
+  background: #f1f1f1a6;
+  padding: 3rem;
+}
+.holder-mobile .accordion > .card > .card-header {
+  border-bottom: 3px solid var(--honki-theme);
+  padding: 12px 20px 9px 20px;
+}
+.holder-mobile .btn-link {
+  color: var(--honki-black);
+  text-decoration: none;
+}
+.holder-mobile .btn-link:focus {
+  box-shadow: none;
+}
+
 /* -------- Components End -------- */
