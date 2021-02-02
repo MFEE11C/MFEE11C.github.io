@@ -45,7 +45,7 @@ https://codepen.io/ant1mas/pen/MeJjaK
   border-radius: 50%;
   list-style: none;
 
-  transform: translate(-81px, -165px);
+  transform: translate(-188.5px, -375.5px);
 }
 
 .red-center {
@@ -122,5 +122,6 @@ https://codepen.io/ant1mas/pen/MeJjaK
   transform: skewY(22.5deg); /* unskew slice contents */
 }
 .slice:hover .slice-contents {
-  background: violet;
+  background: var(--honki-red);
+  transition: 0.5s;
 } /* highlight on hover */
