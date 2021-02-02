@@ -1,9 +1,0 @@
-{
-  "cmake.configureOnOpen": false,
-  "liveServer.settings.port": 5502,
-  "workbench.colorCustomizations": {
-    "activityBar.background": "#1B3136",
-    "titleBar.activeBackground": "#26444B",
-    "titleBar.activeForeground": "#F9FBFC"
-  }
-}
