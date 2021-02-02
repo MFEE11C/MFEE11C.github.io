@@ -41,7 +41,7 @@ https://codepen.io/ant1mas/pen/MeJjaK
 }
 
 .rotate {
-  animation: rotation 120s infinite linear;
+  animation: rotation 20s infinite linear;
 }
 
 @keyframes rotation {
@@ -67,7 +67,7 @@ https://codepen.io/ant1mas/pen/MeJjaK
   list-style: none;
 
   /* transform: translate(0px, 0px); */
-  transform: translate(-81px, -265px);
+  /* transform: translate(-81px, -265px); */
 }
 
 /* .solar-term-plate-v2:hover {
@@ -76,8 +76,8 @@ https://codepen.io/ant1mas/pen/MeJjaK
 } */
 
 .red-center {
-  width: 350px;
-  height: 350px;
+  width: 357.5px;
+  height: 357.5px;
   border-radius: 50%;
   border: 7px solid var(--honki-paper);
 
