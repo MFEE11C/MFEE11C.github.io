@@ -108,7 +108,7 @@ https://codepen.io/ant1mas/pen/MeJjaK
   transform: rotate(135deg) skewY(60deg);
 }
 .slice:nth-child(6) {
-  transform: rotate(165deg) skewY(60deg);
+  transform: rotate(164deg) skewY(60deg);
 }
 .slice:nth-child(7) {
   transform: rotate(195deg) skewY(60deg);
