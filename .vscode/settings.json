@@ -1,4 +1,4 @@
 {
-    "cmake.configureOnOpen": false,
-    "liveServer.settings.port": 5502
+  "cmake.configureOnOpen": false,
+  "liveServer.settings.port": 5502
 }
