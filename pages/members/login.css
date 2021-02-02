@@ -1,0 +1,72 @@
+.redpoint {
+  width: 64px;
+  height: 64px;
+  background-color: var(--honki-red);
+  margin: 5px;
+  float: left;
+  border-radius: 50%;
+  position: absolute;
+  top: 12%;
+  left: 44%;
+  z-index: -1;
+}
+
+.yu-form {
+  width: 100%;
+}
+
+.form-tittle {
+  text-align: center;
+  margin: 72px auto 48px auto;
+}
+
+.yu-pic {
+  /* background-image: url("/images/style-guide/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%; */
+  border-radius: 20px;
+  border: 1px solid var(--honki-black);
+}
+
+.yu-save {
+  font-size: 14px;
+}
+
+.yu-forgetpassword-link {
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.yu-register-link {
+  text-align: center;
+  margin: 24px auto 24px auto;
+  text-decoration: underline;
+}
+
+.yu-loginfromothers {
+  width: 100%;
+  text-align: center;
+  margin: 48px auto 31px auto;
+}
+
+.yu-otherlinks {
+  border: 1px solid var(--honki-black);
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 192px;
+}
+
+.fa-facebook-square {
+  font-size: 55px;
+}
+
+.fa-line {
+  font-size: 55px;
+}
+
+.googleicon {
+  width: 50px;
+  margin-top: 2px;
+}
