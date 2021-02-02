@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HONKI BOOKS</title>
+  <!-- 設定 icon 圖片 -->
+  <link rel="icon" href="/images/style-guide/logo.svg" />
+
+  <!-- Bootstrap 4 與 Font Awesome 5 -->
+  <link rel="stylesheet" href="/bootstrap-4.5.3-dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="/fontawesome-free-5.15.1-web/css/all.css" />
+
+  <!-- font 字體 Noto Sans TC + Abel -->
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- 導入 navbar 與 footer 的 script -->
+  <script src="/js/navfoot.js" type="text/javascript" defer></script>
+
+  <!-- 導入全組通用css -->
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/navbar.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+
+  <!-- yu's css -->
+  <link rel="stylesheet" href="./login.css" />
+</head>
+
+<body>
+  <!-- JS 導入 navbar 模板 -->
+  <div id="navbarTemp"></div>
+
+  <!-- 頁面內容 start -->
+  <div class="container mt-5">
+    <!-- 紅圓點 -->
+    <div class="redpoint"></div>
+
+    <form>
+      <!-- 比例 -->
+      <div class="form-width-height yu-form">
+        <!-- 表單標題 -->
+        <div class="form-tittle">
+          <h5>會員登入</h5>
+        </div>
+        <div class="yu-pic col-6 mx-auto">
+          <!-- 信箱input -->
+          <div class="form-group">
+            <div class="formItems row d-flex justify-content-center">
+              <label class="inputText col-3 mt-5">
+                <h6>帳號(電子信箱)</h6>
+              </label>
+              <input type="email" class="form-control formInput col-6 mt-5" placeholder="example@gmail.com" />
+            </div>
+          </div>
+          <!-- password -->
+          <div class="form-group">
+            <div class="formItems row d-flex justify-content-center">
+              <label class="inputText col-3" for="exampleFormControlTextarea1">
+                <h6>密碼</h6>
+              </label>
+              <input type="password" class="form-control formInput col-6" id="password" name="password" />
+            </div>
+          </div>
+          <div class="d-flex justify-content-between px-5">
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="yu-saveaccountandpassword" />
+              <label class="form-check-label yu-save" for="saveaccountandpassword">
+                <p>儲存帳號及密碼</p>
+              </label>
+            </div>
+            <div class="yu-forgetpassword-link">
+              <p>忘記密碼</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 按鈕 -->
+      <div>
+        <!-- 註冊連結 -->
+        <div class="yu-register-link">
+          <h6>註冊</h6>
+        </div>
+        <!-- 送出按鈕 -->
+        <div class="form-group button-group">
+          <div class="formItems row d-flex justify-content-center">
+            <button type="button" class="btn-md-dark form-button form-control col-2">
+              送出
+            </button>
+          </div>
+        </div>
+      </div>
+  </div>
+  </form>
+  </div>
+  <div class="yu-loginfromothers">
+    <h6>其他登入方式</h6>
+  </div>
+  <div class="d-flex justify-content-center col-3 mx-auto yu-otherlinks">
+    <div><i class="fab fa-facebook-square mx-2"></i></div>
+    <div><i class="fab fa-line mx-2"></i></div>
+    <div class="googleicon mx-2">
+      <img class="w-100" src="/images/members/googleicon.png">
+    </div>
+  </div>
+  <!-- 頁面內容 end -->
+
+  <!-- JS 導入 footer 模板 -->
+  <div id="footerTemp"></div>
+
+  <!-- Bootstrap 4 JS 與 jQuery 3 -->
+  <script src="/js/jquery-3.5.1.js"></script>
+  <script src="/bootstrap-4.5.3-dist/js/bootstrap.bundle.js"></script>
+
+  <!-- 通用元件js -->
+  <script src="/js/index.js"></script>
+</body>
+
+</html>
