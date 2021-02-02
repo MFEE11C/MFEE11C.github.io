@@ -34,20 +34,18 @@ https://stackoverflow.com/questions/14184494/segments-in-a-circle-using-css3/141
 https://codepen.io/ant1mas/pen/MeJjaK
 */
 
-.rotate {
+/* .rotate {
   animation: rotation 120s infinite linear;
 }
 
 @keyframes rotation {
   from {
-    /* transform: rotate(0deg); */
     transform: translate(-81px, -265px) rotate(0deg);
   }
   to {
-    /* transform: rotate(359deg); */
     transform: translate(-81px, -265px) rotate(359deg);
   }
-}
+} */
 
 .solar-term-plate-v2 {
   overflow: hidden;
@@ -60,7 +58,8 @@ https://codepen.io/ant1mas/pen/MeJjaK
   border-radius: 50%;
   list-style: none;
 
-  /* transform: translate(-500px, -300px); */
+  transform: translate(0px, 0px);
+  /* transform: translate(-81px, -265px); */
 }
 
 /* .solar-term-plate-v2:hover {
