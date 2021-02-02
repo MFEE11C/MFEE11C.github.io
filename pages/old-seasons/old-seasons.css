@@ -41,7 +41,7 @@ https://codepen.io/ant1mas/pen/MeJjaK
 }
 
 .rotate {
-  animation: rotation 20s infinite linear;
+  animation: rotation 120s infinite linear;
 }
 
 @keyframes rotation {
@@ -158,7 +158,7 @@ https://codepen.io/ant1mas/pen/MeJjaK
   transform: skewY(22.5deg); /* unskew slice contents */
 }
 
-/* .slice:hover .slice-contents {
-  opacity: 0;
+.slice:hover .slice-contents {
+  background-color: transparent;
   transition: 0.5s;
-} */
+}
