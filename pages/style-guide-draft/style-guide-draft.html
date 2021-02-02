@@ -865,6 +865,249 @@
 
       </div>
     </div>
+    <div class="row">
+      <div class="col-lg-12 py-4">
+        <h4>收合選單 RWD</h4>
+        <p>1. html架構包含桌機和手機板 若只要其一可自己刪減</p>
+        <p>2. 斷點在classname lg-992px 可自行修改</p>
+        <p>3. 若標籤要超過3頁可於tab增加class覆蓋 ex.4個標籤可改width: 25%</p>
+        <div class="holder mt-5 d-none d-lg-block">
+          <input
+            class="holder-radio"
+            id="one"
+            name="group"
+            type="radio"
+            checked
+          />
+          <input class="holder-radio" id="two" name="group" type="radio" />
+          <input class="holder-radio" id="three" name="group" type="radio" />
+          <div class="tabs d-flex justify-content-between">
+            <label class="tab" id="one-tab" for="one">內容簡介</label>
+            <label class="tab" id="two-tab" for="two">作者介紹</label>
+            <label class="tab" id="three-tab" for="three">書籍目錄</label>
+          </div>
+          <div class="panels">
+            <div class="panel" id="one-panel">
+              <div class="panel-title">內容簡介</div>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam nesciunt suscipit, sunt omnis officiis reiciendis soluta praesentium consequatur minima accusantium laboriosam odit? Amet quasi temporibus illum quia eveniet nam dolor.
+              </p>
+            </div>
+            <div class="panel" id="two-panel">
+              <div class="panel-title">作者介紹</div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sit quidem veritatis nihil quia aliquid aut deserunt ea, exercitationem saepe, illo repellat nisi provident. Blanditiis neque illo ad aspernatur est!
+              </p>
+            </div>
+            <div class="panel" id="three-panel">
+              <div class="panel-title">書籍目錄</div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta perferendis veritatis quos adipisci repellendus sapiente ipsa eum, placeat aliquam iure cum cumque sequi iste porro quisquam distinctio ratione voluptas eveniet?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="holder-mobile d-lg-none">
+          <div class="accordion" id="accordionHolder">
+            <div class="card">
+              <div class="card-header" id="headingHolderOne">
+                <h4 class="mb-0">
+                  <button
+                    class="btn btn-link"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#holder-collapseOne"
+                  >
+                    內容簡介
+                  </button>
+                </h4>
+              </div>
+
+              <div
+                id="holder-collapseOne"
+                class="collapse show"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nam consequuntur nesciunt. Totam amet iusto laborum eaque, optio iste vero reprehenderit? Dolore laborum quod eveniet magnam labore! Ipsum, fugit maiores.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingHolderTwo">
+                <h4 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#holder-collapseTwo"
+                  >
+                    作者介紹
+                  </button>
+                </h4>
+              </div>
+              <div
+                id="holder-collapseTwo"
+                class="collapse"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit, dolore sunt illo dolorem dolor aut suscipit sit reprehenderit incidunt placeat consectetur, veniam doloribus fuga est esse voluptatum iure quae!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingHolderThree">
+                <h4 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#holder-collapseThree"
+                  >
+                    書籍目錄
+                  </button>
+                </h4>
+              </div>
+              <div
+                id="holder-collapseThree"
+                class="collapse"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus facilis aperiam adipisci esse veritatis, illo velit reiciendis officiis porro quasi ratione voluptatum eum tempore provident laborum harum. Fugiat, ex fugit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <textarea class="showcase" rows="116" readonly>
+          <div class="holder mt-5 d-none d-lg-block">
+            <input
+              class="holder-radio"
+              id="one"
+              name="group"
+              type="radio"
+              checked
+            />
+            <input class="holder-radio" id="two" name="group" type="radio" />
+            <input class="holder-radio" id="three" name="group" type="radio" />
+            <div class="tabs">
+              <label class="tab" id="one-tab" for="one">內容簡介</label>
+              <label class="tab" id="two-tab" for="two">作者介紹</label>
+              <label class="tab" id="three-tab" for="three">書籍目錄</label>
+            </div>
+            <div class="panels">
+              <div class="panel" id="one-panel">
+                <div class="panel-title">內容簡介</div>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam nesciunt suscipit, sunt omnis officiis reiciendis soluta praesentium consequatur minima accusantium laboriosam odit? Amet quasi temporibus illum quia eveniet nam dolor.
+                </p>
+              </div>
+              <div class="panel" id="two-panel">
+                <div class="panel-title">作者介紹</div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sit quidem veritatis nihil quia aliquid aut deserunt ea, exercitationem saepe, illo repellat nisi provident. Blanditiis neque illo ad aspernatur est!
+                </p>
+              </div>
+              <div class="panel" id="three-panel">
+                <div class="panel-title">書籍目錄</div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta perferendis veritatis quos adipisci repellendus sapiente ipsa eum, placeat aliquam iure cum cumque sequi iste porro quisquam distinctio ratione voluptas eveniet?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="holder-mobile d-lg-none">
+            <div class="accordion" id="accordionHolder">
+              <div class="card">
+                <div class="card-header" id="headingHolderOne">
+                  <h4 class="mb-0">
+                    <button
+                      class="btn btn-link"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#holder-collapseOne"
+                    >
+                      內容簡介
+                    </button>
+                  </h4>
+                </div>
+  
+                <div
+                  id="holder-collapseOne"
+                  class="collapse show"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nam consequuntur nesciunt. Totam amet iusto laborum eaque, optio iste vero reprehenderit? Dolore laborum quod eveniet magnam labore! Ipsum, fugit maiores.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingHolderTwo">
+                  <h4 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#holder-collapseTwo"
+                    >
+                      作者介紹
+                    </button>
+                  </h4>
+                </div>
+                <div
+                  id="holder-collapseTwo"
+                  class="collapse"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit, dolore sunt illo dolorem dolor aut suscipit sit reprehenderit incidunt placeat consectetur, veniam doloribus fuga est esse voluptatum iure quae!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingHolderThree">
+                  <h4 class="mb-0">
+                    <button
+                      class="btn btn-link collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#holder-collapseThree"
+                    >
+                      書籍目錄
+                    </button>
+                  </h4>
+                </div>
+                <div
+                  id="holder-collapseThree"
+                  class="collapse"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus facilis aperiam adipisci esse veritatis, illo velit reiciendis officiis porro quasi ratione voluptatum eum tempore provident laborum harum. Fugiat, ex fugit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </textarea>
+      </div>
+    </div>
+
 
     <div class="row my-1">
       <div class="col-lg-12 mt-5" style="word-break: keep-all; overflow: scroll">
