@@ -19,3 +19,7 @@
   text-align: center;
   margin: 72px auto 38px auto;
 }
+
+.yu-save:focus {
+  color: black;
+}
