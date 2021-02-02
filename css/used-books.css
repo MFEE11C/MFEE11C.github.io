@@ -95,6 +95,11 @@
 }
 
 /* 二手書交換 一般模式 首頁 */
+.jill-mylist-area {
+  position: relative;
+  height: 800px;
+}
+
 .jill-myNchange-area {
   width: 20%;
 }
@@ -104,4 +109,138 @@
 .jill-myNchangelist {
   /* width: 90%; */
   margin-top: 28px;
+}
+
+.jill-myNchange-add-btn {
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+
+.jill-myNchange-display {
+  width: 398px;
+  height: 251px;
+  border: 1px solid#D5C7B2;
+}
+
+.jill-myNchange-display img {
+  width: auto;
+  height: 200px;
+  margin-top: 26px;
+  /* margin-left: 47px; */
+  margin-left: 36px;
+}
+
+.jill-myNchange-display ul {
+  list-style: none;
+  /* text-decoration: underline #d5c7b2 2px; */
+  margin-top: 30px;
+}
+
+.jill-myNchange-display li {
+  margin-top: 12px;
+}
+
+.jill-underline::after {
+  content: "_______________";
+  color: #d5c7b2;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  margin-top: 12px;
+}
+
+.jill-normal-seemyList {
+  background-color: var(--honki-red);
+  margin-top: 20px;
+  margin-left: 39%;
+}
+
+.jill-normal-seemyList:hover {
+  background-color: var(--honki-red);
+}
+/* 蜜蜂svg */
+.jill-myNchange-display svg {
+  position: absolute;
+  left: 385px;
+  top: 110px;
+}
+
+.jill-mystatus {
+  position: absolute;
+  top: 0px;
+  left: 40%;
+}
+
+.jill-mycard {
+  width: 351px;
+  height: 257px;
+  border: 1px solid#D5C7B2;
+  margin-left: 12px;
+}
+
+.jill-mycard img {
+  height: 160px;
+  width: auto;
+  margin-top: 24px;
+  margin-left: 30px;
+}
+
+.jill-mycard ul {
+  list-style: none;
+  /* text-decoration: underline #d5c7b2 2px; */
+  margin-top: 4px;
+}
+
+.jill-mycard li {
+  margin-top: 12px;
+}
+
+.jill-mycard button {
+  position: absolute;
+}
+
+.jill-card-btn-status {
+  top: 200px;
+  /* left: 70px; */
+  left: 120px;
+}
+
+.jill-card-btn-cancel {
+  top: 200px;
+  /* left: 170px; */
+  left: 220px;
+}
+
+.jill-card-btn-status2 {
+  top: 200px;
+  left: 480px;
+}
+
+.jill-card-btn-cancel2 {
+  top: 200px;
+  left: 580px;
+}
+
+.jill-PeoplewantChangeList {
+  margin-top: 12px;
+}
+
+.jill-card-btn-status3 {
+  top: 470px;
+  left: 120px;
+}
+
+.jill-card-btn-cancel3 {
+  top: 470px;
+  left: 220px;
+}
+
+.jill-card-btn-status4 {
+  top: 470px;
+  left: 480px;
+}
+
+.jill-card-btn-cancel4 {
+  top: 470px;
+  left: 580px;
 }
