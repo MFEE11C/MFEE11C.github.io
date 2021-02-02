@@ -58,8 +58,8 @@ https://codepen.io/ant1mas/pen/MeJjaK
   border-radius: 50%;
   list-style: none;
 
-  transform: translate(0px, 0px);
-  /* transform: translate(-81px, -265px); */
+  /* transform: translate(0px, 0px); */
+  transform: translate(-81px, -265px);
 }
 
 /* .solar-term-plate-v2:hover {
@@ -126,7 +126,7 @@ https://codepen.io/ant1mas/pen/MeJjaK
   transform: rotate(315deg) skewY(60deg);
 }
 .slice:nth-child(12) {
-  transform: rotate(345deg) skewY(60deg);
+  transform: rotate(344deg) skewY(60deg);
 }
 
 .slice-contents {
