@@ -92,7 +92,7 @@ https://codepen.io/ant1mas/pen/MeJjaK
   top: 50%;
   left: 50%;
 
-  /* border: 5px solid var(--honki-paper); */
+  border: 5px solid var(--honki-paper);
 
   margin-top: -5000px;
   margin-left: -5000px;
