@@ -1,0 +1,12 @@
+.redpoint {
+    width: 64px;
+    height: 64px;
+    background-color: var(--honki-red);
+    margin: 5px;
+    float: left;
+    border-radius: 50%;
+    position: absolute;
+    top: 12%;
+    left: 44%;
+    z-index: -1;
+  }
