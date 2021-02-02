@@ -49,6 +49,7 @@ h6 {
   border-style: none;
   color: var(--honki-white);
   line-height: 80px;
+  transition: all 0.5s;
 }
 .fa-shopping-cart {
   margin-right: 40px;
@@ -71,6 +72,7 @@ h6 {
   background-color: var(--honki-black);
   color: var(--honki-white);
   line-height: 40px;
+  transition: all 0.5s;
 }
 .btn-md-dark:hover {
   background-color: rgb(114, 108, 106);
@@ -90,6 +92,7 @@ h6 {
   color: var(--honki-black);
   border: 1px solid;
   line-height: 40px;
+  transition: all 0.5s;
 }
 .btn-md-light:hover {
   background-color: var(--honki-white);
@@ -108,6 +111,7 @@ h6 {
   border-style: none;
   background-color: var(--honki-black);
   color: var(--honki-white);
+  transition: all 0.5s;
 }
 .btn-sm-dark:hover {
   background-color: rgb(114, 108, 106);
@@ -127,6 +131,7 @@ h6 {
   background-color: transparent;
   color: var(--honki-black);
   border: 1px solid;
+  transition: all 0.5s;
 }
 .btn-sm-light:hover {
   background-color: var(--honki-white);
@@ -145,6 +150,7 @@ h6 {
   background-color: var(--honki-black);
   color: var(--honki-white);
   border-style: none;
+  transition: all 0.5s;
 }
 .btn-rounded-dark:hover {
   background-color: rgb(114, 108, 106);
@@ -163,6 +169,7 @@ h6 {
   background-color: transparent;
   color: var(--honki-black);
   border: 1px solid;
+  transition: all 0.5s;
 }
 .btn-rounded-light:hover {
   background-color: var(--honki-white);
@@ -736,7 +743,7 @@ https://www.codeply.com/go/NKtDpPXv2x */
 
 /* 收合選單 */
 
-/* holder */
+/* holder 桌機版收合選單*/
 .holder {
   width: 100%;
 }
@@ -800,7 +807,7 @@ https://www.codeply.com/go/NKtDpPXv2x */
   border-bottom: 3px solid var(--honki-theme);
   box-sizing: border-box;
 }
-/* mobile holder */
+/* mobile holder 手機版收合選單 */
 .holder-mobile {
   width: 100%;
   margin-top: 2rem;
@@ -812,6 +819,11 @@ https://www.codeply.com/go/NKtDpPXv2x */
 .holder-mobile .card-body {
   background: #f1f1f1a6;
   padding: 3rem;
+}
+@media (max-width: 576px) {
+  .holder-mobile .card-body {
+    padding: 2rem 1.5rem;
+  }
 }
 .holder-mobile .accordion > .card > .card-header {
   border-bottom: 3px solid var(--honki-theme);
