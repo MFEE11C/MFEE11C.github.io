@@ -120,7 +120,7 @@ navTemplate.innerHTML = `
             <li class="nav-item honki-nav-item active">
               <a
                 class="nav-link honki-nav-link nav-item-60px"
-                href="/pages/activity/bookmarket.html"
+                href="/pages/activity/act-tmp.html"
                 >活動講座</a
               >
             </li>
