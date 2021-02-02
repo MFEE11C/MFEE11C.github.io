@@ -142,7 +142,8 @@ https://codepen.io/ant1mas/pen/MeJjaK
 .slice:first-child .slice-contents {
   transform: skewY(22.5deg); /* unskew slice contents */
 }
+/* 
 .slice:hover .slice-contents {
   background: var(--honki-red);
   transition: 0.5s;
-} /* highlight on hover */
+}  */
