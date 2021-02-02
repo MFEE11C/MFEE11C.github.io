@@ -1,3 +1,4 @@
+/* 二手書交換 首頁(模式選擇) */
 .jill-index-title {
   text-align: center;
 }
@@ -91,4 +92,16 @@
     margin-top: 0px;
     margin-left: 38px;
   }
+}
+
+/* 二手書交換 一般模式 首頁 */
+.jill-myNchange-area {
+  width: 20%;
+}
+.jill-myNchange-title {
+  text-align: center;
+}
+.jill-myNchangelist {
+  /* width: 90%; */
+  margin-top: 28px;
 }
