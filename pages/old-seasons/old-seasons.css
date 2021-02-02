@@ -34,7 +34,7 @@ https://stackoverflow.com/questions/14184494/segments-in-a-circle-using-css3/141
 https://codepen.io/ant1mas/pen/MeJjaK
 */
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1500px) {
   .responsive-title {
     font-size: 2em;
   }
@@ -134,7 +134,7 @@ https://codepen.io/ant1mas/pen/MeJjaK
   transform: rotate(315deg) skewY(60deg);
 }
 .slice:nth-child(12) {
-  transform: rotate(345deg) skewY(60deg);
+  transform: rotate(344deg) skewY(60deg);
 }
 
 .slice-contents {
