@@ -34,7 +34,7 @@ https://stackoverflow.com/questions/14184494/segments-in-a-circle-using-css3/141
 https://codepen.io/ant1mas/pen/MeJjaK
 */
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1200px) {
   .responsive-title {
     font-size: 2em;
   }
