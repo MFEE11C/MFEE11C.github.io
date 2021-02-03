@@ -1,0 +1,21 @@
+.yu-redpoint {
+  width: 64px;
+  height: 64px;
+  background-color: var(--honki-red);
+  margin: 5px;
+  float: left;
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+  left: 55%;
+  z-index: -1;
+}
+
+.yu-breadcrumb {
+  padding-top: 72px;
+  padding-left: 158px;
+}
+
+.yu-membersmenu {
+  margin-left: 100px;
+}
