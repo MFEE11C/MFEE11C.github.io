@@ -34,6 +34,11 @@ https://stackoverflow.com/questions/14184494/segments-in-a-circle-using-css3/141
 https://codepen.io/ant1mas/pen/MeJjaK
 */
 
+.old-season-container {
+  margin-bottom: 80px;
+  overflow-x: hidden;
+}
+
 @media only screen and (max-width: 1200px) {
   .responsive-title {
     font-size: 2rem;
@@ -107,6 +112,7 @@ https://codepen.io/ant1mas/pen/MeJjaK
 .slice:nth-child(1) {
   transform: rotate(0deg) skewY(60deg);
   opacity: 0;
+  display: block;
 }
 .slice:nth-child(2) {
   transform: rotate(30deg) skewY(60deg);
