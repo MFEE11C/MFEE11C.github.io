@@ -61,6 +61,10 @@ https://codepen.io/ant1mas/pen/MeJjaK
   }
 }
 
+.solar-term-plate-filler {
+  height: 500px;
+}
+
 .solar-term-plate-v2 {
   overflow: hidden;
   position: absolute;
@@ -74,9 +78,10 @@ https://codepen.io/ant1mas/pen/MeJjaK
 
   /* image source: https://www.behance.net/gallery/38204839/The-24-Solar-Terms-Character-Design */
   background-image: url(images/The_24_Solar_Terms_by_Cinyee_Chiu_715x715.png);
+  background-size: 100% 100%;
 
   /* transform: translate(0px, 0px); */
-  transform: translate(-81px, -265px);
+  /* transform: translate(-81px, -265px); */
 }
 
 /* .solar-term-plate-v2:hover {
@@ -90,10 +95,11 @@ https://codepen.io/ant1mas/pen/MeJjaK
   border-radius: 50%;
   border: 7px solid var(--honki-paper);
 
-  transform: translate(50%, 50%);
-
   /* background-color: var(--honki-red); */
   background-image: url(images/earth-drawing-clip-art-earth-375x375_v2.png);
+  background-size: 100% 100%;
+
+  transform: translate(50%, 50%);
 }
 
 .slice {
@@ -171,8 +177,46 @@ https://codepen.io/ant1mas/pen/MeJjaK
   transition: 0.5s;
 } */
 
-.solar-term-plate-filler {
-  height: 500px;
+@media only screen and (max-width: 720px) {
+  .solar-term-plate-v2 {
+    width: 90vw;
+    height: 90vw;
+    /* transition: 0.5s; */
+  }
+
+  .red-center {
+    width: 45vw;
+    /* height: 50%; */
+    height: 45vw;
+    transform: translate(50%, 50%);
+    /* transition: 0.5s; */
+  }
+
+  /* v2 */
+  .red-center-v2 {
+    width: 80vw;
+    /* height: 50%; */
+    height: 80vw;
+    transform: translate(6%, 6%);
+    /* transition: 0.5s; */
+  }
+
+  @keyframes rotation {
+    from {
+      transform: translate(0px, 0px) rotate(0deg);
+    }
+    to {
+      transform: translate(0px, 0px) rotate(359deg);
+    }
+  }
+
+  .solar-term-plate-filler {
+    height: calc(100vw + 2rem);
+  }
+
+  .slice {
+    border: 3px solid var(--honki-paper);
+  }
 }
 
 .book-card {
