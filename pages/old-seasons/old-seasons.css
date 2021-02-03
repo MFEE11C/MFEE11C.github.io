@@ -91,7 +91,8 @@ https://codepen.io/ant1mas/pen/MeJjaK
 
   transform: translate(50%, 50%);
 
-  background-color: var(--honki-red);
+  /* background-color: var(--honki-red); */
+  background-image: url(images/earth-drawing-clip-art-earth-375x375_v2.png);
 }
 
 .slice {
@@ -158,13 +159,13 @@ https://codepen.io/ant1mas/pen/MeJjaK
   height: 200%;
   border-radius: 50%;
   background: var(--honki-black);
-  opacity: 80%;
+  opacity: 0;
 }
 .slice:first-child .slice-contents {
   transform: skewY(22.5deg); /* unskew slice contents */
 }
 
-.slice:hover .slice-contents {
+/* .slice:hover .slice-contents {
   background-color: transparent;
   transition: 0.5s;
-}
+} */
