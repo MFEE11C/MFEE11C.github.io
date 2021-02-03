@@ -12,7 +12,7 @@ https://honkibooks.github.io/
     - bookstore（書城，李）
       - merch-list.html
     - activity （活動，余）
-      - bookmarket.html
+      - tmp-act.html
     - UsedbooksIndex.html （二手書，蔡）
       - UsedbooksIndex.html
     - old-seasons （過往推薦，翰）
