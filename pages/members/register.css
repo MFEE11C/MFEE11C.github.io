@@ -1,4 +1,4 @@
-.redpoint {
+.yu-redpoint {
   width: 64px;
   height: 64px;
   background-color: var(--honki-red);
@@ -15,7 +15,7 @@
   width: 100%;
 }
 
-.form-tittle {
+.yu-form-title {
   text-align: center;
   margin: 72px auto 38px auto;
 }

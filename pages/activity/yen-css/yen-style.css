@@ -19,6 +19,7 @@ body {
 .yen-repeat-left {
   width: 40%;
   position: relative;
+  animation: fadein 2s ease-in;
 }
 
 .yen-pics-left {
@@ -30,6 +31,7 @@ body {
 .yen-bg-img {
   width: 60%;
   height: 100vh;
+  animation: fadein 2s ease-in;
 }
 
 .yen-pics-right {
@@ -38,6 +40,7 @@ body {
   position: relative;
   background-repeat: no-repeat;
   background-size: contain;
+  animation: fadein 2s ease-in;
 }
 
 .yen-bg-img::after {
@@ -52,24 +55,33 @@ body {
   opacity: 0.5;
 }
 
-/* .yen-header-box {
+.yen-header-box {
+  animation: fadein 4s ease-in;
+}
+
+.yen-header-text {
+  animation: fadein 4s ease-in;
+}
+
+.yen-header-box {
   z-index: 10;
   position: absolute;
   left: 20%;
-  top: 20%;
-  right: 35%;
+  right: 30%;
+  top: 22%;
   bottom: 15%;
   border: 8px solid #fff;
   color: #fff;
+  transition: 0.5s ease-in-out;
 }
 
 .yen-header-text {
   padding-left: 10%;
   margin-top: 3%;
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
   position: absolute;
-} */
+}
 
 .yen-header-ladybug {
   position: absolute;
@@ -84,10 +96,11 @@ body {
   position: absolute;
   bottom: -8px;
   color: #fff;
-  padding-left: 50%;
-  animation: Updown 1s infinite alternate;
+  padding-left: calc(50% - 25px);
+  animation: fadein 4s ease-in, Updown 1s infinite alternate;
 }
 
+/* header animation */
 @keyframes Updown {
   from {
     bottom: -16px;
@@ -97,29 +110,17 @@ body {
   }
 }
 
-/* header media query */
-@media screen and (min-width: 992px) {
-  .yen-header-box {
-    z-index: 10;
-    position: absolute;
-    left: 20%;
-    right: 30%;
-    top: 22%;
-    bottom: 15%;
-    border: 8px solid #fff;
-    color: #fff;
-    transition: 0.5s ease-in-out;
+@keyframes fadein {
+  0% {
+    opacity: 0;
   }
-
-  .yen-header-text {
-    padding-left: 10%;
-    margin-top: 3%;
-    width: 70%;
-    height: 70%;
-    position: absolute;
+  100% {
+    opacity: 1;
   }
 }
+/* header animation end */
 
+/* header media query */
 @media (min-width: 768px) and (max-width: 992px) {
   .yen-header-box {
     z-index: 10;
@@ -145,9 +146,9 @@ body {
   .yen-header-box {
     z-index: 10;
     position: absolute;
-    left: 30%;
-    right: 30%;
-    top: 30%;
+    left: 25%;
+    right: 25%;
+    top: 25%;
     bottom: 30%;
     border: 4px solid #fff;
     color: #fff;
@@ -157,20 +158,20 @@ body {
   .yen-header-text {
     padding-left: 5%;
     margin-top: 3%;
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
     position: absolute;
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 576px) {
   .yen-header-box {
     z-index: 10;
     position: absolute;
-    left: 30%;
-    right: 30%;
-    top: 35%;
-    bottom: 40%;
+    left: 10%;
+    right: 10%;
+    top: 25%;
+    bottom: 30%;
     border: 4px solid #fff;
     color: #fff;
     transition: 0.5s ease-in-out;
@@ -184,13 +185,20 @@ body {
     position: absolute;
   }
 }
-/* header media query */
+/* header media query end */
 /* header end */
 
+/* ---------------------------- */
+
 /* hot start */
+.yen-overflow-box {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
 .yen-hot {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: 0 72px;
   padding-top: 72px;
   height: 100vh;
   overflow: visible;
@@ -216,38 +224,126 @@ body {
 .yen-hot-card-box {
   display: flex;
   margin-top: 2%;
-  height: 80%;
   width: 100%;
   background: #ccc;
   overflow-x: visible;
   position: relative;
 }
 
-.overflow-box {
-  overflow-x: hidden;
-  width: 100%;
-  height: 100%;
-}
-
 .yen-hot-cards-s {
-  margin-top: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   background: #adc;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  padding-left: 12%;
-  padding-right: 12%;
-  /* width: 40%; */
+  padding: 15rem;
   height: 80%;
   z-index: 10;
 }
 
 .yen-hot-cards-l {
   background: #acf;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  padding-left: 12%;
-  padding-right: 12%;
-  /* width: 40%; */
-  height: 100%;
+  padding: 15rem;
   z-index: 10;
+}
+
+/* media query */
+@media (min-width: 768px) and (max-width: 992px) {
+  .yen-overflow-box {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .yen-hot-card-box {
+    overflow-y: visible;
+    margin-top: 2%;
+    height: 70%;
+  }
+
+  .yen-hot-cards-s {
+    margin-top: 4rem;
+    padding: 8rem 10rem;
+    height: 70%;
+  }
+
+  .yen-hot-cards-l {
+    padding: 8rem 10rem;
+    height: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .yen-overflow-box {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .yen-hot-card-box {
+    margin-top: 2%;
+    height: 70%;
+    overflow: hidden;
+  }
+
+  .yen-hot-cards-s {
+    margin-top: 5rem;
+    padding: 6rem 10rem;
+    height: 70%;
+  }
+
+  .yen-hot-cards-l {
+    padding: 6rem 10rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .yen-overflow-box {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .yen-hot {
+    margin: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    overflow-y: visible;
+  }
+
+  .yen-title-box {
+    width: 100%;
+    padding-bottom: 24px;
+    margin-left: 30%;
+  }
+
+  .yen-circle {
+    width: 12%;
+    position: absolute;
+    top: 8px;
+  }
+
+  .yen-title-text {
+    padding-left: 15%;
+    padding-top: 4%;
+    font-size: 19px;
+  }
+
+  .yen-hot-card-box {
+    /* margin-top: 2%; */
+    width: 100vw;
+    height: 100%;
+    overflow: visible;
+  }
+
+  .yen-hot-cards-s {
+    /* margin-top: 10%; */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 11.5rem;
+  }
+
+  .yen-hot-cards-l {
+    width: 100%;
+    height: 100%;
+  }
 }

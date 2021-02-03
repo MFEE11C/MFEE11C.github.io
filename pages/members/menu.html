@@ -34,31 +34,272 @@
 
     <!-- 頁面內容 start -->
     <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
+        <ol class="breadcrumb yu-breadcrumb">
             <li class="breadcrumb-honki"><a href="#">首頁</a></li>
             <li class="active" aria-current="page">會員中心</li>
         </ol>
     </nav>
-     <!-- 紅圓點 -->
-     <div class="redpoint"></div>
-     <!-- 標題 -->
+    <!-- 紅圓點 -->
+    <div class="yu-redpoint"></div>
+
+    <!-- 標題 -->
     <div class="container my-5">
-        <h5>會員中心</h5>
-        <p>非常不想努力</p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
-            impedit saepe, libero non ad ratione tempore tempora vitae animi
-            aspernatur quod consequatur possimus placeat dignissimos consequuntur
-            eaque error optio. Distinctio quam iure praesentium fugiat commodi
-            doloribus porro earum quasi non natus, quibusdam eos nam repellat
-            sapiente reiciendis, expedita consequatur modi reprehenderit possimus
-            dolore deleniti voluptates repudiandae. Ullam excepturi delectus
-            provident modi in maiores, illum, deserunt maxime molestias laudantium
-            enim quae quam velit, iusto dolor illo. Ipsa voluptate dolores non
-            ipsam. Sed numquam accusantium dolorem unde, rem officiis vitae odit
-            odio repellendus? Nulla, sunt autem ipsum tempore alias expedita
-            distinctio illo!
-        </p>
+        <div class="row">
+            <h5 class="yu-membersmenu">會員中心</h5>
+            <!-- 大頭貼 -->
+            <img src="" alt="">
+            <!-- 會員等級 -->
+            <!-- 歡迎詞 -->
+            <p>哈囉，歡迎回來</p>
+        </div>
+
+
+
+
+        <!-- 會員總表收合選單 -->
+        <div class="holder mt-5 d-none d-lg-block">
+            <input class="holder-radio" id="one" name="group" type="radio" checked />
+            <input class="holder-radio" id="two" name="group" type="radio" />
+            <input class="holder-radio" id="three" name="group" type="radio" />
+            <input class="holder-radio" id="four" name="group" type="radio" />
+            <input class="holder-radio" id="five" name="group" type="radio" />
+            <input class="holder-radio" id="six" name="group" type="radio" />
+
+            <div class="tabs">
+                <label class="tab yu-tab" id="one-tab" for="one">會員總表</label>
+                <label class="tab yu-tab" id="two-tab" for="two">購物紀錄</label>
+                <label class="tab yu-tab" id="three-tab" for="three">我的收藏</label>
+                <label class="tab yu-tab" id="four-tab" for="four">專屬優惠</label>
+                <label class="tab yu-tab" id="five-tab" for="five">二手交換</label>
+                <label class="tab yu-tab" id="six-tab" for="six">參與活動</label>
+            </div>
+
+            <div class="panels yu-panels">
+                <div class="panel" id="one-panel">
+                    <div class="panel-title">查詢列表</div>
+
+                    <div class="yu-col-2">
+                        <!-- 我的帳戶 -->
+                        <div>
+                            <div class="d-flex justify-content-center yu-account-1 ">
+                                <div class="d-flex justify-content-center yu-account-1-1">
+                                    <p>
+                                        <i class="far fa-address-card yu-card"></i>
+                                    <p class="yu-account-1-1-1">我的帳戶</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="yu-account-2">
+                                    <li><a class="yu-links" href="#">個人資料修改</a></li>
+                                    <li><a class="yu-links" href="#">修改密碼</a></li>
+                                    <li><a class="yu-links" href="#">修改節氣頭貼</a></li>
+                                    <li><a class="yu-links" href="#">刪除帳號</a></li>
+                                    <li><a class="yu-links" href="#">節氣書櫃</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 我的收藏 -->
+                        <div>
+                            <div class="d-flex justify-content-center yu-account-1 ">
+                                <div class="d-flex justify-content-center yu-account-1-1">
+                                    <p>
+                                        <i class="fas fa-edit yu-card"></i>
+                                    <p class="yu-account-1-1-1">我的收藏</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="yu-account-2">
+                                    <li><a class="yu-links" href="#">XXX</a></li>
+                                    <li><a class="yu-links" href="#">XXX</a></li>
+                                    <li><a class="yu-links" href="#">XXX</a></li>
+                                    <li><a class="yu-links" href="#">XXX</a></li>
+                                    <li><a class="yu-links" href="#">XXX</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 二手交換 -->
+                        <div>
+                            <div class="d-flex justify-content-center yu-account-1 ">
+                                <div class="d-flex justify-content-center yu-account-1-1">
+                                    <p>
+                                        <i class="fas fa-book-open yu-card"></i>
+                                    <p class="yu-account-1-1-1">二手交換</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="yu-account-2">
+                                    <li><a class="yu-links" href="#">XXX</a></li>
+                                    <li><a class="yu-links" href="#">XXX</a></li>
+                                    <li><a class="yu-links" href="#">XXX</a></li>
+                                    <li><a class="yu-links" href="#">XXX</a></li>
+                                    <li><a class="yu-links" href="#">XXX</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 購物紀錄 -->
+                        <div>
+                            <div class="d-flex justify-content-center yu-account-1 ">
+                                <div class="d-flex justify-content-center yu-account-1-1">
+                                    <p><i class="fas fa-cart-plus yu-card"></i>
+                                    <p class="yu-account-1-1-1">購物紀錄</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="yu-account-2">
+                                    <li><a class="yu-links" href="#">XXX</a></li>
+                                    <li><a class="yu-links" href="#">XXX</a></li>
+                                    <li><a class="yu-links" href="#">XXX</a></li>
+                                    <li><a class="yu-links" href="#">XXX</a></li>
+                                    <li><a class="yu-links" href="#">XXX</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 專屬優惠 -->
+                        <div>
+                            <div class="d-flex justify-content-center yu-account-1 ">
+                                <div class="d-flex justify-content-center yu-account-1-1">
+                                    <p><i class="fas fa-bolt yu-card"></i>
+                                    <p class="yu-account-1-1-1">專屬優惠</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="yu-account-2">
+                                    <li><a class="yu-links" href="#">XXX</a></li>
+                                    <li><a class="yu-links" href="#">XXX</a></li>
+                                    <li><a class="yu-links" href="#">XXX</a></li>
+                                    <li><a class="yu-links" href="#">XXX</a></li>
+                                    <li><a class="yu-links" href="#">XXX</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 參與活動 -->
+                        <div>
+                            <div class="d-flex justify-content-center yu-account-1 ">
+                                <div class="d-flex justify-content-center yu-account-1-1">
+                                    <p><i class="fas fa-child yu-card"></i>
+                                    <p class="yu-account-1-1-1">參與活動</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="yu-account-2">
+                                    <li><a class="yu-links" href="#">XXX</a></li>
+                                    <li><a class="yu-links" href="#">XXX</a></li>
+                                    <li><a class="yu-links" href="#">XXX</a></li>
+                                    <li><a class="yu-links" href="#">XXX</a></li>
+                                    <li><a class="yu-links" href="#">XXX</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                <div class="panel" id="two-panel">
+                    <div class="panel-title">購物紀錄</div>
+                </div>
+
+                <div class="panel" id="three-panel">
+                    <div class="panel-title">我的收藏</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="holder-mobile d-lg-none">
+            <div class="accordion" id="accordionHolder">
+                <div class="card">
+                    <div class="card-header" id="headingHolderOne">
+                        <h4 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                data-target="#holder-collapseOne">
+                                內容簡介
+                            </button>
+                        </h4>
+                    </div>
+
+                    <div id="holder-collapseOne" class="collapse show" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nam consequuntur
+                                nesciunt. Totam amet iusto laborum eaque, optio iste vero reprehenderit? Dolore laborum
+                                quod eveniet magnam labore! Ipsum, fugit maiores.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingHolderTwo">
+                        <h4 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#holder-collapseTwo">
+                                作者介紹
+                            </button>
+                        </h4>
+                    </div>
+                    <div id="holder-collapseTwo" class="collapse" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit, dolore sunt
+                                illo dolorem dolor aut suscipit sit reprehenderit incidunt placeat consectetur, veniam
+                                doloribus fuga est esse voluptatum iure quae!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingHolderThree">
+                        <h4 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#holder-collapseThree">
+                                書籍目錄
+                            </button>
+                        </h4>
+                    </div>
+                    <div id="holder-collapseThree" class="collapse" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus facilis aperiam
+                                adipisci esse veritatis, illo velit reiciendis officiis porro quasi ratione voluptatum
+                                eum tempore provident laborum harum. Fugiat, ex fugit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- 頁面內容 end -->
 
