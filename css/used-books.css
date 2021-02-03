@@ -171,6 +171,36 @@
   left: 40%;
 }
 
+.jill-Iwant-slider-L {
+  position: absolute;
+  /* left: 0px; */
+  /* left: -25px; */
+  left: -35px;
+  top: 110px;
+}
+.jill-Iwant-slider-R {
+  position: absolute;
+  /* left: 710px; */
+  /* left: 730px; */
+  left: 740px;
+  top: 110px;
+}
+
+.jill-Peoplewant-slider-L {
+  position: absolute;
+  /* left: 0px; */
+  /* left: -25px; */
+  left: -35px;
+  top: 420px;
+}
+.jill-Peoplewant-slider-R {
+  position: absolute;
+  /* left: 710px; */
+  /* left: 730px; */
+  left: 740px;
+  top: 420px;
+}
+
 .jill-mycard {
   width: 351px;
   height: 257px;
@@ -200,25 +230,30 @@
 }
 
 .jill-card-btn-status {
-  top: 200px;
+  top: 234px;
   /* left: 70px; */
   left: 120px;
 }
 
 .jill-card-btn-cancel {
-  top: 200px;
+  top: 234px;
   /* left: 170px; */
   left: 220px;
 }
 
 .jill-card-btn-status2 {
-  top: 200px;
+  top: 234px;
   left: 480px;
 }
 
 .jill-card-btn-cancel2 {
-  top: 200px;
+  top: 234px;
   left: 580px;
+}
+
+.jill-PeoplewantChange-title {
+  /* 若想調整margin-top的值，增減多少，jill-card-btn3跟4的按鈕top就一樣要增減相同的數值 */
+  margin-top: 16px;
 }
 
 .jill-PeoplewantChangeList {
@@ -226,21 +261,53 @@
 }
 
 .jill-card-btn-status3 {
-  top: 470px;
+  top: 548px;
   left: 120px;
 }
 
 .jill-card-btn-cancel3 {
-  top: 470px;
+  top: 548px;
   left: 220px;
 }
 
 .jill-card-btn-status4 {
-  top: 470px;
+  top: 548px;
   left: 480px;
 }
 
 .jill-card-btn-cancel4 {
-  top: 470px;
+  top: 548px;
   left: 580px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .jill-myNchange-area {
+    /* 我的選單再調整 */
+    width: 40%;
+    height: 1200px;
+  }
+  .jill-myNchange-display {
+    width: 398px;
+    height: 251px;
+    border: none;
+    background: url("/images/style-guide/bg_noise.png") white;
+  }
+
+  .jill-mystatus {
+    position: relative;
+    height: 1200px;
+  }
+
+  .jill-mycard {
+    /* text-align: center; */
+    position: relative;
+    display: block;
+    border: none;
+    background: url("/images/style-guide/bg_noise.png") white;
+    border-radius: 15px;
+    padding: 40px 20px;
+    width: 100%;
+  }
+  body {
+  }
 }

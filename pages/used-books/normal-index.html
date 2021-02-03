@@ -127,7 +127,7 @@
           </svg>
 
           <img src="../../images/books/5fe1e0d53a3c6.png">
-          <ul>
+          <ul class="d-none d-sm-none d-md-none d-lg-none d-xl-block">
             <div class="jill-underline"></div>
             <li>9789869507776</li>
             <div class="jill-underline"></div>
@@ -145,7 +145,18 @@
       <!-- 我的交換單右邊區塊 -->
       <div class="jill-mystatus">
         <!-- 我想跟別人換 -->
+        <h5> 我想跟別人換</h5>
         <div class="jill-IwantChangeList d-flex">
+          <div class="slider-aria d-flex">
+            <div class="slider jill-Iwant-slider-L"><a href="#">
+                <i class="fas fa-chevron-left"></i>
+              </a>
+            </div>
+            <div class="slider jill-Iwant-slider-R"><a href="#">
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
           <div class="jill-mycard d-flex">
             <img src="../../images/books/5fe1e0d53a3c6.png">
             <ul>
@@ -182,7 +193,18 @@
           </div>
         </div>
         <!-- 別人想跟我換 -->
+        <h5 class="jill-PeoplewantChange-title"> 別人想跟我換</h5>
         <div class="jill-PeoplewantChangeList  d-flex">
+          <div class="slider-aria d-flex">
+            <div class="slider jill-Peoplewant-slider-L"><a href="#">
+                <i class="fas fa-chevron-left"></i>
+              </a>
+            </div>
+            <div class="slider jill-Peoplewant-slider-R"><a href="#">
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
           <div class="jill-mycard d-flex">
             <img src="../../images/books/5fe1e0d53a3c6.png">
             <ul>
@@ -223,12 +245,16 @@
       </div>
     </div>
   </div>
-  </div>
-
-
-
+  <!-- 其他人在換什麼 -->
+  <div class="container-fluid my-5">
 
   </div>
+
+
+
+
+
+
   <!-- 頁面內容 end -->
 
   <!-- 通用元件js  右上選單跑不動 待檢查-->
