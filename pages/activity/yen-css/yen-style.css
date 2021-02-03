@@ -199,20 +199,21 @@ body {
 
 .yen-hot {
   margin: 0 72px;
-  padding-top: 72px;
+  /* padding-top: 72px; */
   height: 100vh;
   overflow: visible;
 }
 
 .yen-title-box {
   width: 100%;
+  padding-top: 72px;
   position: relative;
 }
 
 .yen-circle {
   width: 7%;
   position: absolute;
-  top: 0;
+  top: 4.5rem;
 }
 
 .yen-title-text {
@@ -260,6 +261,7 @@ body {
   background: #acf;
   padding: 15rem;
   z-index: 10;
+  width: 100%;
   transition: 0.2s all;
 }
 
@@ -309,6 +311,24 @@ body {
   color: #fff;
 }
 
+.yen-hot-ladybug {
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  z-index: 25;
+  width: 2%;
+  transform: rotate(0.4turn);
+}
+
+.yen-hot-run {
+  position: absolute;
+  top: -13%;
+  right: 33%;
+  z-index: 30;
+  width: 8%;
+  transform: rotate(0.05turn);
+}
+
 /* media query */
 @media (min-width: 768px) and (max-width: 992px) {
   .yen-overflow-box {
@@ -333,6 +353,17 @@ body {
     padding: 8rem 10rem;
     height: 100%;
   }
+
+  .yen-hot-ladybug {
+    top: 12%;
+    width: 2%;
+  }
+
+  .yen-hot-run {
+    position: absolute;
+    top: -10%;
+    right: 30%;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -356,6 +387,18 @@ body {
 
   .yen-hot-cards-l {
     padding: 6rem 10rem;
+  }
+
+  .yen-hot-ladybug {
+    top: 15%;
+    width: 3%;
+  }
+
+  .yen-hot-run {
+    position: absolute;
+    top: -10%;
+    right: 15%;
+    width: 10%;
   }
 }
 
@@ -410,6 +453,15 @@ body {
     width: 100%;
     height: 100%;
   }
+
+  .yen-hot-ladybug {
+    top: -2%;
+    width: 5%;
+  }
+
+  .yen-hot-run {
+    display: none;
+  }
 }
 /* media query end */
 /* hot end */
@@ -419,6 +471,90 @@ body {
 /* new start */
 .yen-new {
   margin: 0 72px;
-  padding-top: 72px;
   height: 100vh;
+}
+
+.yen-new-box {
+  width: 100%;
+  height: 73%;
+  margin-top: 2%;
+}
+
+.yen-new-card-box {
+  width: 60%;
+  height: 100%;
+  background: #fca;
+}
+
+.yen-island-box {
+  width: 40%;
+  position: relative;
+  /* background: #afa; */
+}
+
+.yen-island {
+  width: 95%;
+  padding-top: 2%;
+  padding-left: 30%;
+  padding-right: 10%;
+}
+
+.yen-north-area {
+  position: absolute;
+  top: -8%;
+  left: 42%;
+  width: 20%;
+  opacity: 0.7;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+
+.yen-medium-area {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 20%;
+  opacity: 0.7;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.yen-south-area {
+  position: absolute;
+  bottom: 12%;
+  left: 10%;
+  width: 20%;
+  opacity: 0.7;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.yen-east-area {
+  position: absolute;
+  bottom: 45%;
+  right: 1%;
+  width: 20%;
+  opacity: 0.7;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.yen-north-area:hover {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.yen-medium-area:hover {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.yen-south-area:hover {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.yen-east-area:hover {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
 }
