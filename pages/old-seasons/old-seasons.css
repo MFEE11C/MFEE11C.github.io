@@ -47,11 +47,11 @@ https://codepen.io/ant1mas/pen/MeJjaK
 @keyframes rotation {
   from {
     /* transform: translate(0px, 0px) rotate(0deg); */
-    /* transform: translate(-81px, -265px) rotate(0deg); */
+    transform: translate(-81px, -265px) rotate(0deg);
   }
   to {
     /* transform: translate(0px, 0px) rotate(359deg); */
-    /* transform: translate(-81px, -265px) rotate(359deg); */
+    transform: translate(-81px, -265px) rotate(359deg);
   }
 }
 
