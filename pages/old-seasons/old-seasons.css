@@ -42,6 +42,7 @@ https://codepen.io/ant1mas/pen/MeJjaK
 @media only screen and (max-width: 1200px) {
   .responsive-title {
     font-size: 2rem;
+    text-align: center;
   }
 }
 
@@ -172,4 +173,17 @@ https://codepen.io/ant1mas/pen/MeJjaK
 
 .solar-term-plate-filler {
   height: 500px;
+}
+
+.book-card {
+  width: 222px;
+  height: 330px;
+  border: 1px dashed black;
+}
+
+.book-base {
+  width: 220px;
+  height: 248px;
+  border-radius: 15px;
+  background-color: var(--honki-white);
 }
