@@ -152,7 +152,7 @@ https://codepen.io/ant1mas/pen/MeJjaK
   height: 200%;
   border-radius: 50%;
   background: var(--honki-black);
-  opacity: 70%;
+  opacity: 80%;
 }
 .slice:first-child .slice-contents {
   transform: skewY(22.5deg); /* unskew slice contents */
