@@ -47,11 +47,11 @@ https://codepen.io/ant1mas/pen/MeJjaK
 @keyframes rotation {
   from {
     /* transform: translate(0px, 0px) rotate(0deg); */
-    transform: translate(-81px, -265px) rotate(0deg);
+    /* transform: translate(-81px, -265px) rotate(0deg); */
   }
   to {
     /* transform: translate(0px, 0px) rotate(359deg); */
-    transform: translate(-81px, -265px) rotate(359deg);
+    /* transform: translate(-81px, -265px) rotate(359deg); */
   }
 }
 
@@ -65,6 +65,9 @@ https://codepen.io/ant1mas/pen/MeJjaK
   /* border: 1px solid black; */
   border-radius: 50%;
   list-style: none;
+
+  /* image source: https://www.behance.net/gallery/38204839/The-24-Solar-Terms-Character-Design */
+  background-image: url(images/The_24_Solar_Terms_by_Cinyee_Chiu_715x715.png);
 
   /* transform: translate(0px, 0px); */
   transform: translate(-81px, -265px);
@@ -102,48 +105,45 @@ https://codepen.io/ant1mas/pen/MeJjaK
   transform-origin: 100% 100%;
 }
 .slice:nth-child(1) {
-  transform: rotate(1deg) skewY(60deg);
+  transform: rotate(0deg) skewY(60deg);
   opacity: 0;
 }
 .slice:nth-child(2) {
-  transform: rotate(31deg) skewY(60deg);
+  transform: rotate(30deg) skewY(60deg);
 }
 .slice:nth-child(3) {
-  transform: rotate(61deg) skewY(60deg);
+  transform: rotate(60deg) skewY(60deg);
 }
 .slice:nth-child(4) {
-  transform: rotate(91deg) skewY(60deg);
+  transform: rotate(90deg) skewY(60deg);
 }
 .slice:nth-child(5) {
-  transform: rotate(121deg) skewY(60deg);
+  transform: rotate(120deg) skewY(60deg);
 }
 .slice:nth-child(6) {
-  transform: rotate(151deg) skewY(60deg);
+  transform: rotate(150deg) skewY(60deg);
 }
 .slice:nth-child(7) {
-  transform: rotate(181deg) skewY(60deg);
+  transform: rotate(180deg) skewY(60deg);
 }
 .slice:nth-child(8) {
-  transform: rotate(211deg) skewY(60deg);
+  transform: rotate(210deg) skewY(60deg);
 }
 .slice:nth-child(9) {
-  transform: rotate(241deg) skewY(60deg);
+  transform: rotate(240deg) skewY(60deg);
 }
 .slice:nth-child(10) {
-  transform: rotate(271deg) skewY(60deg);
+  transform: rotate(270deg) skewY(60deg);
 }
 .slice:nth-child(11) {
-  transform: rotate(301deg) skewY(60deg);
+  transform: rotate(300deg) skewY(60deg);
 }
 .slice:nth-child(12) {
-  transform: rotate(331deg) skewY(60deg);
+  transform: rotate(330deg) skewY(60deg);
 }
 .slice:nth-child(13) {
-  transform: rotate(361deg) skewY(60deg);
+  transform: rotate(360deg) skewY(60deg);
 }
-/* .slice:nth-child(14) {
-  transform: rotate(391deg) skewY(60deg);
-} */
 
 .slice-contents {
   position: absolute;
