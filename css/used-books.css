@@ -1,3 +1,8 @@
+/* 暫時推開footer */
+.jill-footer-mt {
+  margin-top: 1000px;
+}
+
 /* 二手書交換 首頁(模式選擇) */
 .jill-index-title {
   text-align: center;
@@ -97,7 +102,7 @@
 /* 二手書交換 一般模式 首頁 */
 .jill-mylist-area {
   position: relative;
-  height: 800px;
+  /* height: 800px; */
 }
 
 .jill-myNchange-area {
