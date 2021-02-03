@@ -185,6 +185,15 @@ https://codepen.io/ant1mas/pen/MeJjaK
   }
 
   .red-center {
+    width: 45vw;
+    /* height: 50%; */
+    height: 45vw;
+    transform: translate(50%, 50%);
+    /* transition: 0.5s; */
+  }
+
+  /* v2 */
+  .red-center-v2 {
     width: 80vw;
     /* height: 50%; */
     height: 80vw;
