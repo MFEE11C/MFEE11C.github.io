@@ -230,6 +230,21 @@ body {
   position: relative;
 }
 
+.yen-hot-card-box:hover .yen-hover-box {
+  filter: blur(3px);
+  opacity: 0.5;
+  transform: scale(0.98);
+  box-shadow: none;
+}
+
+.yen-hot-card-box:hover .yen-hover-box:hover {
+  transform: scale(1);
+  filter: blur(0px);
+  opacity: 1;
+  box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+  /* background: #7ba23e; */
+}
+
 .yen-hot-cards-s {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -237,31 +252,61 @@ body {
   padding: 15rem;
   height: 80%;
   z-index: 10;
+  transition: 0.2s all;
+  position: relative;
 }
 
 .yen-hot-cards-l {
   background: #acf;
   padding: 15rem;
   z-index: 10;
+  transition: 0.2s all;
 }
 
 .yen-hot-bgimg1 {
   background-image: url(../activity-imgs/hot/hot-1.jpg);
 }
+
 .yen-hot-bgimg2 {
   background-image: url(../activity-imgs/hot/hot-2.jpg);
 }
+
 .yen-hot-bgimg3 {
   background-image: url(../activity-imgs/hot/hot-3.jpg);
 }
+
 .yen-hot-bgimg4 {
   background-image: url(../activity-imgs/hot/hot-4.jpg);
 }
+
 .yen-hot-bgimg5 {
   background-image: url(../activity-imgs/hot/hot-1.jpg);
 }
+
 .yen-hot-bgimg6 {
   background-image: url(../activity-imgs/hot/hot-1.jpg);
+}
+
+.yen-hot-cover-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.yen-hot-cover {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  background-color: #7ba23e;
+}
+
+.yen-hot-cover-text {
+  position: absolute;
+  left: 10%;
+  top: 40%;
+  color: #fff;
 }
 
 /* media query */
@@ -365,4 +410,15 @@ body {
     width: 100%;
     height: 100%;
   }
+}
+/* media query end */
+/* hot end */
+
+/* ----------------------- */
+
+/* new start */
+.yen-new {
+  margin: 0 72px;
+  padding-top: 72px;
+  height: 100vh;
 }
