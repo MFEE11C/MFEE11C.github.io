@@ -225,7 +225,7 @@ body {
   display: flex;
   margin-top: 2%;
   width: 100%;
-  background: #ccc;
+  /* background: #ccc; */
   overflow-x: visible;
   position: relative;
 }
@@ -243,6 +243,25 @@ body {
   background: #acf;
   padding: 15rem;
   z-index: 10;
+}
+
+.yen-hot-bgimg1 {
+  background-image: url(../activity-imgs/hot/hot-1.jpg);
+}
+.yen-hot-bgimg2 {
+  background-image: url(../activity-imgs/hot/hot-2.jpg);
+}
+.yen-hot-bgimg3 {
+  background-image: url(../activity-imgs/hot/hot-3.jpg);
+}
+.yen-hot-bgimg4 {
+  background-image: url(../activity-imgs/hot/hot-4.jpg);
+}
+.yen-hot-bgimg5 {
+  background-image: url(../activity-imgs/hot/hot-1.jpg);
+}
+.yen-hot-bgimg6 {
+  background-image: url(../activity-imgs/hot/hot-1.jpg);
 }
 
 /* media query */
@@ -281,7 +300,7 @@ body {
   .yen-hot-card-box {
     margin-top: 2%;
     height: 70%;
-    overflow: hidden;
+    overflow: visible;
   }
 
   .yen-hot-cards-s {
