@@ -984,21 +984,21 @@ body {
 }
 
 .yen-event-card-title {
-  padding: 5% 8%;
+  padding: 8% 8% 5% 8%;
   overflow: hidden;
   text-overflow: ellipsis;
-  height: 40%;
+  height: 50%;
 }
 
 .yen-event-card-location {
   width: 50%;
-  padding-top: 3%;
+  /* padding-top: 3%; */
   display: flex;
 }
 
 .yen-event-card-price {
   width: 50%;
-  padding-top: -60px;
+  margin-top: -3.2%;
   display: flex;
   justify-content: flex-end;
 }
@@ -1030,6 +1030,9 @@ body {
 .yen-slide {
   width: 13%;
   position: absolute;
-  bottom: -4%;
+  bottom: -3%;
   left: 10%;
 }
+
+/* event animation */
+/* event animation end */
