@@ -516,7 +516,7 @@ body {
   background: #1c1b1b;
   color: #fff;
   text-align: center;
-  padding-top: 5%;
+  padding-top: 5.5%;
   font-weight: 600;
   letter-spacing: 2px;
 }
@@ -527,7 +527,7 @@ body {
   background: #7ba23e;
   color: #fff;
   text-align: center;
-  padding-top: 5%;
+  padding-top: 5.5%;
   letter-spacing: 1px;
 }
 
@@ -539,7 +539,7 @@ body {
 }
 
 .yen-new-card-title {
-  padding: 6% 10%;
+  padding: 8% 10% 8% 10%;
   font-size: 16px;
   font-weight: 700;
   text-align: center;
@@ -553,7 +553,7 @@ body {
 
 .yen-new-card-location {
   width: 50%;
-  padding-top: 5%;
+  /* padding-top: 4%; */
   display: flex;
 }
 
@@ -565,7 +565,7 @@ body {
 
 .yen-new-card-price {
   width: 50%;
-  padding-top: 3%;
+  padding-top: -3%;
   display: flex;
   justify-content: flex-end;
 }
