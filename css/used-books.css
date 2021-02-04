@@ -491,6 +491,10 @@
 /* 新增二手書表單 */
 .jill-myaddform {
   background-color: #ece2d4;
+  padding: 50px;
+  border-radius: 20px;
+  /* width: 900px; */
+  width: 80%;
 }
 
 .BC_pic_title {
@@ -524,9 +528,77 @@
   .jill-dancing-img {
     margin-top: 20px;
     margin-left: 0px;
+    display: none;
+  }
+
+  .jill-myaddform {
+    background-color: transparent;
+    /* width: 70%; */
   }
 }
 
 .jill-insert-footer-mt {
   margin-top: 200px;
+}
+
+/* 一般交換 恭喜配對成功頁面跳窗 */
+.jill-modal-dialog {
+  display: flex;
+  justify-content: center;
+}
+
+.jill-normal-success-area {
+  width: 764px;
+  height: 495px;
+}
+.jill-normal-success-title {
+  color: var(--honki-red);
+}
+
+.jill-normal-success-msbg {
+  width: 763px;
+  height: 450px;
+  background-color: #ece2d4;
+  border: 1px solid #e83015;
+}
+/* 紅色三角形 */
+.jill-triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 450px 763px;
+  border-color: transparent transparent rgba(232, 48, 21, 0.42) transparent;
+  margin-left: -81px;
+  margin-top: -10px;
+}
+
+.jill-normal-success-message-L {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+}
+
+.jill-normal-success-message-L-img img {
+  height: 300px;
+  margin-top: -550px;
+  margin-left: 100px;
+}
+
+.jill-normal-success-message-R {
+  position: absolute;
+  top: 280px;
+  left: 530px;
+  color: #fff;
+}
+
+.jill-normal-success-message-R-img img {
+  height: 300px;
+  margin-top: -450px;
+  margin-left: 200px;
+}
+
+.jill-success-exit button {
+  /* position: absolute; */
+  margin-top: -70px;
+  z-index: 90;
 }
