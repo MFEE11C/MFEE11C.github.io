@@ -278,7 +278,7 @@
   left: 500px;
 }
 
-@media only screen and (max-width: 1330px) {
+@media only screen and (max-width: 1200px) {
   .jill-myNchange-area {
     /* 我的選單再調整 */
     /* width: 50%; */
@@ -486,4 +486,9 @@
   .jill-other-card {
     margin-top: 80px;
   }
+}
+
+/* 新增二手書表單 */
+.BC_pic_title {
+  margin-right: 100px;
 }
