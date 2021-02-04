@@ -278,12 +278,13 @@
   left: 500px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1330px) {
   .jill-myNchange-area {
     /* 我的選單再調整 */
     /* width: 50%; */
     width: 40%;
     height: 1200px;
+    /* margin-left: 100px; */
   }
 
   .jill-myNchange-display {
@@ -293,6 +294,16 @@
     background: url("/images/style-guide/bg_noise.png") white;
     /* background-color: rgb(132, 171, 216); */
   }
+
+  .jill-myNchange-display img {
+    width: auto;
+    height: 200px;
+    margin-top: 26px;
+    /* margin-left: 47px; */
+    margin-left: 90px;
+    /* margin-left: 150px; */
+  }
+
   .jill-myNchange-display ul {
     display: none;
   }
@@ -300,8 +311,8 @@
   /* 蜜蜂svg */
   .jill-myNchange-display svg {
     position: absolute;
-    left: 250px;
-    top: 170px;
+    left: 360px;
+    top: 155px;
   }
 
   .jill-mystatus {
@@ -387,6 +398,14 @@
     /* 我的選單再調整 */
     width: 60%;
     height: 1200px;
+    margin-left: 0px;
+  }
+
+  /* 蜜蜂svg */
+  .jill-myNchange-display svg {
+    position: absolute;
+    left: 260px;
+    top: 170px;
   }
 
   .jill-Iwant-slider-L {
@@ -429,8 +448,12 @@
 /* 其他人在換什麼 */
 
 .jill-otherbooks-area-title {
-  margin-top: 500px;
+  margin-top: 400px;
   text-align: center;
+}
+
+.jill-other-card {
+  margin-top: 20px;
 }
 
 .jill-want-btn {
@@ -447,12 +470,20 @@
   .jill-other-card {
     width: 170px;
     background-color: rgb(212, 150, 150);
+    margin-top: 60px;
   }
   .jill-want-btn {
     margin-top: 210px;
     margin-left: 5px;
   }
+
+  .jill-pagination {
+    margin-top: 100px;
+  }
 }
 
-@media only screen and (max-width: 678px) {
+@media only screen and (max-width: 780px) {
+  .jill-other-card {
+    margin-top: 80px;
+  }
 }
