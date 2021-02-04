@@ -32,17 +32,17 @@
     <!-- JS 導入 navbar 模板 -->
     <div id="navbarTemp"></div>
 
-    <div>
-        <div class="aw-changeProductBtn d-flex justify-content-center"><button>
-                書籍</button><button>活動</button>
+    <!-- <div>
+        <div class=" d-flex justify-content-center"><button class="aw-changeProductBtn-active">
+                書籍</button><button class="aw-changeProductBtn">活動</button>
         </div>
-    </div>
+    </div> -->
     <!-- 頁面內容 start -->
     <div class="container-fluid">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb aw-breadcrumb">
                 <li class="breadcrumb-honki"><a href="#">首頁</a></li>
-                <li class="active" aria-current="page">二手交換</li>
+                <li class="active" aria-current="page">購物車</li>
             </ol>
         </nav>
         <div class="row">
@@ -53,8 +53,8 @@
                         <div class="row aw-changeProductBtnRow">
                             <div class="col-3"></div>
                             <div class="col-6">
-                                <div class="aw-changeProductBtn d-flex justify-content-center"><button>
-                                        書籍</button><button>活動</button>
+                                <div class=" d-flex justify-content-center"><button class="aw-changeProductBtn-active">
+                                        書籍</button><button class="aw-changeProductBtn">活動</button>
                                 </div>
                             </div>
                             <div class="col-3"></div>
@@ -91,7 +91,7 @@
                             </div>
                         </div>
                         <div class="aw-productAreaPadding">
-                            <div class="aw-productArea container">
+                            <div class="aw-productArea">
                                 <!--  -->
                                 <div class="row aw-card d-flex align-items-center ">
                                     <div class="col-3 aw-card-pic">
@@ -156,18 +156,18 @@
                             </div>
                         </div>
 
-                        <div class="container aw-stepBtn">
-                            <div class="row justify-content-between">
-                                <div class="aw-preStep  d-flex align-items-center"><a href="">
-                                        <div class="row">
-                                            <i class="fas fa-angle-left"></i>
-                                            <h6> 繼續購物</h6>
-                                        </div>
-                                    </a></div>
-                                <div class="aw-nextStep  d-flex align-items-center"> <button class="btn-lg">
-                                        <i class="fas fa-shopping-cart"></i>下一步
-                                    </button></div>
-                            </div>
+
+                        <div class="row justify-content-between aw-stepBtn">
+                            <div class="aw-preStep  d-flex align-items-center"><a class="aw-a" href="">
+                                    <div class="row aw-row">
+                                        <i class="fas fa-angle-left mr-2"></i>
+                                        <h6> 繼續購物</h6>
+                                    </div>
+                                </a></div>
+                            <div class="aw-nextStep  d-flex align-items-center"> <button class="btn-lg aw-btn-lg">
+                                    下一步
+                                </button></div>
+
                         </div>
                         <div class="col-2"> </div>
 
