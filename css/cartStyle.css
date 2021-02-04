@@ -24,7 +24,7 @@
   padding: 0;
 }
 .aw-productArea {
-  height: 60vh;
+  height: 61vh;
   overflow-y: scroll;
   margin: 0;
   overflow-x: hidden;
@@ -61,7 +61,7 @@
   /* margin-bottom: 12px; */
   transition: 0.3s ease-in-out;
   padding: 9px 0;
-  margin: 8px 10px 12px;
+  margin: 8px 10px 12px 10px;
 }
 .aw-card:hover {
   margin-bottom: 25px;
@@ -71,7 +71,7 @@
 .aw-card-pic {
   background: url("/images/style-guide/bg_noise.png") white;
   border-radius: 4px;
-  /* padding: 9px; */
+  /* padding: 0px; */
   width: 100%;
 }
 
