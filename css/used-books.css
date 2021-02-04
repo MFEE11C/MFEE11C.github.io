@@ -127,6 +127,13 @@
   border: 1px solid#D5C7B2;
 }
 
+.jill-myNchange-display li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 130px;
+}
+
 .jill-myNchange-display img {
   width: auto;
   height: 200px;
@@ -213,6 +220,13 @@
   margin-left: 12px;
 }
 
+.jill-mycard li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 130px;
+}
+
 .jill-mycard img {
   height: 160px;
   width: auto;
@@ -240,20 +254,9 @@
   left: 120px;
 }
 
-.jill-card-btn-cancel {
-  top: 234px;
-  /* left: 170px; */
-  left: 220px;
-}
-
 .jill-card-btn-status2 {
   top: 234px;
   left: 480px;
-}
-
-.jill-card-btn-cancel2 {
-  top: 234px;
-  left: 580px;
 }
 
 .jill-PeoplewantChange-title {
@@ -270,19 +273,9 @@
   left: 120px;
 }
 
-.jill-card-btn-cancel3 {
-  top: 548px;
-  left: 220px;
-}
-
 .jill-card-btn-status4 {
   top: 548px;
   left: 480px;
-}
-
-.jill-card-btn-cancel4 {
-  top: 548px;
-  left: 580px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -292,15 +285,54 @@
     height: 1200px;
   }
   .jill-myNchange-display {
-    width: 398px;
+    width: 225px;
     height: 251px;
     border: none;
     background: url("/images/style-guide/bg_noise.png") white;
+    /* background-color: rgb(132, 171, 216); */
+  }
+  .jill-myNchange-display ul {
+    display: none;
+  }
+
+  /* 蜜蜂svg */
+  .jill-myNchange-display svg {
+    position: absolute;
+    left: 250px;
+    top: 170px;
   }
 
   .jill-mystatus {
     position: relative;
     height: 1200px;
+    margin-top: 50px;
+    margin-left: -50px;
+  }
+
+  .jill-Iwant-slider-L {
+    position: absolute;
+    left: -35px;
+    top: 110px;
+  }
+  .jill-Iwant-slider-R {
+    position: absolute;
+    left: 490px;
+    top: 110px;
+  }
+
+  .jill-Peoplewant-slider-L {
+    position: absolute;
+    left: -35px;
+    top: 440px;
+  }
+  .jill-Peoplewant-slider-R {
+    position: absolute;
+    left: 490px;
+    top: 440px;
+  }
+
+  .jill-PeoplewantChange-title {
+    margin-top: 80px;
   }
 
   .jill-mycard {
@@ -309,10 +341,79 @@
     display: block;
     border: none;
     background: url("/images/style-guide/bg_noise.png") white;
+    /* 測試用背景 要調回上面 ，這邊RWD中間斷點暫時這樣，有空再調*/
+    /* background-color: rgb(142, 152, 235); */
     border-radius: 15px;
-    padding: 40px 20px;
-    width: 100%;
+    padding: 20px 20px;
+    width: 45%;
+    height: 220px;
   }
-  body {
+  .jill-mycard ul {
+    display: none;
+  }
+
+  .jill-mycard img {
+    height: 160px;
+    width: auto;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+
+  .jill-card-btn-status {
+    top: 234px;
+    left: 35px;
+  }
+
+  .jill-card-btn-status2 {
+    top: 234px;
+    left: 40px;
+  }
+
+  .jill-card-btn-status3 {
+    top: 235px;
+    left: 35px;
+  }
+
+  .jill-card-btn-status4 {
+    top: 235px;
+    left: 40px;
+  }
+}
+
+@media only screen and (max-width: 678px) {
+  .jill-Iwant-slider-L {
+    position: absolute;
+    left: -35px;
+    top: 110px;
+  }
+  .jill-Iwant-slider-R {
+    position: absolute;
+    left: 360px;
+    top: 110px;
+  }
+
+  .jill-Peoplewant-slider-L {
+    position: absolute;
+    left: -35px;
+    top: 440px;
+  }
+  .jill-Peoplewant-slider-R {
+    position: absolute;
+    left: 360px;
+    top: 440px;
+  }
+
+  .jill-mycard {
+    /* text-align: center; */
+    position: relative;
+    display: block;
+    border: none;
+    background: url("/images/style-guide/bg_noise.png") white;
+    /* 測試用背景 要調回上面 */
+    /* background-color: rgb(142, 152, 235); */
+    border-radius: 15px;
+    padding: 20px 20px;
+    width: 100%;
+    height: 220px;
   }
 }
