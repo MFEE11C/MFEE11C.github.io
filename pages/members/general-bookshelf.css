@@ -1,0 +1,88 @@
+.yu-redpoint {
+  width: 64px;
+  height: 64px;
+  background-color: var(--honki-red);
+  margin: 5px;
+  float: left;
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  left: 70%;
+  z-index: -1;
+}
+
+.yu-breadcrumb {
+  padding-top: 72px;
+  padding-left: 158px;
+}
+
+.yu-member-menu-title {
+  text-align: center;
+  /* margin: 72px auto 38px auto; */
+}
+
+.yu-member-photo {
+  width: 200px;
+  height: 200px;
+}
+
+.yu-general-member {
+  background-color: var(--honki-theme);
+  width: 110px;
+  height: 30px;
+  border-radius: 4px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.yu-general-bookshelf {
+  width: 70%;
+  z-index: -1;
+  position: relative;
+}
+
+.yu-book-1 {
+  width: 120px;
+  top: 0;
+  left: 10%;
+  position: absolute;
+  z-index: 200;
+}
+.yu-books::after {
+  content: "";
+  width: 24px;
+  height: 64px;
+  background-color: #fff;
+  border-radius: 5px 0 0 5px;
+  position: absolute;
+  top: 15%;
+  left: -15%;
+  z-index: 1;
+}
+.yu-book-thebeginningofspring-blank {
+  width: 113px;
+  height: 168px;
+  background-color: #776b6b;
+}
+
+.yu-member-menu {
+  margin-top: 15%;
+  margin-left: 230px;
+}
+.yu-new-book {
+  margin-top: 5rem;
+  background-color: salmon;
+  height: 360px;
+  border-radius: 32px;
+  padding: 54px 0;
+  position: relative;
+}
+.yu-new-book-pic {
+  width: 40%;
+}
+.yu-ladybug {
+  width: 24px;
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+}

@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="/css/footer.css" />
 
     <!-- yu's css -->
-    <link rel="stylesheet" href="./basicbookshelf.css" />
+    <link rel="stylesheet" href="./general-bookshelf.css" />
 </head>
 
 <body>
@@ -46,43 +46,44 @@
     <!-- 標題 -->
 
     <div class="container my-5">
-        <div class="row d-flex">
-            <div class="yu-basicbookshelf">
-                <img class="w-100" src="/images/members/bookshelf-normal.png" alt="" />
-            </div>
-            <div class="col-12">
-                <div class="yu-book-thebeginningofspring-blank">
-
+        <div class="row d-flex justify-content-between">
+            <div class="yu-general-bookshelf col-8 ">
+                <div class="yu-books yu-book-1">
+                    <img src="/images/books/9789869782364.png" class="w-100" alt="">
                 </div>
-                <!-- book1 -->
+                <img class="w-100" src="/images/members/general-bookshelf.png" alt="" />
                 <div>
-                    <img src="/images/books/9789869961202.png" alt="">
-                </div>
-                <!-- book2 -->
-                <div>
-                    <img src="/images/books/9789869961202.png" alt="">
-                </div>
-                <!-- book3 -->
-                <div>
-                    <img src="/images/books/9789869961202.png" alt="">
-                </div>
-                <!-- book4 -->
-                <div>
-                    <img src="/images/books/9789869961202.png" alt="">
+                    <!-- book1 -->
+                    <div class="yu-book-thebeginningofspring-blank"></div>
+                    <!-- book2 -->
+                    <div><img src="/images/books/9789869961202.png" alt=""></div>
+                    <!-- book3 -->
+                    <div><img src="/images/books/9789869961202.png" alt=""></div>
+                    <!-- book4 -->
+                    <div><img src="/images/books/9789869961202.png" alt=""></div>
                 </div>
             </div>
-
-            <div>
+            <div class="col-4">
                 <div>
-                    <h5 class="yu-membersmenu">會員中心</h5>
-                    <!-- 大頭貼 -->
-                    <figure class="yu-photo">
-                        <img src="" alt="" />
-                    </figure>
+                    <h5 class="yu-member-menu-title">會員中心</h5>
+                    <!-- 個人頭貼 -->
+                    <div class="yu-member-photo mx-auto">
+                        <img class="w-100" src="/images/members/personalphoto.svg" alt="">
+                    </div>
                     <!-- 會員等級 -->
+                    <div class="yu-member-info d-flex justify-content-center mt-3">
+                        <div class="yu-general-member mr-3">一般會員</div>
+                        <div class="yu-general-member-name">凱莉</div>
+                    </div>
                 </div>
-                <div>
-                    <p>已經買的書</p>
+                <div class="yu-new-book text-center">
+                    <p>新購買的二十四節氣書籍</p>
+                    <div class="yu-new-book-pic mx-auto">
+                        <img src="/images/books/9789863984740.jpg" class="w-100" alt="">
+                    </div>
+                    <div class="yu-ladybug">
+                        <img class="w-100" src="/images/members/ladybug.svg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
