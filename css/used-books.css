@@ -469,7 +469,7 @@
 
   .jill-other-card {
     width: 170px;
-    background-color: rgb(212, 150, 150);
+    /* background-color: rgb(212, 150, 150); */
     margin-top: 60px;
   }
   .jill-want-btn {
@@ -489,6 +489,44 @@
 }
 
 /* 新增二手書表單 */
+.jill-myaddform {
+  background-color: #ece2d4;
+}
+
 .BC_pic_title {
   margin-right: 100px;
+}
+
+.jill-addform-btn {
+  background-color: var(--honki-red);
+  margin-right: 12px;
+}
+
+.jill-addform-btn:hover {
+  background-color: var(--honki-red);
+}
+
+/* 選擇檔案按鈕對齊 */
+.jill-upload-btn {
+  margin-left: -46px;
+}
+
+.jill-dancing-img {
+  margin-top: 160px;
+  margin-left: 120px;
+}
+/* 跳舞的人插圖大小 */
+.jill-dancing-img svg {
+  width: 90%;
+}
+
+@media only screen and (max-width: 780px) {
+  .jill-dancing-img {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+
+.jill-insert-footer-mt {
+  margin-top: 200px;
 }

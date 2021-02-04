@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HONKI BOOKS</title>
+    <!-- 設定 icon 圖片 -->
+    <link rel="icon" href="/images/style-guide/logo.svg" />
+
+    <!-- Bootstrap 4 與 Font Awesome 5 -->
+    <link rel="stylesheet" href="/bootstrap-4.5.3-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/fontawesome-free-5.15.1-web/css/all.css" />
+
+    <!-- font 字體 Noto Sans TC + Abel -->
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet" />
+
+    <!-- 導入 navbar 與 footer 的 script -->
+    <script src="/js/navfoot.js" type="text/javascript" defer></script>
+
+    <!-- 導入全組通用css -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <!-- 導入購物車css -->
+    <link rel="stylesheet" href="/css/cartStyle.css" />
+
+</head>
+
+<body>
+    <!-- JS 導入 navbar 模板 -->
+    <div id="navbarTemp"></div>
+
+    <!-- <div>
+        <div class=" d-flex justify-content-center"><button class="aw-changeProductBtn-active">
+                書籍</button><button class="aw-changeProductBtn">活動</button>
+        </div>
+    </div> -->
+    <!-- 頁面內容 start -->
+    <div class="container-fluid">
+
+        <!-- 進度條 -->
+        <div class="aw-progress-bar">
+            <div class="row aw-row">
+                <div class="col-sm-2 col-lg-3"></div>
+                <div class="col-sm-8 col-lg-6 aw-progress">
+                    <div class=" row aw-row aw-progress-text  ">
+                        <div class="col-sm">
+                            <h6>購物明細</h6>
+                        </div>
+                        <div class="col-sm">
+                            <h6>付款方式</h6>
+                        </div>
+                        <div class="col-sm">
+                            <h6>確認訂單</h6>
+                        </div>
+                    </div>
+                    <div class="aw-progress-bar">
+
+                        <div class="row aw-row aw-progress-line">
+                            <div class="aw-progress-line-item col-sm"></div>
+                            <div class="aw-progress-line-item-pink col-sm"></div>
+                            <div class="aw-progress-line-item-pink col-sm"></div>
+                        </div>
+                        <div class="row aw-row justify-content-between aw-progress-circle">
+                            <div class="aw-progress-circle-item"></div>
+                            <div class="aw-progress-circle-item-pink"></div>
+                            <div class="aw-progress-circle-item-pink"></div>
+                            <div class="aw-progress-circle-item-pink"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-lg-3"></div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="aw-cart-left">
+                    <div class="row">
+                        <div class="col-4"> </div>
+                        <div class="col-6">
+                            <div class="row aw-changeProductBtnRow">
+                                <div class="col-3"></div>
+                                <div class="col-6">
+                                    <div class=" d-flex justify-content-center"><button
+                                            class="aw-changeProductBtn-active">
+                                            書籍</button><button class="aw-changeProductBtn">活動</button>
+                                    </div>
+                                </div>
+                                <div class="col-3"></div>
+                            </div>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+                <div class="aw-cart-right"></div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="aw-cart-left aw-cartBackground-left contai">
+                    <div class="row">
+                        <div class="col-4"></div>
+
+                        <div class="aw-cartContent col-6">
+
+                            <div class="aw-cart-page1-subtitle row  ">
+
+
+                                <div class=" col-6 row a-row  align-items-center">
+                                    <div class="col-sm">
+
+                                    </div>
+                                    <div class=" col-sm d-flex justify-content-center align-items-center ">
+                                        <h6 class="m-0 ">商品明細</h6>
+                                    </div>
+
+                                </div>
+                                <div class="col-6 row a-row  align-items-center justify-content-center">
+                                    <div class="col-sm">
+                                        <h6 class="m-0 ">優惠價</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6 class="m-0 ">數量</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6 class="m-0 ">小計</h6>
+                                    </div>
+                                    <div class="col-sm d-flex justify-content-center align-items-center">
+                                        <button class="btn-sm-dark"><span>清空</span></button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="aw-productAreaPadding">
+                                <div class="aw-productArea">
+                                    <!--  -->
+                                    <div class="row aw-card d-flex align-items-center ">
+                                        <div class="col-6 row a-row  align-items-center">
+                                            <div class="col-sm aw-card-pic">
+                                                <div class="aw-book-pic">
+                                                    <img class="w-100" src="/images/cart/cartpic1.png" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="col-sm aw-book-text d-flex justify-content-center">
+                                                <p class="aw-book-title">
+                                                    種日子的人
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 row a-row  align-items-center justify-content-center">
+                                            <div class="col-sm">
+                                                <p class="aw-book-title">226元</p>
+                                            </div>
+                                            <div class="col-sm d-flex align-items-center"> <select
+                                                    class="aw-select-sm form-control formInput  col-7"
+                                                    id="exampleFormControlSelect1">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                </select> </div>
+                                            <div class="col-sm d-flex align-items-center">
+                                                <p class="aw-book-title">226元</p>
+                                            </div>
+                                            <div class="col-sm aw-book-price  d-flex justify-content-center "><i
+                                                    class="fas fa-times-circle aw-delete-cross"></i></div>
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="row aw-card d-flex align-items-center ">
+                                        <div class="col-6 row a-row  align-items-center">
+                                            <div class="col-sm aw-card-pic">
+                                                <div class="aw-book-pic">
+                                                    <img class="w-100" src="/images/cart/cartpic2.png" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="col-sm aw-book-text d-flex justify-content-center">
+                                                <p class="aw-book-title">
+                                                    山林製造
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 row a-row  align-items-center justify-content-center">
+                                            <div class="col-sm">
+                                                <p class="aw-book-title">226元</p>
+                                            </div>
+                                            <div class="col-sm d-flex align-items-center"> <select
+                                                    class="form-control formInput  col-7"
+                                                    id="exampleFormControlSelect1">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                </select> </div>
+                                            <div class="col-sm d-flex align-items-center">
+                                                <p class="aw-book-title">226元</p>
+                                            </div>
+                                            <div class="col-sm aw-book-price  d-flex justify-content-center "><i
+                                                    class="fas fa-times-circle aw-delete-cross"></i></div>
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="row aw-card d-flex align-items-center ">
+                                        <div class="col-6 row a-row  align-items-center">
+                                            <div class="col-sm aw-card-pic">
+                                                <div class="aw-book-pic">
+                                                    <img class="w-100" src="/images/cart/cartpic3.png" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="col-sm aw-book-text d-flex justify-content-center">
+                                                <p class="aw-book-title">
+                                                    閃電崩盤：一兆美元的真相!全球追捕，史上最神祕的金融罪犯
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 row a-row  align-items-center justify-content-center">
+                                            <div class="col-sm">
+                                                <p class="aw-book-title">226元</p>
+                                            </div>
+                                            <div class="col-sm d-flex align-items-center"> <select
+                                                    class="form-control formInput  col-7"
+                                                    id="exampleFormControlSelect1">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                </select> </div>
+                                            <div class="col-sm d-flex align-items-center">
+                                                <p class="aw-book-title">226元</p>
+                                            </div>
+                                            <div class="col-sm aw-book-price  d-flex justify-content-center "><i
+                                                    class="fas fa-times-circle aw-delete-cross"></i></div>
+                                        </div>
+                                    </div>
+
+                                    <!--  -->
+                                    <div class="row aw-card d-flex align-items-center ">
+                                        <div class="col-6 row a-row  align-items-center">
+                                            <div class="col-sm aw-card-pic">
+                                                <div class="aw-book-pic">
+                                                    <img class="w-100" src="/images/cart/cartpic1.png" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="col-sm aw-book-text d-flex justify-content-center">
+                                                <p class="aw-book-title">
+                                                    種日子的人
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 row a-row  align-items-center justify-content-center">
+                                            <div class="col-sm">
+                                                <p class="aw-book-title">226元</p>
+                                            </div>
+                                            <div class="col-sm d-flex align-items-center"> <select
+                                                    class="form-control formInput  col-7"
+                                                    id="exampleFormControlSelect1">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                </select> </div>
+                                            <div class="col-sm d-flex align-items-center">
+                                                <p class="aw-book-title">226元</p>
+                                            </div>
+                                            <div class="col-sm aw-book-price  d-flex justify-content-center "><i
+                                                    class="fas fa-times-circle aw-delete-cross"></i></div>
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                </div>
+                            </div>
+
+
+                            <div class="row justify-content-between aw-stepBtn">
+                                <div class="aw-preStep  d-flex align-items-center"><a class="aw-a"
+                                        href="./cart-index.html">
+                                        <div class="row aw-row">
+                                            <i class="fas fa-angle-left mr-2"></i>
+                                            <h6> 回上一頁</h6>
+                                        </div>
+                                    </a></div>
+                                <div class="aw-nextStep  d-flex align-items-center"> <button class="btn-lg aw-btn-lg">
+                                        下一步
+                                    </button></div>
+
+                            </div>
+                            <div class="col-2"> </div>
+
+
+
+
+                        </div>
+                        <div class="col-2"> </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="aw-cart-right cartBackground-right-aw"> </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <!-- 頁面內容 end -->
+
+        <!-- JS 導入 footer 模板 -->
+        <div id="footerTemp"></div>
+
+        <!-- Bootstrap 4 JS 與 jQuery 3 -->
+        <script src="/js/jquery-3.5.1.js"></script>
+        <script src="/bootstrap-4.5.3-dist/js/bootstrap.bundle.js"></script>
+
+        <!-- 通用元件js -->
+        <script src="/js/index.js"></script>
+</body>
+
+</html>
