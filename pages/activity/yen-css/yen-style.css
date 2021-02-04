@@ -486,6 +486,102 @@ body {
   background: #fca;
 }
 
+.yen-new-card-box {
+  width: 80%;
+  padding-left: 2%;
+  padding-top: 5%;
+}
+
+.yen-new-card {
+  width: 40%;
+  height: 85%;
+}
+
+.yen-new-card-img {
+  width: 100%;
+  height: 45%;
+  background: #cfa;
+  border-radius: 8px 8px 0 0;
+}
+
+.yen-new-card-tag {
+  width: 100%;
+  height: 15%;
+  background: #ffa;
+}
+
+.yen-new-card-tagl {
+  width: 65%;
+  height: 100%;
+  background: #1c1b1b;
+  color: #fff;
+  text-align: center;
+  padding-top: 5%;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.yen-new-card-tagr {
+  width: 35%;
+  height: 100%;
+  background: #7ba23e;
+  color: #fff;
+  text-align: center;
+  padding-top: 5%;
+  letter-spacing: 1px;
+}
+
+.yen-new-card-des {
+  width: 100%;
+  height: 40%;
+  background-color: #fff;
+  border-radius: 0 0 8px 8px;
+}
+
+.yen-new-card-title {
+  padding: 6% 10%;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.yen-new-card-bottom {
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.yen-new-card-location {
+  width: 50%;
+  padding-top: 5%;
+  display: flex;
+}
+
+.fa-map-marker-alt {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-right: 3%;
+}
+
+.yen-new-card-price {
+  width: 50%;
+  padding-top: 3%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.yen-new-card-money {
+  font-size: 1.5rem;
+  color: #e83015;
+  font-weight: 800;
+  letter-spacing: 2%;
+}
+
+.yen-new-card-nt {
+  padding-top: 3%;
+  padding-right: 5%;
+}
+
 .yen-island-box {
   width: 40%;
   position: relative;
