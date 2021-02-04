@@ -20,6 +20,21 @@
   margin: 72px auto 48px auto;
 }
 
+/* .yu-bookspage {
+  position: absolute;
+} */
+
+.yu-bookspage1-1 {
+  width: 100%;
+  opacity: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  z-index: -1;
+}
+
 .yu-pic {
   /* background-image: url("/images/style-guide/logo.svg");
   background-repeat: no-repeat;
@@ -72,5 +87,4 @@
 
 .yu-googleicon {
   width: 50px;
-  margin-top: 2px;
 }

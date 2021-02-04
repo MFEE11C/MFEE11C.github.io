@@ -6,8 +6,8 @@
   float: left;
   border-radius: 50%;
   position: absolute;
-  top: 30%;
-  left: 55%;
+  top: 25%;
+  left: 70%;
   z-index: -1;
 }
 
@@ -16,6 +16,17 @@
   padding-left: 158px;
 }
 
+.yu-basicbookshelf {
+  width: 70%;
+}
+
+.yu-book-thebeginningofspring-blank {
+  width: 113px;
+  height: 168px;
+  background-color: #776b6b;
+}
+
 .yu-membersmenu {
-  margin-left: 100px;
+  margin-top: 15%;
+  margin-left: 230px;
 }
