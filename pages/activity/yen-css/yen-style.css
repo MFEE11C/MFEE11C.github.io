@@ -497,6 +497,7 @@ body {
   width: 40%;
   height: 85%;
   margin-right: 8%;
+  position: relative;
 }
 
 .yen-new-card-img {
@@ -547,7 +548,7 @@ body {
 }
 
 .yen-new-card-title {
-  height: 50%;
+  height: 48%;
   width: 100%;
   padding: 8% 10% 0 10%;
   font-size: 1.2rem;
@@ -665,4 +666,18 @@ body {
 .yen-east-area:hover {
   opacity: 1;
   transition: 0.5s ease-in-out;
+}
+
+.yen-new-tag-box {
+  width: 15%;
+  height: 13%;
+  background-color: #e83015;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 3.5%;
+  color: #fff;
+  position: absolute;
+  top: -6%;
+  left: 3%;
+  z-index: 30;
 }
