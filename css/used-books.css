@@ -851,3 +851,76 @@
     padding: 0px 25px;
   }
 }
+
+/* 隨機交換成功頁面 */
+
+.jill-random-success-title-area {
+  border: 1px solid var(--honki-red);
+  height: 400px;
+  width: 1440px;
+  margin-top: 150px;
+  margin-left: 200px;
+}
+
+.jill-gong-xi {
+  /* position: absolute;
+  top: 400px;
+  left: 280px; */
+  color: var(--honki-red);
+  padding-top: 70px;
+  padding-left: 50px;
+}
+
+.jill-postcard {
+  margin-top: -550px;
+  margin-bottom: 250px;
+}
+
+.jill-random-success-btn {
+  position: absolute;
+  top: 500px;
+  left: 1480px;
+}
+
+.jill-rand-succ-download {
+  padding: 0px 11px;
+  /* margin-top: 250px; */
+}
+
+.jill-rand-succ-status {
+  margin-top: 10px;
+}
+
+.jill-random-success-btn a {
+  color: var(--honki-black);
+  display: block;
+  margin-top: 30px;
+}
+
+.jill-random-success-btn a:hover {
+  text-decoration: none;
+}
+
+/*隨機抽中的書 */
+
+.jill-random-success-book img {
+  height: 272px;
+  width: auto;
+  margin-left: -870px;
+  margin-top: 300px;
+}
+
+.jill-random-success-book-name {
+  margin-left: -640px;
+  margin-top: 400px;
+}
+
+.jill-random-success-words {
+  margin-left: -640px;
+  margin-top: 30px;
+}
+
+.jill-random-success-name {
+  margin-left: -230px;
+  margin-top: 100px;
+}
