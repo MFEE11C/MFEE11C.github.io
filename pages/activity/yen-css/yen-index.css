@@ -961,6 +961,7 @@ body {
   width: 23%;
   height: 100%;
   margin-right: 3%;
+  cursor: pointer;
 }
 
 .yen-event-card:hover {
