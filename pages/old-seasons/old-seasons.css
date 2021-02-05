@@ -42,6 +42,19 @@ https://codepen.io/ant1mas/pen/MeJjaK
 
 /* solar-term-plate 的各種設定 start */
 
+.responsive-title-bg {
+  float: left;
+  /* display: inline-block; */
+  background-color: #ffffff;
+  height: 2.5rem;
+  overflow: initial;
+  margin: 0.5rem;
+}
+
+.responsive-title {
+  transform: translate(1rem, -1rem);
+}
+
 @media only screen and (max-width: 1200px) {
   .responsive-title {
     font-size: 2rem;
