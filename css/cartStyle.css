@@ -91,6 +91,11 @@
 
 .aw-delete-cross {
   font-size: 1.5rem;
+  /* border-radius: 0.75rem; */
+}
+.aw-delete-cross:hover {
+  box-shadow: 0 0 0 0.2rem rgb(232 48 21 / 33%);
+  border-color: rgb(232 48 21);
 }
 .aw-cart-page1-subtitle {
   margin: 8px 42px 12px 10px;
@@ -140,7 +145,7 @@
   width: 87%;
 }
 .aw-stepBtn {
-  padding: 140px 32px 160px 0px;
+  padding: 60px 130px 160px 0px;
   margin: 0;
 }
 .aw-row {
@@ -160,7 +165,7 @@
 /* STEP1 */
 .aw-progress {
   padding-top: 72px;
-  padding-bottom: 44px;
+  padding-bottom: 72px;
 }
 .aw-progress-text {
   list-style-type: none;
@@ -209,8 +214,40 @@
   -moz-appearance: none;
   -webkit-appearance: none;
   background: url(/images/style-guide/select-btn-sm.png) no-repeat 100%;
+  width: 90px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 20px;
+  padding-left: 8px;
+  height: 1.1rem !important;
+  text-align-last: center;
+  line-height: 1.1rem;
+  border-radius: 0px;
 }
 
 .aw-select-sm::-ms-expand {
   display: none;
+}
+
+.aw-p-9 {
+  padding: 9px;
+}
+.aw-p-0 {
+  padding: 0px;
+}
+.aw-btn-sm-dark {
+  width: 84px;
+  padding: 0px;
+  min-width: 48px;
+}
+.aw-countArea {
+  padding-right: 180px;
+  padding-top: 16px;
+}
+.aw-count {
+  padding-top: 20px;
+}
+.aw-count-num {
+  min-width: 80px;
+  padding: 0 9px;
 }
