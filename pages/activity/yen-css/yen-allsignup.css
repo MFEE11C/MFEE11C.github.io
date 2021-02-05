@@ -1,0 +1,104 @@
+/* all sign up page start */
+/* sign up header start */
+.yen-signup-header {
+  width: 100%;
+  height: 300vh;
+  padding: 78px 72px 0 72px;
+}
+
+.yen-signup-breadcrumb {
+  margin-top: 72px;
+}
+
+.yen-signup-titlebox {
+  width: 100%;
+  height: 8%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4%;
+}
+
+.yen-signup-titlebox > .yen-title-box {
+  width: 50%;
+}
+
+.yen-signup-titlebox > .yen-title-box > .yen-circle {
+  width: 17%;
+  top: 7%;
+}
+
+.yen-signup-titlebox > .yen-title-box > .yen-title-text {
+  padding-top: 2%;
+  padding-left: 20%;
+}
+
+.yen-signup-user {
+  margin-top: 1%;
+  width: 40%;
+  height: 100%;
+  display: flex;
+}
+
+.yen-sign-img-box {
+  width: 40%;
+  height: 100%;
+}
+
+.yen-user-pic {
+  margin-left: 30%;
+  width: 70%;
+  height: 80%;
+  border-radius: 50%;
+  background-color: #ffc;
+}
+
+.yen-user-right {
+  width: 60%;
+  height: 100%;
+}
+
+.yen-user-level-btn {
+  margin: 12% 33% 5% 20%;
+  background: #7ba23e;
+  color: #000;
+}
+
+.yen-user-text {
+  padding-left: 15%;
+}
+
+.yen-signup-body {
+  width: 100%;
+  height: 100vh;
+  margin-top: 2%;
+}
+
+.yen-signup-tag {
+  width: 84%;
+  height: 6%;
+  display: flex;
+}
+
+.yen-signup-tag-box {
+  width: 14%;
+  padding: 1% 2.5% 2% 2.5%;
+  border: 1px solid #000;
+  text-align: center;
+  border-radius: 12px 12px 0 0;
+}
+
+.yen-signup-act {
+  width: 14%;
+  padding: 1% 2.5% 2% 2.5%;
+  border: 1px solid #000;
+  text-align: center;
+  border-radius: 12px 12px 0 0;
+  background-color: #fdf3db;
+}
+
+.yen-signup-showbox {
+  width: 100%;
+  height: 120%;
+  border: 1px solid #000;
+  border-radius: 0px 4px 8px 8px;
+}

@@ -213,18 +213,20 @@
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  background: url(/images/style-guide/select-btn-sm.png) no-repeat 100%;
-  width: 90px;
-  padding-top: 0;
+  background: url(/images/style-guide/select-btn-sm.svg) no-repeat 100%;
+  /* width: 90px; */
+  /* padding-top: 0;
   padding-bottom: 0;
   padding-right: 20px;
-  padding-left: 8px;
-  height: 1.1rem !important;
-  text-align-last: center;
+  padding-left: 8px; */
+  height: 1.8rem !important;
+  /* text-align-last: center; */
   line-height: 1.1rem;
   border-radius: 0px;
 }
-
+.aw-select-title {
+  width: 90px;
+}
 .aw-select-sm::-ms-expand {
   display: none;
 }
@@ -238,7 +240,7 @@
 .aw-btn-sm-dark {
   width: 84px;
   padding: 0px;
-  min-width: 48px;
+  min-width: 24px;
 }
 .aw-countArea {
   padding-right: 180px;
