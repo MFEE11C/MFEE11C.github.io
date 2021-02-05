@@ -247,6 +247,7 @@ https://codepen.io/ant1mas/pen/MeJjaK
     transform: translate(39%, 39%);
     /* transition: 0.5s; */
     border: 10px solid var(--honki-paper);
+    overflow: hidden;
   }
 
   /* v2 */
