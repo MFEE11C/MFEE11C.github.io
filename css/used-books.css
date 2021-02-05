@@ -28,10 +28,16 @@
   margin-top: -30%;
   margin-left: 30%;
   z-index: 99;
+  width: 1200px;
+}
+
+.jill-modebtn a:hover {
+  text-decoration: none;
 }
 
 .jill-modebtn button {
   margin: 0px 54px;
+  /* margin: 0px 120px; */
 }
 
 @media only screen and (max-width: 768px) {
