@@ -211,17 +211,14 @@ https://codepen.io/ant1mas/pen/MeJjaK
 
 @media only screen and (max-width: 1200px) {
   .solar-term-plate-v2 {
-    z-index: 0;
   }
   .title-bg {
     transform: translate(-1rem, 0rem);
-    z-index: 2;
   }
 
   .title {
     font-size: 2rem;
     text-align: center;
-    z-index: 2;
     transform: translate(0.5rem, -0.5rem);
   }
 }
@@ -240,7 +237,6 @@ https://codepen.io/ant1mas/pen/MeJjaK
     /* transition: 0.5s; */
     position: fixed;
     bottom: 0;
-    z-index: 1;
   }
 
   /* v1 */
