@@ -34,6 +34,43 @@ https://stackoverflow.com/questions/14184494/segments-in-a-circle-using-css3/141
 https://codepen.io/ant1mas/pen/MeJjaK
 */
 
+/* solar-term-plate 的各種設定 end */
+
+.book-card {
+  width: 220px;
+  height: 330px;
+  border: 1px dashed black;
+  margin: 16px 0;
+}
+
+.book-base {
+  width: 218px;
+  height: 248px;
+  border-radius: 15px;
+  background-color: var(--honki-white);
+}
+
+.osb-book-col {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.osb-row {
+  margin: 16px 0;
+}
+
+.book-card-spacing {
+  padding: 0 0;
+  margin: 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rotate {
+  animation: rotation 120s infinite linear;
+}
+
 .old-season-container {
   height: 900px;
   /* margin-bottom: 80px; */
@@ -42,28 +79,23 @@ https://codepen.io/ant1mas/pen/MeJjaK
 
 /* solar-term-plate 的各種設定 start */
 
-.responsive-title-bg {
+.title-box {
+  width: 100vw / 2;
+}
+
+.title-bg {
   float: left;
   /* display: inline-block; */
   background-color: #ffffff;
   height: 2.5rem;
   overflow: initial;
   margin: 0.5rem;
+  /* transform: translate(calc(100vw / 12), calc(100vh * 7 / 9 - 80px)); */
+  transform: translate(calc(100vw / 12), 0rem);
 }
 
-.responsive-title {
-  transform: translate(1rem, -1rem);
-}
-
-@media only screen and (max-width: 1200px) {
-  .responsive-title {
-    font-size: 2rem;
-    text-align: center;
-  }
-}
-
-.rotate {
-  animation: rotation 120s infinite linear;
+.title {
+  transform: translate(0.7rem, -0.7rem);
 }
 
 @keyframes rotation {
@@ -202,13 +234,29 @@ https://codepen.io/ant1mas/pen/MeJjaK
   background: var(--honki-black);
   opacity: 50%;
 }
-.slice:first-child .slice-contents {
-  transform: skewY(22.5deg); /* unskew slice contents */
-}
 
 .slice:hover .slice-contents {
   background-color: transparent;
   transition: 1s;
+}
+
+/* media 變化 start */
+
+@media only screen and (max-width: 1200px) {
+  .solar-term-plate-v2 {
+    z-index: 0;
+  }
+  .title-bg {
+    transform: translate(-1rem, 0rem);
+    z-index: 2;
+  }
+
+  .title {
+    font-size: 2rem;
+    text-align: center;
+    z-index: 2;
+    transform: translate(0.5rem, -0.5rem);
+  }
 }
 
 @media only screen and (max-width: 720px) {
@@ -225,26 +273,38 @@ https://codepen.io/ant1mas/pen/MeJjaK
   }
 
   /* v1 */
-  .red-center {
+  .red-center-v1 {
     width: 50vw;
     /* height: 50%; */
     height: 50vw;
     transform: translate(39%, 39%);
     /* transition: 0.5s; */
+    overflow: hidden;
     border: 10px solid var(--honki-paper);
   }
 
   /* v2 */
-  .red-center-v2 {
+  .red-center {
     width: 80vw;
     /* height: 50%; */
     height: 80vw;
     transform: translate(6%, 6%);
+    overflow: hidden;
     /* transition: 0.5s; */
   }
 
-  .red-center-bg-color:hover {
+  /* .red-center-bg-color:hover {
     background-color: var(--honki-red);
+  } */
+
+  .red-center .red-center-bg-color {
+    background-color: var(--honki-red);
+    position: absolute;
+    /* left: -100%; */
+    width: 200%;
+    height: 200%;
+
+    opacity: 1;
   }
 
   .slice-contents {
@@ -261,44 +321,13 @@ https://codepen.io/ant1mas/pen/MeJjaK
     }
   }
 
-  .solar-term-plate-filler {
+  /* .solar-term-plate-filler {
     height: calc(100vw + 2rem);
-  }
+  } */
 
   .slice {
     border: 3px solid var(--honki-paper);
   }
 }
 
-/* solar-term-plate 的各種設定 end */
-
-.book-card {
-  width: 220px;
-  height: 330px;
-  border: 1px dashed black;
-  margin: 16px 0;
-}
-
-.book-base {
-  width: 218px;
-  height: 248px;
-  border-radius: 15px;
-  background-color: var(--honki-white);
-}
-
-.osb-book-col {
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
-
-.osb-row {
-  margin: 16px 0;
-}
-
-.book-card-spacing {
-  padding: 0 0;
-  margin: 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+/* media 變化 end */
