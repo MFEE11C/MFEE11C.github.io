@@ -42,6 +42,10 @@ https://codepen.io/ant1mas/pen/MeJjaK
 
 /* solar-term-plate 的各種設定 start */
 
+.title-box {
+  width: calc(100vh / 2);
+}
+
 .title-bg {
   float: left;
   /* display: inline-block; */
@@ -51,11 +55,16 @@ https://codepen.io/ant1mas/pen/MeJjaK
   margin: 0.5rem;
   /* transform: translate(calc(100vw / 12), calc(100vh * 7 / 9 - 80px)); */
   transform: translate(calc(100vw / 12), 0rem);
-  z-index: 2;
 }
 
 .title {
   transform: translate(0.7rem, -0.7rem);
+}
+
+@media only screen and (max-width: 1440px) {
+  .title-box {
+    width: unset;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -100,7 +109,7 @@ https://codepen.io/ant1mas/pen/MeJjaK
   /* border: 1px solid black; */
   border-radius: 50%;
   list-style: none;
-  z-index: 1;
+  z-index: 0;
 
   /* image source: https://www.behance.net/gallery/38204839/The-24-Solar-Terms-Character-Design */
   background-image: url(images/The_24_Solar_Terms_by_Cinyee_Chiu_715x715.png);
@@ -207,7 +216,7 @@ https://codepen.io/ant1mas/pen/MeJjaK
   width: 200%;
   height: 200%;
   border-radius: 50%;
-  background: var(--honki-white);
+  background: var(--honki-black);
   opacity: 50%;
 }
 
