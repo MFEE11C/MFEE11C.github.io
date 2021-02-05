@@ -43,7 +43,7 @@ https://codepen.io/ant1mas/pen/MeJjaK
 /* solar-term-plate 的各種設定 start */
 
 .title-box {
-  width: calc(100vh / 2);
+  width: 100vw / 2;
 }
 
 .title-bg {
