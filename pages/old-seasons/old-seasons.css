@@ -289,9 +289,8 @@ https://codepen.io/ant1mas/pen/MeJjaK
     /* height: 50%; */
     height: 80vw;
     transform: translate(6%, 6%);
-    border-radius: 50%;
-    overflow: hidden;
     /* transition: 0.5s; */
+    z-index: 1;
   }
 
   /* .red-center-bg-color:hover {
