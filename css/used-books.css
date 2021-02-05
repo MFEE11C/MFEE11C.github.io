@@ -549,15 +549,18 @@
 
 .jill-normal-success-area {
   width: 764px;
-  height: 495px;
+  /* height: 495px; */
+  height: 545px;
 }
 .jill-normal-success-title {
   color: var(--honki-red);
+  margin-left: -60px;
+  margin-top: 18px;
 }
 
 .jill-normal-success-msbg {
   width: 763px;
-  height: 450px;
+  height: 500px;
   background-color: #ece2d4;
   border: 1px solid #e83015;
 }
@@ -566,21 +569,21 @@
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 0 450px 763px;
+  border-width: 0 0 500px 763px;
   border-color: transparent transparent rgba(232, 48, 21, 0.42) transparent;
   margin-left: -81px;
-  margin-top: -10px;
+  margin-top: -63px;
 }
 
 .jill-normal-success-message-L {
   position: absolute;
-  top: 100px;
+  top: 150px;
   left: 30px;
 }
 
 .jill-normal-success-message-L-img img {
   height: 300px;
-  margin-top: -550px;
+  margin-top: -630px;
   margin-left: 100px;
 }
 
@@ -593,12 +596,252 @@
 
 .jill-normal-success-message-R-img img {
   height: 300px;
-  margin-top: -450px;
+  margin-top: -570px;
   margin-left: 200px;
 }
 
 .jill-success-exit button {
   /* position: absolute; */
-  margin-top: -70px;
+  margin-top: -120px;
   z-index: 90;
+}
+
+@media only screen and (max-width: 780px) {
+  .jill-normal-success-area {
+    width: 280px;
+    /* height: 495px; */
+    height: 545px;
+  }
+  .jill-normal-success-title {
+    color: var(--honki-red);
+    margin-left: -28px;
+    margin-top: 10px;
+    /* text-align: center; */
+  }
+
+  .jill-normal-success-msbg {
+    width: 278px;
+    height: 490px;
+    background-color: #ece2d4;
+    border: 1px solid #e83015;
+  }
+  /* 紅色三角形 */
+  .jill-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    /* 下面是先高度再寬度 */
+    border-width: 0 0 490px 278px;
+    border-color: transparent transparent rgba(232, 48, 21, 0.42) transparent;
+    margin-left: -81px;
+    margin-top: -56px;
+  }
+
+  .jill-normal-success-message-L {
+    position: absolute;
+    top: 58px;
+    left: 30px;
+  }
+
+  .jill-normal-success-message-L-img img {
+    height: 160px;
+    margin-top: -578px;
+    margin-left: -50px;
+  }
+
+  .jill-normal-success-message-R {
+    position: absolute;
+    top: 330px;
+    left: 120px;
+    color: #fff;
+  }
+
+  .jill-normal-success-message-R-img img {
+    height: 160px;
+    margin-top: -558px;
+    margin-left: 40px;
+  }
+
+  .jill-success-exit button {
+    /* position: absolute; */
+    margin-top: -75px;
+    z-index: 90;
+  }
+}
+
+/* 隨機交換首頁 */
+
+.jill-random-index-bg-area {
+  background-image: url(../pages/used-books/page-images/random-index-background.jpg);
+  height: 572px;
+  width: auto;
+  opacity: 25%;
+}
+
+.jill-random-index-btn1 {
+  z-index: 99;
+  background-color: rgba(232, 48, 21, 1);
+  position: absolute;
+  top: 360px;
+  left: 870px;
+  /* top: 38%;
+  left: 45.7%; */
+}
+.jill-random-index-btn2 {
+  z-index: 99;
+  background-color: rgba(232, 48, 21, 1);
+  position: absolute;
+  top: 410px;
+  left: 870px;
+  /* top: 43%;
+  left: 45.7%; */
+  padding: 0px 25px;
+}
+.jill-random-index-btn1:hover {
+  background-color: rgba(232, 48, 21, 1);
+}
+
+.jill-random-index-btn2:hover {
+  background-color: rgba(232, 48, 21, 1);
+}
+
+.jill-myRbook-area {
+  /* background-color: #fdf3db; */
+
+  position: relative;
+  /* width: 210px; */
+  /* margin-top: -160px; */
+  margin-top: -170px;
+
+  /* border: 1px solid black; */
+}
+
+.jill-myRbook-area img {
+  height: 150px;
+  width: auto;
+  margin: 0px 54px;
+}
+
+.jill-edit-icon {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: var(--honki-black);
+  color: #fff;
+  position: absolute;
+  top: 33px;
+  left: 190px;
+}
+
+.jill-delect-icon {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 10px 13px;
+  background-color: var(--honki-black);
+  color: #fff;
+  position: absolute;
+  top: -10px;
+  left: 190px;
+}
+
+.jill-myRbook {
+  background-color: #fdf3db;
+  width: 210px;
+  position: relative;
+  margin-top: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+  border: 1px solid black;
+}
+
+@media only screen and (max-width: 1340px) {
+  .jill-random-index-btn1 {
+    z-index: 99;
+    background-color: rgba(232, 48, 21, 1);
+    /* background-color: blue; */
+    position: absolute;
+    top: 360px;
+    left: 600px;
+  }
+  .jill-random-index-btn2 {
+    z-index: 99;
+    background-color: rgba(232, 48, 21, 1);
+    position: absolute;
+    top: 410px;
+    left: 600px;
+    padding: 0px 25px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .jill-random-index-bg-area {
+    background-image: url(../pages/used-books/page-images/random-index-background.jpg);
+    height: 672px;
+    width: auto;
+    opacity: 25%;
+  }
+
+  .jill-random-index-btn1 {
+    z-index: 99;
+    background-color: rgba(232, 48, 21, 1);
+    position: absolute;
+    top: 360px;
+    left: 380px;
+  }
+  .jill-random-index-btn2 {
+    z-index: 99;
+    background-color: rgba(232, 48, 21, 1);
+    position: absolute;
+    top: 410px;
+    left: 380px;
+    padding: 0px 25px;
+  }
+
+  .jill-myRbook-area {
+    /* background-color: #fdf3db; */
+
+    position: relative;
+    /* width: 210px; */
+    margin-top: -330px;
+
+    /* border: 1px solid black; */
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .jill-random-index-bg-area {
+    background-image: url(../pages/used-books/page-images/random-index-background.jpg);
+    height: 800px;
+    width: auto;
+    opacity: 25%;
+  }
+
+  .jill-myRbook-area {
+    /* background-color: #fdf3db; */
+
+    position: relative;
+    /* width: 210px; */
+    margin-top: -500px;
+
+    /* border: 1px solid black; */
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .jill-random-index-btn1 {
+    z-index: 99;
+    background-color: rgba(232, 48, 21, 1);
+    /* background-color: blue; */
+    position: absolute;
+    top: 360px;
+    left: 100px;
+  }
+  .jill-random-index-btn2 {
+    z-index: 99;
+    background-color: rgba(232, 48, 21, 1);
+    position: absolute;
+    top: 410px;
+    left: 100px;
+    padding: 0px 25px;
+  }
 }
