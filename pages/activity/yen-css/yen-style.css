@@ -1079,6 +1079,7 @@ body {
   width: 60%;
   height: 80%;
   background-color: #7ba23e;
+  animation: fadein 2s ease-in;
 }
 
 .yen-event-pic > img {
@@ -1102,6 +1103,7 @@ body {
   color: #7ba23e;
   text-align: center;
   padding-top: 3%;
+  margin-top: 3%;
 }
 
 .yen-event-location-logo > i {
@@ -1156,9 +1158,13 @@ body {
   padding-left: 20%;
 }
 .yen-event-signup-btn {
+  width: 70%;
   background: #e83015;
 }
 
 .yen-event-signup-btn:hover {
   background: #ff735e;
+}
+
+.yen-event-body-box {
 }
