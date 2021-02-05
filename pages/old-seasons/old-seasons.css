@@ -34,6 +34,43 @@ https://stackoverflow.com/questions/14184494/segments-in-a-circle-using-css3/141
 https://codepen.io/ant1mas/pen/MeJjaK
 */
 
+/* solar-term-plate 的各種設定 end */
+
+.book-card {
+  width: 220px;
+  height: 330px;
+  border: 1px dashed black;
+  margin: 16px 0;
+}
+
+.book-base {
+  width: 218px;
+  height: 248px;
+  border-radius: 15px;
+  background-color: var(--honki-white);
+}
+
+.osb-book-col {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.osb-row {
+  margin: 16px 0;
+}
+
+.book-card-spacing {
+  padding: 0 0;
+  margin: 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rotate {
+  animation: rotation 120s infinite linear;
+}
+
 .old-season-container {
   height: 900px;
   /* margin-bottom: 80px; */
@@ -203,6 +240,8 @@ https://codepen.io/ant1mas/pen/MeJjaK
   transition: 1s;
 }
 
+/* media 變化 start */
+
 @media only screen and (max-width: 1200px) {
   .solar-term-plate-v2 {
     z-index: 0;
@@ -234,7 +273,7 @@ https://codepen.io/ant1mas/pen/MeJjaK
   }
 
   /* v1 */
-  .red-center {
+  .red-center-v1 {
     width: 50vw;
     /* height: 50%; */
     height: 50vw;
@@ -244,7 +283,7 @@ https://codepen.io/ant1mas/pen/MeJjaK
   }
 
   /* v2 */
-  .red-center-v2 {
+  .red-center {
     width: 80vw;
     /* height: 50%; */
     height: 80vw;
@@ -279,39 +318,4 @@ https://codepen.io/ant1mas/pen/MeJjaK
   }
 }
 
-/* solar-term-plate 的各種設定 end */
-
-.book-card {
-  width: 220px;
-  height: 330px;
-  border: 1px dashed black;
-  margin: 16px 0;
-}
-
-.book-base {
-  width: 218px;
-  height: 248px;
-  border-radius: 15px;
-  background-color: var(--honki-white);
-}
-
-.osb-book-col {
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
-
-.osb-row {
-  margin: 16px 0;
-}
-
-.book-card-spacing {
-  padding: 0 0;
-  margin: 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.rotate {
-  animation: rotation 120s infinite linear;
-}
+/* media 變化 end */
