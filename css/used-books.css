@@ -605,3 +605,66 @@
   margin-top: -120px;
   z-index: 90;
 }
+
+@media only screen and (max-width: 780px) {
+  .jill-normal-success-area {
+    width: 280px;
+    /* height: 495px; */
+    height: 545px;
+  }
+  .jill-normal-success-title {
+    color: var(--honki-red);
+    margin-left: -28px;
+    margin-top: 10px;
+    /* text-align: center; */
+  }
+
+  .jill-normal-success-msbg {
+    width: 278px;
+    height: 490px;
+    background-color: #ece2d4;
+    border: 1px solid #e83015;
+  }
+  /* 紅色三角形 */
+  .jill-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    /* 下面是先高度再寬度 */
+    border-width: 0 0 490px 278px;
+    border-color: transparent transparent rgba(232, 48, 21, 0.42) transparent;
+    margin-left: -81px;
+    margin-top: -56px;
+  }
+
+  .jill-normal-success-message-L {
+    position: absolute;
+    top: 58px;
+    left: 30px;
+  }
+
+  .jill-normal-success-message-L-img img {
+    height: 160px;
+    margin-top: -578px;
+    margin-left: -50px;
+  }
+
+  .jill-normal-success-message-R {
+    position: absolute;
+    top: 330px;
+    left: 120px;
+    color: #fff;
+  }
+
+  .jill-normal-success-message-R-img img {
+    height: 160px;
+    margin-top: -558px;
+    margin-left: 40px;
+  }
+
+  .jill-success-exit button {
+    /* position: absolute; */
+    margin-top: -75px;
+    z-index: 90;
+  }
+}
