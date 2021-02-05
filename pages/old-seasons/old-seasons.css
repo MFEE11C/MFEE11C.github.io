@@ -95,7 +95,7 @@ https://codepen.io/ant1mas/pen/MeJjaK
 }
 
 .title {
-  transform: translate(0.7rem, -0.7rem);
+  transform: translate(0.5rem, -0.5rem);
 }
 
 @keyframes rotation {
