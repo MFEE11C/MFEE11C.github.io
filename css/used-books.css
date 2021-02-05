@@ -668,3 +668,180 @@
     z-index: 90;
   }
 }
+
+/* 隨機交換首頁 */
+
+.jill-random-index-bg-area {
+  background-image: url(../pages/used-books/page-images/random-index-background.jpg);
+  height: 572px;
+  width: auto;
+  opacity: 25%;
+}
+
+.jill-random-index-btn1 {
+  z-index: 99;
+  background-color: rgba(232, 48, 21, 1);
+  position: absolute;
+  top: 360px;
+  left: 870px;
+  /* top: 38%;
+  left: 45.7%; */
+}
+.jill-random-index-btn2 {
+  z-index: 99;
+  background-color: rgba(232, 48, 21, 1);
+  position: absolute;
+  top: 410px;
+  left: 870px;
+  /* top: 43%;
+  left: 45.7%; */
+  padding: 0px 25px;
+}
+.jill-random-index-btn1:hover {
+  background-color: rgba(232, 48, 21, 1);
+}
+
+.jill-random-index-btn2:hover {
+  background-color: rgba(232, 48, 21, 1);
+}
+
+.jill-myRbook-area {
+  /* background-color: #fdf3db; */
+
+  position: relative;
+  /* width: 210px; */
+  /* margin-top: -160px; */
+  margin-top: -170px;
+
+  /* border: 1px solid black; */
+}
+
+.jill-myRbook-area img {
+  height: 150px;
+  width: auto;
+  margin: 0px 54px;
+}
+
+.jill-edit-icon {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: var(--honki-black);
+  color: #fff;
+  position: absolute;
+  top: 33px;
+  left: 190px;
+}
+
+.jill-delect-icon {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 10px 13px;
+  background-color: var(--honki-black);
+  color: #fff;
+  position: absolute;
+  top: -10px;
+  left: 190px;
+}
+
+.jill-myRbook {
+  background-color: #fdf3db;
+  width: 210px;
+  position: relative;
+  margin-top: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+  border: 1px solid black;
+}
+
+@media only screen and (max-width: 1340px) {
+  .jill-random-index-btn1 {
+    z-index: 99;
+    background-color: rgba(232, 48, 21, 1);
+    /* background-color: blue; */
+    position: absolute;
+    top: 360px;
+    left: 600px;
+  }
+  .jill-random-index-btn2 {
+    z-index: 99;
+    background-color: rgba(232, 48, 21, 1);
+    position: absolute;
+    top: 410px;
+    left: 600px;
+    padding: 0px 25px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .jill-random-index-bg-area {
+    background-image: url(../pages/used-books/page-images/random-index-background.jpg);
+    height: 672px;
+    width: auto;
+    opacity: 25%;
+  }
+
+  .jill-random-index-btn1 {
+    z-index: 99;
+    background-color: rgba(232, 48, 21, 1);
+    position: absolute;
+    top: 360px;
+    left: 380px;
+  }
+  .jill-random-index-btn2 {
+    z-index: 99;
+    background-color: rgba(232, 48, 21, 1);
+    position: absolute;
+    top: 410px;
+    left: 380px;
+    padding: 0px 25px;
+  }
+
+  .jill-myRbook-area {
+    /* background-color: #fdf3db; */
+
+    position: relative;
+    /* width: 210px; */
+    margin-top: -330px;
+
+    /* border: 1px solid black; */
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .jill-random-index-bg-area {
+    background-image: url(../pages/used-books/page-images/random-index-background.jpg);
+    height: 800px;
+    width: auto;
+    opacity: 25%;
+  }
+
+  .jill-myRbook-area {
+    /* background-color: #fdf3db; */
+
+    position: relative;
+    /* width: 210px; */
+    margin-top: -500px;
+
+    /* border: 1px solid black; */
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .jill-random-index-btn1 {
+    z-index: 99;
+    background-color: rgba(232, 48, 21, 1);
+    /* background-color: blue; */
+    position: absolute;
+    top: 360px;
+    left: 100px;
+  }
+  .jill-random-index-btn2 {
+    z-index: 99;
+    background-color: rgba(232, 48, 21, 1);
+    position: absolute;
+    top: 410px;
+    left: 100px;
+    padding: 0px 25px;
+  }
+}
