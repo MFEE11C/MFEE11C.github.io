@@ -549,15 +549,18 @@
 
 .jill-normal-success-area {
   width: 764px;
-  height: 495px;
+  /* height: 495px; */
+  height: 545px;
 }
 .jill-normal-success-title {
   color: var(--honki-red);
+  margin-left: -60px;
+  margin-top: 18px;
 }
 
 .jill-normal-success-msbg {
   width: 763px;
-  height: 450px;
+  height: 500px;
   background-color: #ece2d4;
   border: 1px solid #e83015;
 }
@@ -566,21 +569,21 @@
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 0 450px 763px;
+  border-width: 0 0 500px 763px;
   border-color: transparent transparent rgba(232, 48, 21, 0.42) transparent;
   margin-left: -81px;
-  margin-top: -10px;
+  margin-top: -63px;
 }
 
 .jill-normal-success-message-L {
   position: absolute;
-  top: 100px;
+  top: 150px;
   left: 30px;
 }
 
 .jill-normal-success-message-L-img img {
   height: 300px;
-  margin-top: -550px;
+  margin-top: -630px;
   margin-left: 100px;
 }
 
@@ -593,12 +596,12 @@
 
 .jill-normal-success-message-R-img img {
   height: 300px;
-  margin-top: -450px;
+  margin-top: -570px;
   margin-left: 200px;
 }
 
 .jill-success-exit button {
   /* position: absolute; */
-  margin-top: -70px;
+  margin-top: -120px;
   z-index: 90;
 }
