@@ -2,7 +2,7 @@
 /* sign up header start */
 .yen-signup-header {
   width: 100%;
-  height: 300vh;
+  height: 345vh;
   padding: 78px 72px 0 72px;
 }
 
@@ -14,12 +14,11 @@
   width: 100%;
   height: 8%;
   display: flex;
-  justify-content: space-between;
-  padding: 0 4%;
 }
 
 .yen-signup-titlebox > .yen-title-box {
   width: 50%;
+  margin-right: 20%;
 }
 
 .yen-signup-titlebox > .yen-title-box > .yen-circle {
@@ -40,25 +39,25 @@
 }
 
 .yen-sign-img-box {
-  width: 40%;
+  width: 50%;
   height: 100%;
 }
 
 .yen-user-pic {
-  margin-left: 30%;
-  width: 70%;
-  height: 80%;
+  margin-left: 50%;
+  width: 50%;
+  height: 70%;
   border-radius: 50%;
   background-color: #ffc;
 }
 
 .yen-user-right {
-  width: 60%;
+  width: 50%;
   height: 100%;
 }
 
 .yen-user-level-btn {
-  margin: 12% 33% 5% 20%;
+  margin: 12% 0 5% 22%;
   background: #7ba23e;
   color: #000;
 }
@@ -85,6 +84,7 @@
   border: 1px solid #000;
   text-align: center;
   border-radius: 12px 12px 0 0;
+  cursor: pointer;
 }
 
 .yen-signup-act {
@@ -94,11 +94,97 @@
   text-align: center;
   border-radius: 12px 12px 0 0;
   background-color: #fdf3db;
+  cursor: pointer;
 }
 
 .yen-signup-showbox {
   width: 100%;
-  height: 120%;
+  height: 270%;
   border: 1px solid #000;
   border-radius: 0px 4px 8px 8px;
+  background-color: #fdf3db;
+}
+
+.yen-signup-showbox-bg {
+  width: 90%;
+  height: 90%;
+  margin: 7% 5%;
+  background: #ebe7e0;
+  border-radius: 5px;
+}
+
+.yen-signup-moon-box {
+  width: 100%;
+  height: 15%;
+  padding-top: 4%;
+  /* background: #afa; */
+}
+
+.yen-signup-moon {
+  width: 18%;
+  height: 100%;
+  margin: 5% 45%;
+  border-radius: 50%;
+  background: #fdf3db;
+  position: relative;
+}
+
+.yen-signup-moon-month {
+  position: absolute;
+  left: -45%;
+  top: -10%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0px 3px 6px #000000;
+  background-image: url(../activity-imgs/12644762_1801767416717416_6840062887620370075_n.jpg);
+  background-position: 80% 75%;
+  background-repeat: no-repeat;
+}
+
+.yen-signup-moon-text {
+  position: absolute;
+  left: 64%;
+  top: 25%;
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.yen-signup-calendar-box {
+  width: 100%;
+  height: 40%;
+  background-color: #ffc;
+  margin-top: 12%;
+  position: relative;
+}
+
+.yen-signup-calendar-day-box {
+  width: 84%;
+  height: 100%;
+  margin-left: 8%;
+  background: #daa;
+}
+
+.yen-signup-arrow-box {
+  width: 100%;
+  height: 100%;
+  /* padding-top:  */
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.yen-signup-arrow-right {
+  width: 4%;
+  height: 4%;
+}
+
+.yen-signup-arrow-left {
+  width: 4%;
+  height: 4%;
+  transform: scaleX(-1);
 }
