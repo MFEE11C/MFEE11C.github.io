@@ -61,27 +61,6 @@ https://codepen.io/ant1mas/pen/MeJjaK
   transform: translate(0.7rem, -0.7rem);
 }
 
-@media only screen and (max-width: 1440px) {
-  .title-box {
-    width: unset;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .title-bg {
-    transform: unset;
-  }
-
-  .title {
-    font-size: 2rem;
-    text-align: center;
-  }
-}
-
-.rotate {
-  animation: rotation 120s infinite linear;
-}
-
 @keyframes rotation {
   from {
     /* transform: translate(0px, 0px) rotate(0deg); */
@@ -109,7 +88,6 @@ https://codepen.io/ant1mas/pen/MeJjaK
   /* border: 1px solid black; */
   border-radius: 50%;
   list-style: none;
-  z-index: 0;
 
   /* image source: https://www.behance.net/gallery/38204839/The-24-Solar-Terms-Character-Design */
   background-image: url(images/The_24_Solar_Terms_by_Cinyee_Chiu_715x715.png);
@@ -223,6 +201,33 @@ https://codepen.io/ant1mas/pen/MeJjaK
 .slice:hover .slice-contents {
   background-color: transparent;
   transition: 1s;
+}
+
+@media only screen and (max-width: 1440px) {
+  .title-box {
+    width: unset;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .solar-term-plate-v2 {
+    z-index: 0;
+  }
+  .title-bg {
+    transform: translate(-1rem, 0rem);
+    z-index: 2;
+  }
+
+  .title {
+    font-size: 2rem;
+    text-align: center;
+    z-index: 2;
+    transform: translate(0.5rem, -0.5rem);
+  }
+}
+
+.rotate {
+  animation: rotation 120s infinite linear;
 }
 
 @media only screen and (max-width: 720px) {
