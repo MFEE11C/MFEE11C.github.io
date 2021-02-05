@@ -1,6 +1,6 @@
 /* 暫時推開footer */
 .jill-footer-mt {
-  margin-top: 1000px;
+  margin-top: 300px;
 }
 
 /* 二手書交換 首頁(模式選擇) */
@@ -923,4 +923,33 @@
 .jill-random-success-name {
   margin-left: -230px;
   margin-top: 100px;
+}
+
+/* 一般交換修改頁面 */
+
+.jill-upload-pics-area {
+  width: 1440px;
+}
+
+.jill-upload-pics {
+  margin-top: 30px;
+  margin-right: 30px;
+  position: relative;
+}
+
+.jill-upload-pics img {
+  height: 200px;
+  width: auto;
+}
+
+.jill-normal-delect-icon {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 10px 13px;
+  background-color: var(--honki-black);
+  color: #fff;
+  position: absolute;
+  top: -10px;
+  left: calc(100% - 20px);
+  z-index: 99;
 }
