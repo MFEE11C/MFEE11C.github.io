@@ -67,10 +67,6 @@ https://codepen.io/ant1mas/pen/MeJjaK
   justify-content: center;
 }
 
-.rotate {
-  animation: rotation 120s infinite linear;
-}
-
 .old-season-container {
   height: 900px;
   /* margin-bottom: 80px; */
@@ -96,6 +92,10 @@ https://codepen.io/ant1mas/pen/MeJjaK
 
 .title {
   transform: translate(0.5rem, -0.5rem);
+}
+
+.rotate {
+  animation: rotation 120s infinite linear;
 }
 
 @keyframes rotation {
@@ -161,7 +161,7 @@ https://codepen.io/ant1mas/pen/MeJjaK
   /* left: -100%; */
   width: 200%;
   height: 200%;
-  /* opacity: 1; */
+  opacity: 0;
 }
 
 /* 中心紅圓塊 end */
