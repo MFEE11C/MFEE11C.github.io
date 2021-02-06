@@ -507,6 +507,17 @@
   margin-right: 100px;
 }
 
+.jill-form-btn-group {
+  /* 表格按鈕置中 */
+  margin-left: 93%;
+}
+.jill-form-btn-group button {
+}
+
+.jill-center-btn {
+  width: 700px;
+}
+
 .jill-addform-btn {
   background-color: var(--honki-red);
   margin-right: 12px;
@@ -929,6 +940,7 @@
 
 .jill-upload-pics-area {
   width: 1440px;
+  margin-left: 1px;
 }
 
 .jill-upload-pics {
@@ -952,4 +964,12 @@
   top: -10px;
   left: calc(100% - 20px);
   z-index: 99;
+}
+
+.jill-edit-svg {
+  height: 200px;
+}
+
+.jill-edit-svg svg {
+  margin-left: 180px;
 }
