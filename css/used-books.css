@@ -460,11 +460,15 @@
 
 .jill-other-card {
   margin-top: 20px;
+  position: relative;
 }
 
 .jill-want-btn {
-  margin-top: 200px;
-  margin-left: 120px;
+  /* margin-top: 200px;
+  margin-left: 120px; */
+  position: absolute;
+  top: 200px;
+  left: 120px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -507,6 +511,20 @@
   margin-right: 100px;
 }
 
+.jill-form-btn-group {
+  /* 表格按鈕置中 */
+  margin-left: 35.5%;
+}
+
+.jill-center-btn {
+  width: 700px;
+}
+
+.jill-fix-btn {
+  /* 修正新增修改頁面按鈕從Form抓出來後的走位 */
+  margin-top: 380px;
+}
+
 .jill-addform-btn {
   background-color: var(--honki-red);
   margin-right: 12px;
@@ -522,8 +540,8 @@
 }
 
 .jill-dancing-img {
-  margin-top: 160px;
-  margin-left: 120px;
+  margin-top: -460px;
+  margin-left: 560px;
 }
 /* 跳舞的人插圖大小 */
 .jill-dancing-img svg {
@@ -929,6 +947,7 @@
 
 .jill-upload-pics-area {
   width: 1440px;
+  margin-left: 1px;
 }
 
 .jill-upload-pics {
@@ -952,4 +971,49 @@
   top: -10px;
   left: calc(100% - 20px);
   z-index: 99;
+}
+/* 看書的人 */
+.jill-edit-svg {
+  height: 200px;
+}
+
+.jill-edit-svg svg {
+  margin-left: 180px;
+}
+
+/* 我想跟別人換-查看 */
+
+.jill-check-status p {
+  margin-top: 15px;
+  display: block;
+  width: 170px;
+}
+
+.jill-fix-btn2 {
+  /* 修正我想跟別人換-查看 頁面按鈕從Form抓出來後的走位 */
+  margin-top: -60px;
+  margin-left: 28%;
+}
+
+/* 修正走位看書的人 */
+.jill-edit-svg-fix {
+  height: 200px;
+}
+
+.jill-edit-svg-fix svg {
+  margin-left: 480px;
+  margin-top: -1230px;
+}
+
+/* 別人想跟我換-查看 */
+
+.jill-form-3btn-group {
+  /* 表格按鈕置中 */
+  margin-left: 76%;
+}
+
+.jill-fix-btn3 {
+  /* 修正我想跟別人換-查看 頁面按鈕從Form抓出來後的走位 */
+  margin-top: -60px;
+  margin-left: 22%;
 }
