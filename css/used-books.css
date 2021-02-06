@@ -511,8 +511,6 @@
   /* 表格按鈕置中 */
   margin-left: 93%;
 }
-.jill-form-btn-group button {
-}
 
 .jill-center-btn {
   width: 700px;
@@ -533,12 +531,12 @@
 }
 
 .jill-dancing-img {
-  margin-top: 160px;
-  margin-left: 120px;
+  margin-top: 0px;
+  margin-left: 160px;
 }
 /* 跳舞的人插圖大小 */
 .jill-dancing-img svg {
-  width: 90%;
+  width: 80%;
 }
 
 @media only screen and (max-width: 780px) {
@@ -972,4 +970,19 @@
 
 .jill-edit-svg svg {
   margin-left: 180px;
+}
+
+/* 我想跟別人換-查看 */
+
+.jill-check-status p {
+  margin-top: 15px;
+  display: block;
+  width: 170px;
+}
+
+/* 別人想跟我換-查看 */
+
+.jill-form-3btn-group {
+  /* 表格按鈕置中 */
+  margin-left: 76%;
 }
