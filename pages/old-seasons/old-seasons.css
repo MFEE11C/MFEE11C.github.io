@@ -39,7 +39,7 @@ https://codepen.io/ant1mas/pen/MeJjaK
 .book-card {
   width: 220px;
   height: 330px;
-  border: 1px dashed black;
+  /* border: 1px dashed black; */
   margin: 16px 0;
 }
 
@@ -55,6 +55,19 @@ https://codepen.io/ant1mas/pen/MeJjaK
   display: block;
   margin: 0 auto;
   margin-top: 10%;
+}
+
+.book-description {
+  margin-top: 20px;
+  padding: 0 0.5rem;
+}
+
+.book-name {
+  font-size: 14px;
+}
+
+.book-solar-term-year {
+  font-size: 12px;
 }
 
 .osb-book-col {
@@ -81,6 +94,10 @@ https://codepen.io/ant1mas/pen/MeJjaK
 }
 
 /* solar-term-plate 的各種設定 start */
+
+.title-pointer {
+  transform: translate(calc(18vw), 0rem);
+}
 
 .title-box {
   width: 100vw / 2;
@@ -119,7 +136,7 @@ https://codepen.io/ant1mas/pen/MeJjaK
 }
 
 .solar-term-plate-filler {
-  height: calc(70vh);
+  height: calc(62vh);
 }
 
 .solar-term-plate-v2 {
