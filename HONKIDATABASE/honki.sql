@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2021-02-08 10:52:57
+-- 產生時間： 2021-02-08 12:06:08
 -- 伺服器版本： 10.4.16-MariaDB
 -- PHP 版本： 7.3.24
 
@@ -51,7 +51,7 @@ INSERT INTO `act_categories` (`sid`, `name`) VALUES
 --
 
 CREATE TABLE `book_categories` (
-  `sid` int(11) NOT NULL,
+  `category_sid` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `eng_name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -60,7 +60,7 @@ CREATE TABLE `book_categories` (
 -- 傾印資料表的資料 `book_categories`
 --
 
-INSERT INTO `book_categories` (`sid`, `name`, `eng_name`) VALUES
+INSERT INTO `book_categories` (`category_sid`, `name`, `eng_name`) VALUES
 (1, '生活風格', 'lifestyle'),
 (2, '文學小說', 'literature'),
 (3, '商業理財', 'business'),
@@ -1179,7 +1179,7 @@ ALTER TABLE `act_categories`
 -- 資料表索引 `book_categories`
 --
 ALTER TABLE `book_categories`
-  ADD PRIMARY KEY (`sid`);
+  ADD PRIMARY KEY (`category_sid`);
 
 --
 -- 資料表索引 `book_product`
@@ -1269,7 +1269,7 @@ ALTER TABLE `act_categories`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `book_categories`
 --
 ALTER TABLE `book_categories`
-  MODIFY `sid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `category_sid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `book_product`
