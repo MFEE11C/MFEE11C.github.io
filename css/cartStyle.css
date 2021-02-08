@@ -246,10 +246,27 @@
   padding-right: 180px;
   padding-top: 16px;
 }
+
 .aw-count {
   padding-top: 20px;
 }
 .aw-count-num {
   min-width: 80px;
   padding: 0 9px;
+}
+.aw-test {
+  overflow: hidden;
+}
+.aw-form-width-height {
+  width: 100%;
+}
+.aw-transport-fee {
+  padding-top: 44px;
+}
+.aw-transport-fee-items {
+  padding-top: 10px;
+  padding-bottom: 24px;
+}
+.aw-pr-42 {
+  padding-right: 42px;
 }

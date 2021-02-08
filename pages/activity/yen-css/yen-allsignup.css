@@ -262,7 +262,7 @@
 .yen-signup-list {
   width: 100%;
   height: 50%;
-  background: #afdafa;
+  /* background: #afdafa; */
 }
 
 .yen-signup-select-box {
@@ -353,7 +353,7 @@
   padding-top: 2%;
 }
 
-/* ani */
+/* animation start */
 @keyframes fadeOut {
   0% {
     opacity: 0;
@@ -373,6 +373,7 @@
     opacity: 1;
   }
 }
+/* animation end */
 
 /* TODO: 待刪除 */
 .link {
