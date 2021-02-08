@@ -35,6 +35,9 @@
   border-width: 1px 0;
   border-color: #707070;
 }
+.aw-pt-20 {
+  padding: 20px 0;
+}
 /* 卷軸 */
 /* width */
 .aw-productArea::-webkit-scrollbar {
@@ -269,4 +272,35 @@
 }
 .aw-pr-42 {
   padding-right: 42px;
+}
+.aw-btbb {
+  border-top: solid 1px var(--honki-black);
+  border-bottom: solid 1px var(--honki-black);
+}
+.aw-mb-40 {
+  margin-bottom: 40px;
+}
+.aw-ptpb-20 {
+  padding-top: 20px;
+  padding-bottom: 4px;
+}
+.aw-mb-16 {
+  margin-bottom: 16px !important;
+}
+.aw-mb-4 {
+  margin-bottom: 4px !important;
+}
+.aw-ptpb-64 {
+  padding: 64px;
+}
+.aw-border-lightYellow {
+  border: solid #fdf3db 8px;
+  background-color: var(--honki-white);
+}
+.aw-icecream {
+  top: -1px;
+  left: -100px;
+}
+.aw-borderTop {
+  border-top: solid 1px var(--honki-black);
 }
