@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2021-02-12 04:34:39
--- 伺服器版本： 10.4.17-MariaDB
--- PHP 版本： 7.3.25
+-- 產生時間： 2021-02-08 09:38:50
+-- 伺服器版本： 10.4.16-MariaDB
+-- PHP 版本： 7.3.24
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -1046,7 +1046,6 @@ INSERT INTO `recipient` (`sid`, `recipient_name`, `recipient_phone`, `recipient_
 CREATE TABLE `secondhand_normalchange` (
   `c_sid` int(11) NOT NULL,
   `ISBN` varchar(30) NOT NULL,
-  `book_name` varchar(255) NOT NULL,
   `book_condition` varchar(20) NOT NULL,
   `BC_pic1` varchar(255) DEFAULT NULL,
   `BC_pic2` varchar(255) DEFAULT NULL,
@@ -1066,13 +1065,13 @@ CREATE TABLE `secondhand_normalchange` (
 -- 傾印資料表的資料 `secondhand_normalchange`
 --
 
-INSERT INTO `secondhand_normalchange` (`c_sid`, `ISBN`, `book_name`, `book_condition`, `BC_pic1`, `BC_pic2`, `BC_pic3`, `written_or_not`, `status`, `Match_c_sid`, `member_sid_o`, `member_sid_n`, `Iwant_c_sid`, `Peoplewant_c_sid`, `created_at`, `modifed_at`) VALUES
-(1, '9789571356068', '歲月靜好：蔣勳 日常功課（隨書附贈 蔣勳朗讀四季節氣）', '7成新', '5fe4af74b713e.jpg', NULL, NULL, '無塗改', '交換完成', '10', 5, 9, NULL, NULL, '2020-12-22 14:01:50', NULL),
-(10, '9789862489178', '日本語演化論：誰說笑門福必來？一本掀開154個詞語面紗的庶民生活史', '5成新', '', NULL, NULL, '無塗改', '交換完成', '1', 9, 5, NULL, NULL, '2020-12-23 22:56:12', '2020-12-24 23:06:15'),
-(11, '9789571356068', '歲月靜好：蔣勳 日常功課（隨書附贈 蔣勳朗讀四季節氣）', '5成新', '5fe4af74b713e.jpg', NULL, NULL, '無塗改', '尚未交換', NULL, 22, NULL, '12', '14', '2020-12-23 23:01:34', '2020-12-26 15:52:29'),
-(12, '9789571356068', '歲月靜好：蔣勳 日常功課（隨書附贈 蔣勳朗讀四季節氣）', '5成新', '5fe37032b92a4.jpg', NULL, NULL, '無塗改', '尚未交換', NULL, 16, NULL, '11,13', '14', '2020-12-23 23:11:14', '2020-12-24 00:30:40'),
-(13, '9789571356068', '歲月靜好：蔣勳 日常功課（隨書附贈 蔣勳朗讀四季節氣）', '5成新', '5fe4abe26fb64.jpg', NULL, NULL, '有塗改', '尚未交換', NULL, 31, NULL, '14', '11', '2020-12-24 22:55:30', '2020-12-26 15:52:20'),
-(14, '9789571356068', '歲月靜好：蔣勳 日常功課（隨書附贈 蔣勳朗讀四季節氣）', '5成新', '5fe4b6d23a7d1.jpg', NULL, NULL, '有塗改', '尚未交換', NULL, 40, NULL, '13', '11,12', '2020-12-24 23:42:10', NULL);
+INSERT INTO `secondhand_normalchange` (`c_sid`, `ISBN`, `book_condition`, `BC_pic1`, `BC_pic2`, `BC_pic3`, `written_or_not`, `status`, `Match_c_sid`, `member_sid_o`, `member_sid_n`, `Iwant_c_sid`, `Peoplewant_c_sid`, `created_at`, `modifed_at`) VALUES
+(1, '9789571356068', '7成新', '5fe4af74b713e.jpg', NULL, NULL, '無塗改', '交換完成', '10', 5, 9, NULL, NULL, '2020-12-22 14:01:50', NULL),
+(10, '9789862489178', '5成新', '', NULL, NULL, '無塗改', '交換完成', '1', 9, 5, NULL, NULL, '2020-12-23 22:56:12', '2020-12-24 23:06:15'),
+(11, '9789571356068', '5成新', '5fe4af74b713e.jpg', NULL, NULL, '無塗改', '尚未交換', NULL, 22, NULL, '12', '14', '2020-12-23 23:01:34', '2020-12-26 15:52:29'),
+(12, '9789571356068', '5成新', '5fe37032b92a4.jpg', NULL, NULL, '無塗改', '尚未交換', NULL, 16, NULL, '11,13', '14', '2020-12-23 23:11:14', '2020-12-24 00:30:40'),
+(13, '9789571356068', '5成新', '5fe4abe26fb64.jpg', NULL, NULL, '有塗改', '尚未交換', NULL, 31, NULL, '14', '11', '2020-12-24 22:55:30', '2020-12-26 15:52:20'),
+(14, '9789571356068', '5成新', '5fe4b6d23a7d1.jpg', NULL, NULL, '有塗改', '尚未交換', NULL, 40, NULL, '13', '11,12', '2020-12-24 23:42:10', NULL);
 
 -- --------------------------------------------------------
 
@@ -1083,7 +1082,6 @@ INSERT INTO `secondhand_normalchange` (`c_sid`, `ISBN`, `book_name`, `book_condi
 CREATE TABLE `secondhand_randomchange` (
   `r_sid` int(11) NOT NULL,
   `ISBN` varchar(255) NOT NULL,
-  `book_name` varchar(255) NOT NULL,
   `book_condition` varchar(255) NOT NULL,
   `BC_pic1` varchar(255) DEFAULT NULL,
   `BC_pic2` varchar(255) DEFAULT NULL,
@@ -1102,12 +1100,12 @@ CREATE TABLE `secondhand_randomchange` (
 -- 傾印資料表的資料 `secondhand_randomchange`
 --
 
-INSERT INTO `secondhand_randomchange` (`r_sid`, `ISBN`, `book_name`, `book_condition`, `BC_pic1`, `BC_pic2`, `BC_pic3`, `written_or_not`, `message`, `status`, `Match_r_sid`, `member_sid_o`, `member_sid_n`, `created_at`, `modifed_at`) VALUES
-(1, '9789861343631', '閃電崩盤：一兆美元的真相！全球追捕，史上最神祕的金融罪犯', '5成新', NULL, NULL, NULL, '無塗改', '您好,希望你會喜歡這本書,謝謝!!	', '尚未交換', NULL, 6, NULL, '2021-01-19 20:10:21', '2021-01-28 20:10:46'),
-(2, '9789869938136', '歌唱臺灣：連續殖民下臺語歌曲的變遷', '7成新', NULL, NULL, NULL, '無塗改', '您好,希望你會喜歡這本書,謝謝!!	', '交換完成', 4, 10, NULL, '2021-01-19 20:10:25', '0000-00-00 00:00:00'),
-(3, '9789869961202', '種日子的人：鄉居十年，手機和鋤頭並用的有機書寫', '3成新', NULL, NULL, NULL, '有塗改', '嗨嗨,我很喜歡這本書,受益良多,一定要看完', '尚未交換', NULL, 12, NULL, '2021-01-19 20:10:29', '0000-00-00 00:00:00'),
-(4, '9789865505400', '越過寫作的山（增訂版）：學測國文寫作全方位操練跟著名師嚮導，深耕閱讀能力，掌握寫作法門', '全新', NULL, NULL, NULL, '無塗改', '您好,謝謝您支持HONKI,恭喜你抽中HONKI特別選書!!', '交換完成', 2, 99999, NULL, '2021-01-19 20:22:41', '0000-00-00 00:00:00'),
-(5, '9789865505400', '越過寫作的山（增訂版）：學測國文寫作全方位操練跟著名師嚮導，深耕閱讀能力，掌握寫作法門', '全新', NULL, NULL, NULL, '無塗改', '您好,謝謝您支持HONKI,恭喜你抽中HONKI特別選書!!', '尚未交換', NULL, 99999, NULL, '2021-01-28 20:29:21', '0000-00-00 00:00:00');
+INSERT INTO `secondhand_randomchange` (`r_sid`, `ISBN`, `book_condition`, `BC_pic1`, `BC_pic2`, `BC_pic3`, `written_or_not`, `message`, `status`, `Match_r_sid`, `member_sid_o`, `member_sid_n`, `created_at`, `modifed_at`) VALUES
+(1, '9789861343631', '5成新', NULL, NULL, NULL, '無塗改', '您好,希望你會喜歡這本書,謝謝!!	', '尚未交換', NULL, 6, NULL, '2021-01-19 20:10:21', '2021-01-28 20:10:46'),
+(2, '9789869938136', '7成新', NULL, NULL, NULL, '無塗改', '您好,希望你會喜歡這本書,謝謝!!	', '交換完成', 4, 10, NULL, '2021-01-19 20:10:25', '0000-00-00 00:00:00'),
+(3, '9789869961202', '3成新', NULL, NULL, NULL, '有塗改', '嗨嗨,我很喜歡這本書,受益良多,一定要看完', '尚未交換', NULL, 12, NULL, '2021-01-19 20:10:29', '0000-00-00 00:00:00'),
+(4, '9789865505400', '全新', NULL, NULL, NULL, '無塗改', '您好,謝謝您支持HONKI,恭喜你抽中HONKI特別選書!!', '交換完成', 2, 99999, NULL, '2021-01-19 20:22:41', '0000-00-00 00:00:00'),
+(5, '9789865505400', '全新', NULL, NULL, NULL, '無塗改', '您好,謝謝您支持HONKI,恭喜你抽中HONKI特別選書!!', '尚未交換', NULL, 99999, NULL, '2021-01-28 20:29:21', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
