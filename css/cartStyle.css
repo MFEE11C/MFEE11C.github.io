@@ -304,3 +304,15 @@
 .aw-borderTop {
   border-top: solid 1px var(--honki-black);
 }
+.aw-cartLine {
+  height: 84px;
+  background: #f1f1f1;
+  border-bottom: solid 4px var(--honki-theme);
+  border-radius: 15px 15px 0 0;
+}
+.aw-composition {
+  transform: translate(10%, 50%);
+}
+.aw-ladybirdfinal {
+  transform: translate(250%, -180%);
+}
